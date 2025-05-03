@@ -1,4 +1,4 @@
-using Mono.Cecil;
+﻿using Mono.Cecil;
 using UnityEngine;
 
 public class lightShoot : MonoBehaviour
@@ -21,20 +21,18 @@ public class lightShoot : MonoBehaviour
        
     }
 
-    
-    private void OnCollisionEnter2D(Collider2D collision)
+
+    private void OnCollisionEnter2D(Collision2D collision) // ← تم تصحيحه هنا
     {
-       Destroy(gameObject);
-        if(collision.gameObject.TryGetComponent<EnemyHealth>(out EnemyHealth enemycomponent))
+        Destroy(gameObject);
+        if (collision.gameObject.TryGetComponent<EnemyHealth>(out EnemyHealth enemycomponent))
         {
             enemycomponent.TakeDamage(1);
         }
-
-       
     }
 
 
-    private void OnTrigerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(gameObject);
         if (collision.gameObject.TryGetComponent<EnemyHealth>(out EnemyHealth enemycomponent))

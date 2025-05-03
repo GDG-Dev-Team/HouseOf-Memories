@@ -89,12 +89,12 @@ public class PlayerMove : MonoBehaviour
     }
 
     //playerhealth
-    private void OnTriggerEnter2D(Collider2D collision) //OnTriggerEnter2D ��� �������� ����
-    {
-        if (collision.tag == "Enemy")
-            PlayerHealth--;
-        Debug.Log(PlayerHealth);
-        if (PlayerHealth <= 0)
-            Debug.Log("your Dead");
-    }
+    //private void OnTriggerEnter2D(Collider2D collision) //OnTriggerEnter2D ��� �������� ����
+    //{
+    //    if (collision.tag == "Enemy")
+    //        PlayerHealth--;
+    //    Debug.Log(PlayerHealth);
+    //    if (PlayerHealth <= 0)
+    //        Debug.Log("your Dead");
+    //}
 }
