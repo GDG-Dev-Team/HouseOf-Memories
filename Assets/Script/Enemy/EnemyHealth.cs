@@ -2,23 +2,59 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    [Header("EnemyHealth")]
     public float maxHealth = 100f;
     private float currentHealth;
+
+    [Header("Damage Cooldown")]
+    [SerializeField] private float damageCooldown = 1f; // Êﬁ  «·«‰ Ÿ«— »Ì‰ «·÷—»« 
+    private float lastDamageTime;
+
+    [Header("ChangColor")]
+    private SpriteRenderer spriteRenderer;
+    [SerializeField] private Color hurtColor = Color.red;
+    private Color originalColor;
+    [SerializeField] private float flashDuration = 0.1f;
 
     private void Start()
     {
         currentHealth = maxHealth;
+        lastDamageTime = -damageCooldown; // ‰”„Õ »«·÷—» „»«‘—… √Ê· „—…
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
+            originalColor = spriteRenderer.color;
+
     }
 
     public void TakeDamage(float damage)
     {
-        currentHealth -= damage;
-        if (currentHealth <= 0)
+        // ·Ê „— Êﬁ  ﬂ«›Ì „‰ ¬Œ— ÷—»…
+        if (Time.time - lastDamageTime >= damageCooldown)
         {
-            Destroy(gameObject);
+            currentHealth -= damage;
+            lastDamageTime = Time.time;
 
+            StartCoroutine(FlashEffect());
+
+            if (currentHealth <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
+
+    private IEnumerator FlashEffect()
+    {
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = hurtColor;
+            yield return new WaitForSeconds(flashDuration);
+            spriteRenderer.color = originalColor;
+        }
+    }
+
+
 
 
 }
