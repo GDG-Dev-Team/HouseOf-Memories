@@ -1,4 +1,5 @@
-﻿using Mono.Cecil;
+﻿
+using Mono.Cecil;
 using UnityEngine;
 
 public class lightShoot : MonoBehaviour
@@ -7,22 +8,22 @@ public class lightShoot : MonoBehaviour
     [SerializeField] float bulletSpeed = 20f;
     [SerializeField] float lifeTime = 3f;
     private Rigidbody2D rb;
-    
 
-    
 
-   
+
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         Vector3 force = transform.right * bulletSpeed;
         rb.AddForce(force, ForceMode2D.Impulse);
 
-       
+
     }
 
 
-    private void OnCollisionEnter2D(Collision2D collision) // ← تم تصحيحه هنا
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject);
         if (collision.gameObject.TryGetComponent<EnemyHealth>(out EnemyHealth enemycomponent))
@@ -40,9 +41,7 @@ public class lightShoot : MonoBehaviour
             enemycomponent.TakeDamage(1);
         }
 
-
+        
     }
 
 }
-
-
