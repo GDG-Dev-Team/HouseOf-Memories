@@ -1,0 +1,1690 @@
+fileFormatVersion: 2
+guid: bbc7e9d7b676d4f7bb265893ad7ea205
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2237328812246956896
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_0"
+  - first:
+      213: -3626341187723101821
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_1"
+  - first:
+      213: 8333720014968296339
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_2"
+  - first:
+      213: 2620072971979777648
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_3"
+  - first:
+      213: -6531826911260786107
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_4"
+  - first:
+      213: -1688773603716405137
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_5"
+  - first:
+      213: -6222029037606732149
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_6"
+  - first:
+      213: 6873909074933953613
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_7"
+  - first:
+      213: -7702406411760233828
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_8"
+  - first:
+      213: 549403087610907008
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_9"
+  - first:
+      213: 668624252120951788
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_10"
+  - first:
+      213: 1459192069894877625
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_11"
+  - first:
+      213: -7423931590132634008
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_12"
+  - first:
+      213: 6952994392528152864
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_13"
+  - first:
+      213: 7647152103061171168
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_14"
+  - first:
+      213: -8924018734312236054
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_15"
+  - first:
+      213: -1541795451774969042
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_16"
+  - first:
+      213: 148096374031315739
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_17"
+  - first:
+      213: -4980298502500999270
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_18"
+  - first:
+      213: -5528182227861239086
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_19"
+  - first:
+      213: 3705597252598780033
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_20"
+  - first:
+      213: 6877614657649013999
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_21"
+  - first:
+      213: -6950129588676601550
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_22"
+  - first:
+      213: -4389631747392038665
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_23"
+  - first:
+      213: 1787981410988881216
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_24"
+  - first:
+      213: -668650375138043794
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_25"
+  - first:
+      213: -5839402793828534754
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_26"
+  - first:
+      213: 304068085838524196
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_27"
+  - first:
+      213: 30966821985824392
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_28"
+  - first:
+      213: 8477940106925391939
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_29"
+  - first:
+      213: -231271929438554424
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_30"
+  - first:
+      213: -5007606859578595183
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_31"
+  - first:
+      213: 6476279724356871827
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_32"
+  - first:
+      213: 9041847443568711459
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_33"
+  - first:
+      213: 6301714987012345755
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_34"
+  - first:
+      213: -840607202427143976
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_35"
+  - first:
+      213: 586569765891624416
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_36"
+  - first:
+      213: -2570503213195768044
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_37"
+  - first:
+      213: 813770359148872703
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_38"
+  - first:
+      213: 7445574215612496634
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_39"
+  - first:
+      213: -7061264334138090047
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_40"
+  - first:
+      213: -8248018256158028811
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_41"
+  - first:
+      213: -8955200028244637586
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_42"
+  - first:
+      213: -4661366010227457075
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_43"
+  - first:
+      213: -7596306175717834609
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_44"
+  - first:
+      213: -784488590984713833
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_45"
+  - first:
+      213: -2237005136082970896
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_46"
+  - first:
+      213: -6148097595656923930
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_47"
+  - first:
+      213: 4488563398909514459
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_48"
+  - first:
+      213: 6719105020346824904
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_49"
+  - first:
+      213: 326602326976642795
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_50"
+  - first:
+      213: -6111711752196957516
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_51"
+  - first:
+      213: -1818948342042178181
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_52"
+  - first:
+      213: 699924241357029690
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_53"
+  - first:
+      213: -7432265939444574261
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_54"
+  - first:
+      213: 8883290740878450533
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_55"
+  - first:
+      213: 7625248403333623736
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_56"
+  - first:
+      213: 7111009437193369010
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_57"
+  - first:
+      213: 2921329670463140348
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_58"
+  - first:
+      213: 7436196268149166570
+    second: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_59"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_0"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 599
+        width: 90
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a406449c4963f0e0800000000000000
+      internalID: -2237328812246956896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_1"
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 645
+        width: 166
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 389756727e5acadc0800000000000000
+      internalID: -3626341187723101821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_2"
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 662
+        width: 33
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3939fbd133257a370800000000000000
+      internalID: 8333720014968296339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_3"
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 662
+        width: 35
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 076e47c7c7e5c5420800000000000000
+      internalID: 2620072971979777648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_4"
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 646
+        width: 96
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542c6f3080a4a55a0800000000000000
+      internalID: -6531826911260786107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_5"
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 650
+        width: 65
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f686d6cda554098e0800000000000000
+      internalID: -1688773603716405137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_6"
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 636
+        width: 56
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ef8475e89e6a9a0800000000000000
+      internalID: -6222029037606732149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_7"
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 557
+        width: 135
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d44b5c552e7056f50800000000000000
+      internalID: 6873909074933953613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_8"
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 475
+        width: 164
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9217577d2e8b1590800000000000000
+      internalID: -7702406411760233828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_9"
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 603
+        width: 75
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0890d83823fdf9700800000000000000
+      internalID: 549403087610907008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_10"
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 556
+        width: 99
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb61ebf63e674900800000000000000
+      internalID: 668624252120951788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_11"
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 567
+        width: 72
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1b629d477104410800000000000000
+      internalID: 1459192069894877625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_12"
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 591
+        width: 51
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ee75d6d85e8f890800000000000000
+      internalID: -7423931590132634008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_13"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 475
+        width: 103
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0296cebbf8ffd7060800000000000000
+      internalID: 6952994392528152864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_14"
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 557
+        width: 70
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eba7564254202a60800000000000000
+      internalID: 7647152103061171168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_15"
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 556
+        width: 55
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb536c1e34872480800000000000000
+      internalID: -8924018734312236054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_16"
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 475
+        width: 82
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2bd3a494317a9ae0800000000000000
+      internalID: -1541795451774969042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_17"
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 385
+        width: 83
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b13f8a61ed42e0200800000000000000
+      internalID: 148096374031315739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_18"
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 538
+        width: 82
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f940316ec62eab0800000000000000
+      internalID: -4980298502500999270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_19"
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 391
+        width: 66
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da04b6ad83f743b0800000000000000
+      internalID: -5528182227861239086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_20"
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 475
+        width: 68
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18050d1711dec6330800000000000000
+      internalID: 3705597252598780033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_21"
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 386
+        width: 139
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe4703b8712327f50800000000000000
+      internalID: 6877614657649013999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_22"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 374
+        width: 350
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239dff366fd2c8f90800000000000000
+      internalID: -6950129588676601550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_23"
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 385
+        width: 67
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f89be9de25e413c0800000000000000
+      internalID: -4389631747392038665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_24"
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 395
+        width: 63
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0457ef2ce9f20d810800000000000000
+      internalID: 1787981410988881216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_25"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 174
+        width: 181
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6817f6c60a78b6f0800000000000000
+      internalID: -668650375138043794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_26"
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 313
+        width: 167
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e163d65f81646fea0800000000000000
+      internalID: -5839402793828534754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_27"
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 287
+        width: 45
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f20f32054483400800000000000000
+      internalID: 304068085838524196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_28"
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 243
+        width: 32
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ea94819240e6000800000000000000
+      internalID: 30966821985824392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_29"
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 241
+        width: 115
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3404354fb91b7a570800000000000000
+      internalID: 8477940106925391939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_30"
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 240
+        width: 108
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6bb4fc76b5accf0800000000000000
+      internalID: -231271929438554424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_31"
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 245
+        width: 45
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1982208b718618ab0800000000000000
+      internalID: -5007606859578595183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_32"
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 245
+        width: 44
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3962b54b81e50e950800000000000000
+      internalID: 6476279724356871827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_33"
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 282
+        width: 53
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 327df2b18581b7d70800000000000000
+      internalID: 9041847443568711459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_34"
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 245
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f40ac8460347750800000000000000
+      internalID: 6301714987012345755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_35"
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 242
+        width: 75
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8f1bff3309554f0800000000000000
+      internalID: -840607202427143976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_36"
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 181
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed44f3281ae32800800000000000000
+      internalID: 586569765891624416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_37"
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 184
+        width: 100
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f477b52fcb35cd0800000000000000
+      internalID: -2570503213195768044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_38"
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 155
+        width: 55
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff38fc184d71b4b00800000000000000
+      internalID: 813770359148872703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_39"
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 118
+        width: 137
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afaf36efc4ef35760800000000000000
+      internalID: 7445574215612496634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_40"
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 122
+        width: 76
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cd50921089510e90800000000000000
+      internalID: -7061264334138090047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_41"
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 122
+        width: 118
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb83cc8817298d80800000000000000
+      internalID: -8248018256158028811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_42"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6809ef550db8b380800000000000000
+      internalID: -8955200028244637586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_43"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 141
+        width: 64
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc300588f408f4fb0800000000000000
+      internalID: -4661366010227457075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_44"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 148
+        width: 54
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f808b37b7cf749690800000000000000
+      internalID: -7596306175717834609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_45"
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 91
+        width: 47
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 799620c68cfec15f0800000000000000
+      internalID: -784488590984713833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_46"
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 7
+        width: 144
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6dc0f4eaf84f0e0800000000000000
+      internalID: -2237005136082970896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_47"
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 139
+        width: 57
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e49f6e8fc19daaa0800000000000000
+      internalID: -6148097595656923930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_48"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd252df31a49a4e30800000000000000
+      internalID: 4488563398909514459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_49"
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 94
+        width: 52
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8f05aaa6e0f3d50800000000000000
+      internalID: 6719105020346824904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_50"
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 96
+        width: 74
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee32420613588400800000000000000
+      internalID: 326602326976642795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_51"
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 7
+        width: 213
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba58b8ea86de2ba0800000000000000
+      internalID: -6111711752196957516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_52"
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 71
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d4acfbe1cc1c6e0800000000000000
+      internalID: -1818948342042178181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_53"
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 68
+        width: 59
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3145cf9361a6b900800000000000000
+      internalID: 699924241357029690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_54"
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 72
+        width: 62
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7db2381894bd890800000000000000
+      internalID: -7432265939444574261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_55"
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 20
+        width: 53
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f9396fcd9c74b70800000000000000
+      internalID: 8883290740878450533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_56"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 133
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bfa0d4c50352d960800000000000000
+      internalID: 7625248403333623736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_57"
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 7
+        width: 74
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b57c5a48616fa260800000000000000
+      internalID: 7111009437193369010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_58"
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 21
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1b3cf7bd5aa8820800000000000000
+      internalID: 2921329670463140348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_59"
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 19
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae1dd137b1da23760800000000000000
+      internalID: 7436196268149166570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bb2a43c14358c4fc68c1269a634c46ce
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_0": -2237328812246956896
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_1": -3626341187723101821
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_10": 668624252120951788
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_11": 1459192069894877625
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_12": -7423931590132634008
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_13": 6952994392528152864
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_14": 7647152103061171168
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_15": -8924018734312236054
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_16": -1541795451774969042
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_17": 148096374031315739
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_18": -4980298502500999270
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_19": -5528182227861239086
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_2": 8333720014968296339
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_20": 3705597252598780033
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_21": 6877614657649013999
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_22": -6950129588676601550
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_23": -4389631747392038665
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_24": 1787981410988881216
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_25": -668650375138043794
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_26": -5839402793828534754
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_27": 304068085838524196
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_28": 30966821985824392
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_29": 8477940106925391939
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_3": 2620072971979777648
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_30": -231271929438554424
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_31": -5007606859578595183
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_32": 6476279724356871827
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_33": 9041847443568711459
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_34": 6301714987012345755
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_35": -840607202427143976
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_36": 586569765891624416
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_37": -2570503213195768044
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_38": 813770359148872703
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_39": 7445574215612496634
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_4": -6531826911260786107
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_40": -7061264334138090047
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_41": -8248018256158028811
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_42": -8955200028244637586
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_43": -4661366010227457075
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_44": -7596306175717834609
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_45": -784488590984713833
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_46": -2237005136082970896
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_47": -6148097595656923930
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_48": 4488563398909514459
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_49": 6719105020346824904
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_5": -1688773603716405137
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_50": 326602326976642795
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_51": -6111711752196957516
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_52": -1818948342042178181
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_53": 699924241357029690
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_54": -7432265939444574261
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_55": 8883290740878450533
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_56": 7625248403333623736
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_57": 7111009437193369010
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_58": 2921329670463140348
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_59": 7436196268149166570
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_6": -6222029037606732149
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_7": 6873909074933953613
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_8": -7702406411760233828
+      "2D Sci-Fi _ Game Assets _ Reference Images _ 4K, Lumie\u0300re_9": 549403087610907008
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
