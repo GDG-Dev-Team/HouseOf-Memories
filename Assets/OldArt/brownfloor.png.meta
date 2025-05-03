@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      brownfloor_0: 4638197630703676786
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

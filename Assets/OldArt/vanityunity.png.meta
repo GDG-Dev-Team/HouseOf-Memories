@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      vanityunity_0: -2498165852681206277
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

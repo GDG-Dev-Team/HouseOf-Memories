@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HOMwindowsliving_0: 477397458432807758
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

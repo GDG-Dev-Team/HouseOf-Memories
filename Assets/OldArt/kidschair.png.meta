@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kidschair_0: 2741132467224946817
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

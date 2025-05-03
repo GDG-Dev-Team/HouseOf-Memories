@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HOMlight_0: 5041119088471453607
+      HOMlight_1: 6359738888107142490
+      HOMlight_2: -5453360397095896054
+      HOMlight_3: 860311516103602063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      brownwall3_0: 3288854066000918311
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

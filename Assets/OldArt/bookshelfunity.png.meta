@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bookshelfunity_0: -5333738569749328110
+      bookshelfunity_1: 529811641247739782
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
