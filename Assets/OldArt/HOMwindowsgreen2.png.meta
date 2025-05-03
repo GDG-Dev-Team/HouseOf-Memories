@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HOMwindowsgreen2_0: 4253014775705197518
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

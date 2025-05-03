@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8415567613662831157}
   - component: {fileID: 6722849239937485629}
   - component: {fileID: 2037277742440735463}
+  - component: {fileID: -2325283730227841795}
   m_Layer: 0
   m_Name: lightBullet
   m_TagString: Untagged
@@ -168,3 +169,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &-2325283730227841795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7027281160704079786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 779252d263bfd7245b2f7f837cf2e5df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1

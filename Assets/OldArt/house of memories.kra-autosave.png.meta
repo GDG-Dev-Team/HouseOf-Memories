@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      house of memories.kra-autosave_0: 8064335936592261347
+      house of memories.kra-autosave_1: 1294714670388776405
+      house of memories.kra-autosave_2: 9034060998930312887
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

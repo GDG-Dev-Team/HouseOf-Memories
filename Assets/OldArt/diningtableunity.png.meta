@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      diningtableunity_0: 622299282215541569
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

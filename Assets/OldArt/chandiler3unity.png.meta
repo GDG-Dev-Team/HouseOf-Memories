@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      chandiler3unity_0: 5773143355149038169
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

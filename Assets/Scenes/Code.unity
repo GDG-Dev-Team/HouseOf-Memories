@@ -601,7 +601,7 @@ GameObject:
   - component: {fileID: 554986205}
   - component: {fileID: 554986204}
   - component: {fileID: 554986203}
-  - component: {fileID: 554986202}
+  - component: {fileID: 554986207}
   m_Layer: 0
   m_Name: Spider2
   m_TagString: Enemy
@@ -609,42 +609,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!58 &554986202
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 554986201}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.020282269}
-  m_Radius: 1.1287684
 --- !u!50 &554986203
 Rigidbody2D:
   serializedVersion: 5
@@ -749,13 +713,82 @@ Transform:
   m_GameObject: {fileID: 554986201}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.7, y: 31.9, z: 0.07537643}
+  m_LocalPosition: {x: 63.1, y: -7, z: 0.07537643}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1633571773}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &554986207
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554986201}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 2.24}
+    newSize: {x: 2.56, y: 2.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.06, y: -0.65}
+      - {x: 0.72999996, y: -0.08}
+      - {x: 0.7, y: -0.03}
+      - {x: 0.62, y: 0.11}
+      - {x: 0.59, y: 0.16}
+      - {x: 0.51, y: 0.29999998}
+      - {x: 0.22, y: 0.79999995}
+      - {x: 0.08, y: 1.04}
+      - {x: 0.03, y: 1.12}
+      - {x: -0.03, y: 1.12}
+      - {x: -0.08, y: 1.04}
+      - {x: -0.19, y: 0.84999996}
+      - {x: -0.29, y: 0.68}
+      - {x: -0.51, y: 0.29999998}
+      - {x: -0.59, y: 0.16}
+      - {x: -0.95, y: -0.45999998}
+      - {x: -1.03, y: -0.59999996}
+      - {x: -1.28, y: -1.04}
+      - {x: -1.28, y: -1.12}
+      - {x: 1.28, y: -1.12}
+      - {x: 1.28, y: -1.03}
+      - {x: 1.25, y: -0.97999996}
+  m_UseDelaunayMesh: 0
 --- !u!1 &635933201
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,6 +1006,7 @@ GameObject:
   - component: {fileID: 757655162}
   - component: {fileID: 757655161}
   - component: {fileID: 757655160}
+  - component: {fileID: 757655170}
   m_Layer: 0
   m_Name: Boy
   m_TagString: Player
@@ -992,7 +1026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed763cae5a2a64619a26cbcb5281643f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 10
+  jumpForce: 1
   groundPoint: {fileID: 280985543}
   pointRadius: 1.23
   groundLayer:
@@ -1110,7 +1144,7 @@ Animator:
   m_GameObject: {fileID: 757655159}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a0b4e87ddfd386d4c982f5db06e61a0a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1146,7 +1180,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1254,7 +1288,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0f2f2f6b3f562c54ebded322e20fb240, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1442,6 +1476,18 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &757655170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757655159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca959b81a69e042d19652a84859b0800, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &885427684
 GameObject:
   m_ObjectHideFlags: 0
@@ -2245,7 +2291,7 @@ Transform:
   m_GameObject: {fileID: 1600866265}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.8, y: 32.3, z: 0}
+  m_LocalPosition: {x: 64.9, y: -7.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2683,14 +2729,14 @@ GameObject:
   - component: {fileID: 1740688033}
   - component: {fileID: 1740688032}
   - component: {fileID: 1740688031}
-  - component: {fileID: 1740688030}
-  - component: {fileID: 1740688029}
   - component: {fileID: 1740688028}
   - component: {fileID: 1740688027}
   - component: {fileID: 1740688026}
-  - component: {fileID: 1740688025}
   - component: {fileID: 1740688024}
+  - component: {fileID: 1740688025}
   - component: {fileID: 1740688034}
+  - component: {fileID: 1740688036}
+  - component: {fileID: 1740688035}
   m_Layer: 0
   m_Name: Girl
   m_TagString: Player
@@ -2822,7 +2868,7 @@ Animator:
   m_GameObject: {fileID: 1740688022}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a0b4e87ddfd386d4c982f5db06e61a0a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2858,7 +2904,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2950,39 +2996,6 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 0
   m_ApplyActiveColorSpace: 1
---- !u!114 &1740688029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1740688022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90363f32bfd0847bcac516086af7926a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 10
-  groundPoint: {fileID: 38062847}
-  pointRadius: 1.23
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
---- !u!114 &1740688030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1740688022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92e8270a75fdd42ecbc874731fa65f75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 50
-  tr: {fileID: 1740688028}
-  PlayerHealth: 3
 --- !u!114 &1740688031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3105,7 +3118,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 2
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 0f2f2f6b3f562c54ebded322e20fb240, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -3157,8 +3170,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1684095401
+  m_SortingLayer: 1
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 3c7cc68d9b87d450587cc1993b25283f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3183,8 +3196,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee314f505b8184c6fb5288a2ca0bda1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 3926474354853292574, guid: 8ef486ed4f50f405fba8210eff4cde9d, type: 3}
+  bulletPrefab: {fileID: 7027281160704079786, guid: 99db25299f00042a18ff053621aeb619, type: 3}
   firePoint: {fileID: 1227958113}
+--- !u!114 &1740688035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740688022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90363f32bfd0847bcac516086af7926a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 10
+  groundPoint: {fileID: 38062847}
+  pointRadius: 1.23
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &1740688036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740688022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92e8270a75fdd42ecbc874731fa65f75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  tr: {fileID: 1740688028}
+  PlayerHealth: 3
 --- !u!1 &1852471707
 GameObject:
   m_ObjectHideFlags: 0
@@ -3708,7 +3754,7 @@ Transform:
   m_GameObject: {fileID: 1942497320}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.73, y: 8.16, z: 0}
+  m_LocalPosition: {x: -30.9, y: 9.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
