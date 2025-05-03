@@ -141,7 +141,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -192,7 +192,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -1122,7 +1122,47 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      columnFilter_0: 6367995300739396285
+      columnFilter_1: -2924718750016719764
+      columnFilter_10: 5641292170355144141
+      columnFilter_11: -8937504852178083693
+      columnFilter_12: 2054871415907959702
+      columnFilter_13: -6573346800842060119
+      columnFilter_14: 5866582530302770364
+      columnFilter_15: 8558736104355943957
+      columnFilter_16: -1572748984674865029
+      columnFilter_17: -4306663788877585240
+      columnFilter_18: -1543047670623493810
+      columnFilter_19: 2425767969609257834
+      columnFilter_2: 1777481834158696755
+      columnFilter_20: 5029684626084019497
+      columnFilter_21: -4423907403648376613
+      columnFilter_22: 8892284247609356732
+      columnFilter_23: -5054976600545187805
+      columnFilter_24: 8845107306711072415
+      columnFilter_25: 8630252147031288042
+      columnFilter_26: 5615066403859741061
+      columnFilter_27: -4059033693433865403
+      columnFilter_28: 6907538917871896572
+      columnFilter_29: 5394321153539150422
+      columnFilter_3: 5877438207220615385
+      columnFilter_30: -6957266825048680609
+      columnFilter_31: 3450030577026404576
+      columnFilter_32: -3564075180716288685
+      columnFilter_33: 5836907046250467715
+      columnFilter_34: -1056468976111878742
+      columnFilter_35: -1515475330496269974
+      columnFilter_36: 6381011237485803440
+      columnFilter_37: -4393883107410386622
+      columnFilter_38: -1526210606611433567
+      columnFilter_39: 7234237350727683779
+      columnFilter_4: 2026466919100874867
+      columnFilter_5: 2133546313733626066
+      columnFilter_6: -1328189793113579178
+      columnFilter_7: 3627012446428972942
+      columnFilter_8: -3174398022435320515
+      columnFilter_9: -7925683115634111465
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
