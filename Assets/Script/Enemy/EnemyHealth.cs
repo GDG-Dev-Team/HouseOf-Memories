@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -44,7 +45,7 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    private IEnumerator FlashEffect()
+   IEnumerator FlashEffect()
     {
         if (spriteRenderer != null)
         {

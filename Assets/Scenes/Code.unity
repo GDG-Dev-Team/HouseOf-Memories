@@ -650,6 +650,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   damageCooldown: 0.5
+  hurtColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.1
 --- !u!212 &554986205
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -825,6 +827,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 2
   damageCooldown: 0.5
+  hurtColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.1
 --- !u!70 &635933203
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1398,7 +1402,19 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 351f2ccd-1f9f-44bf-9bec-d62ac5c5f408
     m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
   - m_PersistentCalls:
@@ -1473,6 +1489,26 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 757655161}
+        m_TargetAssemblyTypeName: Move, Assembly-CSharp
+        m_MethodName: mover
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 4515a8f5-ac12-483b-9937-5473d3f35c40
+    m_ActionName: 'Player/Arrow[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 38708507-a481-499f-ae39-380cdd406554
+    m_ActionName: Player/Escape
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -1747,6 +1783,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 2
   damageCooldown: 0.3
+  hurtColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.1
 --- !u!60 &1190107407
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1926,7 +1964,7 @@ Transform:
   m_GameObject: {fileID: 1190107405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.9, y: -4.9, z: 0}
+  m_LocalPosition: {x: 23.8, y: 36.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2022,7 +2060,7 @@ Transform:
   m_GameObject: {fileID: 1238753453}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.43, y: 1.19, z: 0}
+  m_LocalPosition: {x: 1.5, y: 0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3025,7 +3063,19 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1740688036}
+        m_TargetAssemblyTypeName: PlayerMove, Assembly-CSharp
+        m_MethodName: playermove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 351f2ccd-1f9f-44bf-9bec-d62ac5c5f408
     m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
   - m_PersistentCalls:
@@ -3045,7 +3095,19 @@ MonoBehaviour:
     m_ActionId: 27c5f898-bc57-4ee1-8800-db469aca5fe3
     m_ActionName: 'Player/Crouch[/Keyboard/c]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1740688035}
+        m_TargetAssemblyTypeName: PlayerJump, Assembly-CSharp
+        m_MethodName: Jump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: f1ba0d36-48eb-4cd5-b651-1c94a6531f70
     m_ActionName: 'Player/Jump[/Keyboard/space]'
   - m_PersistentCalls:
@@ -3100,6 +3162,26 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4515a8f5-ac12-483b-9937-5473d3f35c40
+    m_ActionName: 'Player/Arrow[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1740688025}
+        m_TargetAssemblyTypeName: PlayerPause, Assembly-CSharp
+        m_MethodName: Escape
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 38708507-a481-499f-ae39-380cdd406554
+    m_ActionName: 'Player/Escape[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -3231,7 +3313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92e8270a75fdd42ecbc874731fa65f75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 50
   tr: {fileID: 1740688028}
   PlayerHealth: 3
 --- !u!1 &1852471707
@@ -3269,6 +3351,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   damageCooldown: 0.5
+  hurtColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.1
 --- !u!114 &1852471709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3640,6 +3724,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   damageCooldown: 0.5
+  hurtColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.1
 --- !u!70 &1942497322
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3759,7 +3845,7 @@ Transform:
   m_GameObject: {fileID: 1942497320}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.9, y: 9.2, z: 0}
+  m_LocalPosition: {x: -28, y: 9.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
