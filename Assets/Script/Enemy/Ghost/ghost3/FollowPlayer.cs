@@ -11,14 +11,15 @@ public class FollowPlayer : MonoBehaviour
     public float shootingRange;
     public GameObject bullet;//shoot bullet
     public GameObject bulletParent;//location where to shoot
-    public float FireRate = 1f;
+    [SerializeField] float shootCooldown = 1f;
     private float nextFireTime;
     
     
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform; 
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        player = GetClosestPlayer(players).transform;
     }
 
    
@@ -32,11 +33,31 @@ public class FollowPlayer : MonoBehaviour
         else if (distanceFormPlayer <= shootingRange && nextFireTime < Time.time)
         {
             Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
-            nextFireTime = Time.time + FireRate;
+            nextFireTime = Time.time + shootCooldown;
 
         }
            
           
+    }
+
+
+    GameObject GetClosestPlayer(GameObject[] players)
+    {
+        GameObject closest = null;
+        float shortestDistance = Mathf.Infinity;
+        Vector3 currentPos = transform.position;
+
+        foreach (GameObject GirlOrBoy in players)
+        {
+            float distance = Vector3.Distance(GirlOrBoy.transform.position, currentPos);
+            if (distance < shortestDistance)
+            {
+                shortestDistance = distance;
+                closest = GirlOrBoy;
+            }
+        }
+
+        return closest;
     }
 
     private void OnDrawGizmosSelected()//space if player close of it the enemy attack him
