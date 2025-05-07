@@ -17,7 +17,7 @@ TagManager:
   - Ground
   - Wall
   - Enemy
-  - 
+  - wall decor
   - 
   - 
   - 
@@ -44,8 +44,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2594814181
+    locked: 0
+  - name: GroundLayer
+    uniqueID: 3488846779
+    locked: 0
   - name: mayground
     uniqueID: 1684095401
+    locked: 0
+  - name: frontground
+    uniqueID: 2900308015
     locked: 0
   m_RenderingLayers:
   - Default

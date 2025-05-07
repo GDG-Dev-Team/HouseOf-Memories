@@ -1,57 +1,66 @@
+using System.Collections;
+using System.Diagnostics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] int maxHealth = 3;
-    private int currentHealth;
+    public static PlayerHealth instance;
+    public GameObject health1;
+    public GameObject health2;
+    public GameObject health3;
+    public int Health;
 
-    public float invincibleTime = 1f;
-    private float lastDamageTime;
-
-        
-    void Start()
+    void Awake()
     {
-
-        currentHealth = maxHealth;
-
+        if (!instance)
+            instance = this;
     }
 
-
-
-    public void TakeDamage(int damageAmount)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        currentHealth -= damageAmount;
-        Debug.Log(gameObject.name + " took " + damageAmount + " damage. Remaining Health: " + currentHealth);
-
-
-        if (currentHealth <= 0)
+        if (collision.gameObject.tag == "Enemy")
         {
-            Die();
-            Debug.Log("1111111111111d");
+            Health--;
+
+            if (Health == 0)
+            {
+                Destroy(gameObject);
+                Time.timeScale = 0;
+                SceneManage.instance.LoadMenu("Lose Menu");
+            }
+        }
+        switch (Health)
+        {
+            case 0:
+            {
+                health1.gameObject.SetActive(false);
+                health2.gameObject.SetActive(false);
+                health3.gameObject.SetActive(false);
+                break;
+            }
+            case 1:
+            {
+                health1.gameObject.SetActive(true);
+                health2.gameObject.SetActive(false);
+                health3.gameObject.SetActive(false);
+                break;
+            }
+            case 2:
+            {
+                health1.gameObject.SetActive(true);
+                health2.gameObject.SetActive(true);
+                health3.gameObject.SetActive(false);
+                break;
+            }
+            case 3:
+            {
+                health1.gameObject.SetActive(true);
+                health2.gameObject.SetActive(true);
+                health3.gameObject.SetActive(true);
+
+                break;
+            }
         }
     }
-
-    void Die()
-    {
-        Debug.Log(gameObject.name + " died.");
-        Destroy(gameObject);
-    }
-
-    //private void GetTarget()
-    //{
-    //    target = GameObject.FindGameObjectWithTag("Player").transform;
-    //}
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-            maxHealth--;
-        Debug.Log(maxHealth);
-        if (maxHealth <= 0)
-            Debug.Log("playerdie");
-        Destroy(gameObject);
-    }
-
-
-
 }
