@@ -18,6 +18,12 @@ public class Spider : MonoBehaviour
     public float LineOfSite;
     private Transform player;//target
 
+    [Header("Jumping")]
+    [SerializeField] float jumpForce = 10f;
+    [SerializeField] float jumpRange;
+    [SerializeField] float jumpCooldown = 2f;
+    private float lastJumpTime;
+
     [Header("Other")]
     private Animator enemyAnim;
     private Rigidbody2D enemyRB;
@@ -33,21 +39,39 @@ public class Spider : MonoBehaviour
 
     void FixedUpdate()
     {
-
         checkingGround = Physics2D.OverlapCircle(groundCheckPoint.position, circleRadius, groundLayer);
         checkingWall = Physics2D.OverlapCircle(wallCheckPoint.position, circleRadius, groundLayer);
 
-        float distanceFormPlayer = Vector2.Distance(player.position, transform.position);
-        if (distanceFormPlayer < LineOfSite)
+        float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
+
+        if (distanceFromPlayer < LineOfSite)
         {
-            FollowPlayer();
+            if (distanceFromPlayer < jumpRange && Time.time > lastJumpTime + jumpCooldown)
+            {
+                JumpAtPlayer();
+                lastJumpTime = Time.time;
+            }
+            else
+            {
+                FollowPlayer();
+            }
         }
         else
         {
             petrolling();
         }
-
     }
+
+    void JumpAtPlayer()
+    {
+        if (checkingGround) // Jump only if on ground
+        {
+            Vector2 jumpDirection = (player.position - transform.position).normalized;
+            enemyRB.linearVelocity = new Vector2(0, 0); // optional: reset velocity before jump
+            enemyRB.AddForce(new Vector2(jumpDirection.x, 1f) * jumpForce, ForceMode2D.Impulse);
+        }
+    }
+
 
     GameObject GetClosestPlayer(GameObject[] players)
     {
@@ -79,7 +103,7 @@ public class Spider : MonoBehaviour
             Flip();
         }
 
-        // íÊÍÑß ÈÇÊÌÇå ÇááÇÚÈ
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         enemyRB.linearVelocity = new Vector2(moveSpeed * moveDirection, enemyRB.linearVelocity.y);
     }
 
@@ -117,11 +141,16 @@ public class Spider : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
+        // Ground check + Wall check
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(groundCheckPoint.position, circleRadius);
         Gizmos.DrawWireSphere(wallCheckPoint.position, circleRadius);
+        // Line of sight (follow player)
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, LineOfSite);
+        // Jump range (start jumping)
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, jumpRange);
 
 
     }
