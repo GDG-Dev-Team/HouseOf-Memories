@@ -27,6 +27,7 @@ public class PlayerHealth : MonoBehaviour
             {
                 Destroy(gameObject);
                 Time.timeScale = 0;
+                SceneManage.instance.LoadMenu("Lose Menu");
             }
         }
         switch (Health)
