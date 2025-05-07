@@ -749,7 +749,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4955796393134621700, guid: 7b1952192fc052545850ac3f8df7160d, type: 3}
+      - m_Target: {fileID: 8526846900735680429, guid: 06ea08b7ad0f44425a7097a239d994da, type: 3}
         m_TargetAssemblyTypeName: SceneManage, Assembly-CSharp
         m_MethodName: UnloadMenu
         m_Mode: 5
