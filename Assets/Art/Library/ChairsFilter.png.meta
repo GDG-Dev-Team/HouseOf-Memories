@@ -922,7 +922,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ChairsFilter_0: -3096030127358999654
+      ChairsFilter_1: 8390961955698409756
+      ChairsFilter_10: 4209760416174810527
+      ChairsFilter_11: -2420089934219411208
+      ChairsFilter_12: -5507656347233565074
+      ChairsFilter_13: -3910968156833854002
+      ChairsFilter_14: 9114445957663436086
+      ChairsFilter_15: -8866742617294881031
+      ChairsFilter_16: 2483638694943597399
+      ChairsFilter_17: 2384734260369673078
+      ChairsFilter_18: -7775463817604279623
+      ChairsFilter_19: 8242163691518167069
+      ChairsFilter_2: 8035443212124721692
+      ChairsFilter_20: 2638231010514383003
+      ChairsFilter_21: -7028030153323303310
+      ChairsFilter_22: -1160923301929709143
+      ChairsFilter_23: 56893787235460604
+      ChairsFilter_24: 8050971330727983828
+      ChairsFilter_25: 1191824158239584762
+      ChairsFilter_26: 2784686173560166324
+      ChairsFilter_27: 5446309529890127118
+      ChairsFilter_28: 7561098247573845402
+      ChairsFilter_29: 141537066126874556
+      ChairsFilter_3: -4330194724252323085
+      ChairsFilter_30: -8122069268838505304
+      ChairsFilter_31: 7136850062691018590
+      ChairsFilter_4: -3952550811975587565
+      ChairsFilter_5: 6513878932212581124
+      ChairsFilter_6: -7299188595353001205
+      ChairsFilter_7: -6580134938961391991
+      ChairsFilter_8: 1525564141233197934
+      ChairsFilter_9: -1554706360917472881
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

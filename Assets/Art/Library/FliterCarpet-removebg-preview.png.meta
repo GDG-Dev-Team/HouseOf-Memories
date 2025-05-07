@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FliterCarpet-removebg-preview_0: 5568753227163694010
+      FliterCarpet-removebg-preview_1: 6178896189459123946
+      FliterCarpet-removebg-preview_2: -5298546988160225362
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

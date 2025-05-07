@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bookcasefilter-removebg-preview 1_0: -8298349926439112344
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
