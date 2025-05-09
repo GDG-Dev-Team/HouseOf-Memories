@@ -129,7 +129,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8653719598885068355, guid: 8507551fccd66de44906e57246e5f1df, type: 3}
       propertyPath: m_Name
-      value: vertopal.com_ch1_ (2)
+      value: girel
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 8507551fccd66de44906e57246e5f1df, type: 3}
       propertyPath: m_LocalScale.x
@@ -290,7 +290,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8653719598885068355, guid: 336fb415337c63541bbbb04f75503018, type: 3}
       propertyPath: m_Name
-      value: vertopal.com_chr_2- (7)
+      value: boy
       objectReference: {fileID: 0}
     - target: {fileID: -7614567890348359648, guid: 336fb415337c63541bbbb04f75503018, type: 3}
       propertyPath: m_LocalRotation.w
