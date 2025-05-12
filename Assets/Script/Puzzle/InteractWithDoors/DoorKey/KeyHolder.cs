@@ -38,8 +38,8 @@ public class KeyHolder : MonoBehaviour
         if (keyDoor != null)
         {
            if(ContainsKey(keyDoor.GetKeyType()));
-           //currently holding key to open this door
-           KeyDoor.OpenDoor
+            //currently holding key to open this door
+            //KeyDoor.OpenDoor
         }
   }
 }
