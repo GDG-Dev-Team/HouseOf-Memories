@@ -5,6 +5,7 @@ using UnityEngine;
 public class KeyHolder : MonoBehaviour
 {
     private List<Key.KeyType> KeyList;
+   
 
     private void Awake(){
         KeyList = new List<Key.KeyType>();
@@ -37,9 +38,10 @@ public class KeyHolder : MonoBehaviour
     KeyDoor keyDoor = collider.GetComponent<KeyDoor>();
         if (keyDoor != null)
         {
-           if(ContainsKey(keyDoor.GetKeyType()));
-            //currently holding key to open this door
-            //KeyDoor.OpenDoor
-        }
+            if (ContainsKey(keyDoor.GetKeyType())) { 
+                //currently holding key to open this door
+                RemoveKey(keyDoor.GetKeyType());
+                keyDoor.OpenDoor();
+        }}
   }
 }
