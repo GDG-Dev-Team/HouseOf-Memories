@@ -1,0 +1,67 @@
+using UnityEngine;
+
+public class EnemyShootingFar : MonoBehaviour
+{
+    [Header("TargetToFollow")]
+    public float LineOfSite;
+    private Transform player;//target
+
+    [Header("shoot")]
+    public float shootingRange;
+    public GameObject bullet;//shoot bullet
+    public GameObject bulletParent;//location where to shoot
+    [SerializeField] float shootCooldown = 1f;
+    private float nextFireTime;
+
+
+
+    void Start()
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        player = GetClosestPlayer(players).transform;
+    }
+
+
+    void Update()
+    {
+        float distanceFormPlayer = Vector2.Distance(player.position, transform.position);
+
+        if (distanceFormPlayer <= shootingRange && nextFireTime < Time.time)
+        {
+            Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
+            nextFireTime = Time.time + shootCooldown;
+
+        }
+
+
+    }
+
+
+    GameObject GetClosestPlayer(GameObject[] players)
+    {
+        GameObject closest = null;
+        float shortestDistance = Mathf.Infinity;
+        Vector3 currentPos = transform.position;
+
+        foreach (GameObject GirlOrBoy in players)
+        {
+            float distance = Vector3.Distance(GirlOrBoy.transform.position, currentPos);
+            if (distance < shortestDistance)
+            {
+                shortestDistance = distance;
+                closest = GirlOrBoy;
+            }
+        }
+
+        return closest;
+    }
+
+    private void OnDrawGizmosSelected()//space if player close of it the enemy attack him
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, LineOfSite);
+        Gizmos.DrawWireSphere(transform.position, shootingRange);
+    }
+
+
+}

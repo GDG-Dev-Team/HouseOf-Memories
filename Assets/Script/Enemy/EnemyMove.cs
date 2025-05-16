@@ -1,9 +1,9 @@
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Spider : MonoBehaviour
+public class EnemyMove : MonoBehaviour
 {
-    [Header("For Petrolling")]
-    [SerializeField] float moveSpeed;
+    [Header("For Patrolling")]
+    [SerializeField] float patrolSpeed;
     [SerializeField] Transform groundCheckPoint;
     [SerializeField] Transform wallCheckPoint;
     [SerializeField] float circleRadius;
@@ -14,27 +14,18 @@ public class Spider : MonoBehaviour
     private bool checkingGround;
     private bool checkingWall;
 
-    [Header("TargetToFollow")]
-    public float speed;
+    [Header("Target To Follow")]
+    public float chaseSpeed;
     public float LineOfSite;
-    private Transform player;//target
-
-    [Header("Jumping")]
-    [SerializeField] float jumpForce = 10f;
-    [SerializeField] float jumpRange;
-    [SerializeField] float jumpCooldown = 2f;
-    private float lastJumpTime;
+    private Transform player;
 
     [Header("Other")]
-    private Animator enemyAnim;
     private Rigidbody2D enemyRB;
-
 
     void Start()
     {
        
         enemyRB = GetComponent<Rigidbody2D>();
-
     }
 
     void FixedUpdate()
@@ -49,32 +40,13 @@ public class Spider : MonoBehaviour
 
         if (distanceFromPlayer < LineOfSite)
         {
-            if (distanceFromPlayer < jumpRange && Time.time > lastJumpTime + jumpCooldown)
-            {
-                JumpAtPlayer();
-                lastJumpTime = Time.time;
-            }
-            else
-            {
-                FollowPlayer();
-            }
+            FollowPlayer();
         }
         else
         {
-            petrolling();
+            Patrolling();
         }
     }
-
-    void JumpAtPlayer()
-    {
-        if (checkingGround) // Jump only if on ground
-        {
-            Vector2 jumpDirection = (player.position - transform.position).normalized;
-            enemyRB.linearVelocity = new Vector2(0, 0); // optional: reset velocity before jump
-            enemyRB.AddForce(new Vector2(jumpDirection.x, 1f) * jumpForce, ForceMode2D.Impulse);
-        }
-    }
-
 
     GameObject GetClosestPlayer(GameObject[] players)
     {
@@ -97,6 +69,7 @@ public class Spider : MonoBehaviour
 
     void FollowPlayer()
     {
+        moveDirection = (player.position.x > transform.position.x) ? 1f : -1f;
         if (player.position.x > transform.position.x && !facingRight)
         {
             Flip();
@@ -106,55 +79,34 @@ public class Spider : MonoBehaviour
             Flip();
         }
 
-        // ����� ������ ������
-        enemyRB.linearVelocity = new Vector2(moveSpeed * moveDirection, enemyRB.linearVelocity.y);
+        enemyRB.linearVelocity = new Vector2(chaseSpeed * moveDirection, enemyRB.linearVelocity.y);
     }
 
-
-    void petrolling()
+    void Patrolling()
+    {
+        if (!checkingGround || checkingWall)
         {
-            if (!checkingGround || checkingWall)
-            {
-                if (facingRight)
-                {
-                    Flip();
-                }
-                else if (!facingRight)
-                {
-                    Flip();
-                }
-            }
-
-            enemyRB.linearVelocity = new Vector2(moveSpeed * moveDirection, enemyRB.linearVelocity.y);
+            Flip();
         }
-    
 
-
+        enemyRB.linearVelocity = new Vector2(patrolSpeed * moveDirection, enemyRB.linearVelocity.y);
+    }
 
     private void Flip()
     {
         moveDirection *= -1;
         facingRight = !facingRight;
         transform.Rotate(0, 180, 0);
-
     }
-
-
-
 
     private void OnDrawGizmosSelected()
     {
-        // Ground check + Wall check
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(groundCheckPoint.position, circleRadius);
         Gizmos.DrawWireSphere(wallCheckPoint.position, circleRadius);
-        // Line of sight (follow player)
+
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, LineOfSite);
-        // Jump range (start jumping)
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, jumpRange);
-
-
     }
+
 }

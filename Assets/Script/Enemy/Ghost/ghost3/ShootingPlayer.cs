@@ -1,4 +1,4 @@
-using Mono.Cecil;
+ï»¿using Mono.Cecil;
 using UnityEngine;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
@@ -8,6 +8,8 @@ public class ShootingPlayer : MonoBehaviour
     //GameObject target;
     //public float speed;
     //Rigidbody2D bulletRB;
+    //private Vector2 moveDirection;
+
 
 
     [Header("bulletfollow")]
@@ -25,10 +27,12 @@ public class ShootingPlayer : MonoBehaviour
     {
         ////"bulletdontfollow"
         //bulletRB = GetComponent<Rigidbody2D>();
-        //target = GameObject.FindGameObjectWithTag("Player");//ÊÍÏÏ ÇáåÏÝ
-        //Vector2 moveDir = (target.transform.position - transform.position).normalized* speed;//ÇÊÌÇå ÇááÇÚÈ
-        //bulletRB.linearVelocity = new Vector2(moveDir.x, moveDir.y);//ÊÊÍÑß ÈÇÊÌÇå ÇááÇÚÈ
+        //target = GameObject.FindGameObjectWithTag("Player");//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
+        //Vector2 moveDir = (target.transform.position - transform.position).normalized * speed;//ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        //bulletRB.linearVelocity = new Vector2(moveDir.x, moveDir.y);//ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         //Destroy(this.gameObject, 2);
+
+
 
         //"bulletfollow"
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
