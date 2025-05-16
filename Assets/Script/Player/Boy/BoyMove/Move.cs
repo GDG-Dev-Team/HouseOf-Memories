@@ -4,14 +4,18 @@ using UnityEngine.InputSystem;
 
 public class Move : MonoBehaviour
 {
-    [HideInInspector]
+    
     public static Rigidbody2D rb2d;
+    [SerializeField] Transform targetTransform;
 
     [Header("move")]
     Vector2 direction;
-    public float speed;
     float input;
-    Animator anim;
+    [SerializeField] float speed;
+    
+    private Camera mainCamera;
+    [SerializeField] LayerMask mouseAimMask;
+
 
     [Header("Dash")]
     private bool canDash = true;
@@ -21,15 +25,26 @@ public class Move : MonoBehaviour
     private float DashCoolDown = 1f;
     private bool isFacingRight = true;
 
-    [SerializeField]
-    private TrailRenderer tr;
-    public int PlayerHealth = 3;
+    [SerializeField]private TrailRenderer tr;
+    [SerializeField] int PlayerHealth = 3;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        mainCamera = Camera.main;
+      
+    }
+
+    private void Update()
+    {
+        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity, mouseAimMask);
+
+        if (hit.collider != null)
+        {
+            targetTransform.position = hit.point;
+        }
     }
 
     // Update is called once per frame
@@ -79,13 +94,4 @@ public class Move : MonoBehaviour
             transform.localScale = localscale;
         }
     }
-
-    //private void OnTriggerEnter2D(Collider2D collision) //OnTriggerEnter2D ��� �������� ����
-    //{
-    //    if (collision.tag == "Enemy")
-    //        PlayerHealth--;
-    //    Debug.Log(PlayerHealth);
-    //    if (PlayerHealth <= 0)
-    //        Debug.Log("your Dead");
-    //}
 }
