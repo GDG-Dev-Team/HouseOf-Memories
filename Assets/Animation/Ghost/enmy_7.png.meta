@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 87d7a648b8e733a47af011b93468cf38
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -531699288319273694
+    second: enmy_7_0
+  - first:
+      213: -6020424776497851876
+    second: enmy_7_1
+  - first:
+      213: -2059274384166945132
+    second: enmy_7_2
+  - first:
+      213: 4811863073258686658
+    second: enmy_7_3
+  - first:
+      213: 112241006882111650
+    second: enmy_7_4
+  - first:
+      213: -5427741007905702118
+    second: enmy_7_5
+  - first:
+      213: 3582698108908192485
+    second: enmy_7_6
+  - first:
+      213: 1734046032049422683
+    second: enmy_7_7
+  - first:
+      213: 8440878337194953333
+    second: enmy_7_8
+  - first:
+      213: 8369846477515940478
+    second: enmy_7_9
+  - first:
+      213: 3074708893257492588
+    second: enmy_7_10
+  - first:
+      213: 3790263597668138876
+    second: enmy_7_11
+  - first:
+      213: -3237657957257298377
+    second: enmy_7_12
+  - first:
+      213: 4392991991394457416
+    second: enmy_7_13
+  - first:
+      213: -6572737844314409445
+    second: enmy_7_14
+  - first:
+      213: 7811005554833070265
+    second: enmy_7_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: enmy_7_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 727
+        width: 77
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb09170d00107fc4fa57ae4c93d7a8ee
+      internalID: -824289439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enmy_7_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 727
+        width: 90
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6460719b3f03b1749b6990b2dbc47300
+      internalID: -1564268195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enmy_7_2
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 727
+        width: 114
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038bde8848142164187cfb9be7af5495
+      internalID: -1944450209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enmy_7_3
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 727
+        width: 90
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7d3efe375889b48b9be19e9cc0ddbf
+      internalID: -618448978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enmy_7_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 585
+        width: 89
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8528052bbdc1671478565f02114e9605
+      internalID: 1717541457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enmy_7_5
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 585
+        width: 136
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608398c90f0d6a5448c3427f1dff3882
+      internalID: -2122729365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enmy_7_6
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 585
+        width: 137
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba67e262ebaace0449f045667ec4f323
+      internalID: -196275246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enmy_7_7
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 455
+        width: 122
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4471018c1759734585f2db1e6c44db7
+      internalID: -1643715472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enmy_7_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 292
+        width: 76
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87896291f8648243b3d1e2e23b867de
+      internalID: -1616007171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enmy_7_9
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 294
+        width: 90
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef0b889feea56d4588a111c3e1dc6fa
+      internalID: -1619752986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enmy_7_10
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 294
+        width: 114
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ffbc3c164a9d2f4fbe103ea30b14baa
+      internalID: -380487549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enmy_7_11
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 292
+        width: 91
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f767a6998a69e94a98692822e4e8817
+      internalID: 1773965390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enmy_7_12
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 152
+        width: 89
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d313e6a29cb4f438e904c653c988d9
+      internalID: -1345227835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enmy_7_13
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 152
+        width: 136
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8431ac68f8c64fd4fae14bca013c4871
+      internalID: -450155564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enmy_7_14
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 152
+        width: 136
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d24a676ba4754046bd4f03a700822f4
+      internalID: -640548330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enmy_7_15
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 20
+        width: 122
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0306f410856dddc4c8061d39099e6383
+      internalID: -853752028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e9ed376f24c0e6e4d94dab0692ef2d41
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      enmy_7_0: -824289439
+      enmy_7_1: -1564268195
+      enmy_7_10: -380487549
+      enmy_7_11: 1773965390
+      enmy_7_12: -1345227835
+      enmy_7_13: -450155564
+      enmy_7_14: -640548330
+      enmy_7_15: -853752028
+      enmy_7_2: -1944450209
+      enmy_7_3: -618448978
+      enmy_7_4: 1717541457
+      enmy_7_5: -2122729365
+      enmy_7_6: -196275246
+      enmy_7_7: -1643715472
+      enmy_7_8: -1616007171
+      enmy_7_9: -1619752986
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
