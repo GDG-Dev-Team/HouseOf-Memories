@@ -83,6 +83,21 @@ public class PlayerHealth : MonoBehaviour
                 SceneManage.instance.LoadMenu("Lose Menu");
             }
         }
+    }
+
+        public void TakeDamage(int damage)
+    {
+        Health -= damage;
+
+        if (Health <= 0)
+        {
+            Health = 0;
+            Destroy(gameObject);
+            Time.timeScale = 0;
+            SceneManage.instance.LoadMenu("Lose Menu");
+        }
+
+
         switch (Health)
         {
             case 0:

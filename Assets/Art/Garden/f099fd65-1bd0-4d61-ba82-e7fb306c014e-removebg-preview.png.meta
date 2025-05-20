@@ -472,7 +472,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      f099fd65-1bd0-4d61-ba82-e7fb306c014e-removebg-preview_0: -7620600141480115772
+      f099fd65-1bd0-4d61-ba82-e7fb306c014e-removebg-preview_1: 9172367307643438293
+      f099fd65-1bd0-4d61-ba82-e7fb306c014e-removebg-preview_10: 5047437725492690679
+      f099fd65-1bd0-4d61-ba82-e7fb306c014e-removebg-preview_11: -2939578678081774528
+      f099fd65-1bd0-4d61-ba82-e7fb306c014e-removebg-preview_12: 8550891822733346983
+      f099fd65-1bd0-4d61-ba82-e7fb306c014e-removebg-preview_13: -6216355616392633481
+      f099fd65-1bd0-4d61-ba82-e7fb306c014e-removebg-preview_2: 7362819213192186276
+      f099fd65-1bd0-4d61-ba82-e7fb306c014e-removebg-preview_3: -7414451980193542860
+      f099fd65-1bd0-4d61-ba82-e7fb306c014e-removebg-preview_4: -7701564253540618208
+      f099fd65-1bd0-4d61-ba82-e7fb306c014e-removebg-preview_5: 6636639543506825878
+      f099fd65-1bd0-4d61-ba82-e7fb306c014e-removebg-preview_6: -4040451532631377838
+      f099fd65-1bd0-4d61-ba82-e7fb306c014e-removebg-preview_7: -3059008164929981358
+      f099fd65-1bd0-4d61-ba82-e7fb306c014e-removebg-preview_8: 8542991399325431814
+      f099fd65-1bd0-4d61-ba82-e7fb306c014e-removebg-preview_9: 6079175406249357529
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
