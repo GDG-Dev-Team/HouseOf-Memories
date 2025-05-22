@@ -9,6 +9,7 @@ TagManager:
   - Wall
   - Button
   - GameManager
+  - Teleporter
   layers:
   - Default
   - TransparentFX
@@ -55,29 +56,8 @@ TagManager:
   - name: mayground
     uniqueID: 1684095401
     locked: 0
-  - name: groundlevel2
+  - name: FrontGround
     uniqueID: 139886383
-    locked: 0
-  - name: mayground
-    uniqueID: 3471015599
-    locked: 0
-  - name: Ground3
-    uniqueID: 3557997091
-    locked: 0
-  - name: mayground3
-    uniqueID: 2699750377
-    locked: 0
-  - name: Ground4
-    uniqueID: 4235374987
-    locked: 0
-  - name: mayground4
-    uniqueID: 882247953
-    locked: 0
-  - name: ground5
-    uniqueID: 809640875
-    locked: 0
-  - name: mayground5
-    uniqueID: 630135535
     locked: 0
   m_RenderingLayers:
   - Default
