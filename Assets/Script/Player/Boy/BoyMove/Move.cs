@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 public class Move : MonoBehaviour
 {
     
+    private Animator anim;
     public static Rigidbody2D rb2d;
     [SerializeField] Transform targetTransform;
 
@@ -32,6 +33,7 @@ public class Move : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+       anim = GetComponent<Animator>();
         mainCamera = Camera.main;
       
     }
@@ -54,13 +56,19 @@ public class Move : MonoBehaviour
         {
             return;
         }
-        direction = new Vector2(input * speed, rb2d.linearVelocityY);
+       // direction = new Vector2(input * speed, rb2d.linearVelocityY);
+       // rb2d.linearVelocity = direction;
+        direction = new Vector2(input * speed, rb2d.linearVelocity.y);
         rb2d.linearVelocity = direction;
+
         if (Input.GetKeyDown(KeyCode.RightShift) && canDash)
         {
             StartCoroutine(Dash());
         }
         Flip();
+
+        anim.SetBool("IsRunning", input != 0 && !isDashing);
+
     }
 
     public void mover(InputAction.CallbackContext context)
@@ -72,6 +80,9 @@ public class Move : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
+        anim.SetBool("IsDashing", true);
+
+
         float originalGravity = rb2d.gravityScale;
         rb2d.gravityScale = 0f;
         rb2d.linearVelocity = new Vector2(transform.localScale.x * DashPower, 0f);
