@@ -6,7 +6,7 @@ public class PlayerMove : MonoBehaviour
 {
     [HideInInspector]
     public static Rigidbody2D rb2d;
-
+    public bool enablePlatformMovement;
     [Header("move")]
     Vector2 direction;
     public float speed;
@@ -87,7 +87,15 @@ public class PlayerMove : MonoBehaviour
             transform.localScale = localscale;
         }
     }
-
+    void Update2()
+    {
+        if (enablePlatformMovement)
+        {
+            // حركة أفقية عادية
+            float move = Input.GetAxis("Horizontal");
+            GetComponent<Rigidbody2D>().linearVelocity = new Vector2(move * speed, 0);
+        }
+    }
     //playerhealth
     //private void OnTriggerEnter2D(Collider2D collision) //OnTriggerEnter2D ��� �������� ����
     //{

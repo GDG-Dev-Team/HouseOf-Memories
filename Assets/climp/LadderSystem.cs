@@ -2,87 +2,95 @@
 
 public class LadderSystem : MonoBehaviour
 {
-    [Header("Components")]
+    [Header("References")]
     [SerializeField] private Collider2D playerCollider;
-    [SerializeField] private LayerMask ladderLayer;
+    [SerializeField] private Rigidbody2D playerRigidbody;
+    [SerializeField] private PlayerMove playerMovement;
 
     [Header("Settings")]
-    [SerializeField] private float detectionRange = 0.5f;
+    [SerializeField] private LayerMask ladderLayer;
+    [SerializeField] private float climbSpeed = 4f;
 
     private bool isOnLadder = false;
+    private bool isClimbing = false;
     private Collider2D currentLadder;
 
     void Update()
     {
-        HandleLadderInteraction();
-        HandleJump();
+        HandleLadderInput();
     }
 
-    void HandleLadderInteraction()
+    void FixedUpdate()
+    {
+        if (isClimbing)
+        {
+            ClimbLadder();
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (((1 << other.gameObject.layer) & ladderLayer) != 0)
+        {
+            isOnLadder = true;
+            currentLadder = other;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (((1 << other.gameObject.layer) & ladderLayer) != 0)
+        {
+            isOnLadder = false;
+            StopClimbing();
+        }
+    }
+
+    void HandleLadderInput()
     {
         float verticalInput = Input.GetAxisRaw("Vertical");
 
-        // الكشف عن السلالم في النطاق
-        RaycastHit2D hit = Physics2D.Raycast(
-            transform.position,
-            Vector2.up,
-            detectionRange,
-            ladderLayer
-        );
-
-        if (hit.collider != null)
+        if (isOnLadder)
         {
-            currentLadder = hit.collider;
-            if (verticalInput != 0)
+            if (verticalInput != 0 && !isClimbing)
             {
-                IgnoreCollision(true);
-                isOnLadder = true;
+                StartClimbing();
             }
-        }
-        else if (isOnLadder)
-        {
-            IgnoreCollision(false);
-            isOnLadder = false;
-            currentLadder = null;
-        }
-    }
-
-    void HandleJump()
-    {
-        if (Input.GetButtonDown("Jump") && !isOnLadder)
-        {
-            // الكشف عن السلالم خلف اللاعب
-            Vector2 direction = transform.right * (transform.localScale.x > 0 ? 1 : -1);
-            RaycastHit2D behindHit = Physics2D.Raycast(
-                transform.position,
-                -direction,
-                detectionRange,
-                ladderLayer
-            );
-
-            if (behindHit.collider != null)
+            else if (verticalInput == 0 && isClimbing)
             {
-                IgnoreCollision(false);
+                StopClimbing();
             }
         }
     }
 
-    void IgnoreCollision(bool ignore)
+    void StartClimbing()
     {
-        if (currentLadder != null)
+        isClimbing = true;
+        Physics2D.IgnoreCollision(playerCollider, currentLadder, true);
+        playerRigidbody.gravityScale = 0;
+        playerRigidbody.linearVelocity = Vector2.zero;
+
+        if (playerMovement != null)
         {
-            Physics2D.IgnoreCollision(playerCollider, currentLadder, ignore);
+            playerMovement.enabled = false;
         }
     }
 
-    void OnDrawGizmos()
+    void ClimbLadder()
     {
-        // رسم خطوط للمساعدة في التصحيح
-        Gizmos.color = Color.blue;
-        Gizmos.DrawLine(transform.position, transform.position + Vector3.up * detectionRange);
+        float verticalInput = Input.GetAxisRaw("Vertical");
+        playerRigidbody.linearVelocity = new Vector2(0, verticalInput * climbSpeed);
+    }
 
-        Vector2 direction = transform.right * (transform.localScale.x > 0 ? 1 : -1);
-        Gizmos.color = Color.red;
-        Gizmos.DrawLine(transform.position, transform.position + (Vector3)(-direction * detectionRange));
+    void StopClimbing()
+    {
+        isClimbing = false;
+        Physics2D.IgnoreCollision(playerCollider, currentLadder, false);
+        playerRigidbody.gravityScale = 1;
+
+        if (playerMovement != null)
+        {
+            playerMovement.enabled = true;
+        }
     }
 }
