@@ -19,9 +19,11 @@ public class ExplodingEnemyMove : MonoBehaviour
     public float LineOfSite;
     private Transform player;
 
+
     [Header("Other")]
     private Rigidbody2D enemyRB;
-    [HideInInspector] public bool isChasingPlayer = false;
+    private bool alreadyChasing = false;
+
 
     void Start()
     {
@@ -35,11 +37,18 @@ public class ExplodingEnemyMove : MonoBehaviour
         checkingWall = Physics2D.OverlapCircle(wallCheckPoint.position, circleRadius, wallLayer);
 
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-        player = GetClosestPlayer(players).transform;
+        player = GetClosestPlayer(players)?.transform;
+
+        if (player == null) return;
 
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
 
-        if (distanceFromPlayer < LineOfSite)
+        if (!alreadyChasing && distanceFromPlayer < LineOfSite)
+        {
+            alreadyChasing = true;
+        }
+
+        if (alreadyChasing)
         {
             FollowPlayer();
         }
@@ -48,6 +57,7 @@ public class ExplodingEnemyMove : MonoBehaviour
             Patrolling();
         }
     }
+
 
     GameObject GetClosestPlayer(GameObject[] players)
     {
@@ -70,7 +80,6 @@ public class ExplodingEnemyMove : MonoBehaviour
 
     void FollowPlayer()
     {
-        isChasingPlayer = true;
         moveDirection = (player.position.x > transform.position.x) ? 1f : -1f;
         if (player.position.x > transform.position.x && !facingRight)
         {
@@ -86,7 +95,6 @@ public class ExplodingEnemyMove : MonoBehaviour
 
     void Patrolling()
     {
-        isChasingPlayer = false;
         if (!checkingGround || checkingWall)
         {
             Flip();
@@ -102,6 +110,11 @@ public class ExplodingEnemyMove : MonoBehaviour
         transform.Rotate(0, 180, 0);
     }
 
+    public bool IsChasing
+    {
+        get { return alreadyChasing; }
+    }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.blue;
@@ -111,5 +124,4 @@ public class ExplodingEnemyMove : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, LineOfSite);
     }
-
 }

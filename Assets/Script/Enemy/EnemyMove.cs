@@ -19,6 +19,7 @@ public class EnemyMove : MonoBehaviour
     public float LineOfSite;
     private Transform player;
 
+
     [Header("Other")]
     private Rigidbody2D enemyRB;
 

@@ -2222,6 +2222,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1726819411 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8917433004105619099, guid: 6ea94eb7e59573047ad2f2a1b7e56079, type: 3}
+  m_PrefabInstance: {fileID: 1928762008}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1740688022
 GameObject:
   m_ObjectHideFlags: 0
@@ -2947,6 +2952,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2141734706}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1928762008
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4397612494014495356, guid: 6ea94eb7e59573047ad2f2a1b7e56079, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 224.4862
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397612494014495356, guid: 6ea94eb7e59573047ad2f2a1b7e56079, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 67.24502
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397612494014495356, guid: 6ea94eb7e59573047ad2f2a1b7e56079, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 375.7325
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397612494014495356, guid: 6ea94eb7e59573047ad2f2a1b7e56079, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397612494014495356, guid: 6ea94eb7e59573047ad2f2a1b7e56079, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397612494014495356, guid: 6ea94eb7e59573047ad2f2a1b7e56079, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397612494014495356, guid: 6ea94eb7e59573047ad2f2a1b7e56079, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397612494014495356, guid: 6ea94eb7e59573047ad2f2a1b7e56079, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397612494014495356, guid: 6ea94eb7e59573047ad2f2a1b7e56079, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397612494014495356, guid: 6ea94eb7e59573047ad2f2a1b7e56079, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8543149657568081565, guid: 6ea94eb7e59573047ad2f2a1b7e56079, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8917433004105619099, guid: 6ea94eb7e59573047ad2f2a1b7e56079, type: 3}
+      propertyPath: m_Name
+      value: ExplosionEffect
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6ea94eb7e59573047ad2f2a1b7e56079, type: 3}
 --- !u!1 &1928998774
 GameObject:
   m_ObjectHideFlags: 0
@@ -3264,8 +3330,9 @@ GameObject:
   - component: {fileID: 2141734705}
   - component: {fileID: 2141734704}
   - component: {fileID: 2141734703}
-  - component: {fileID: 2141734702}
+  - component: {fileID: 2141734708}
   - component: {fileID: 2141734707}
+  - component: {fileID: 2141734709}
   m_Layer: 0
   m_Name: ExplodingEnemy
   m_TagString: Untagged
@@ -3273,26 +3340,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2141734702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2141734701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b71b7c8c8350bd42b17ac0ca7885903, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionEffect: {fileID: 0}
-  explosionDelay: 2
-  explosionRadius: 19
-  damage: 30
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  damageAmount: 1
 --- !u!50 &2141734703
 Rigidbody2D:
   serializedVersion: 5
@@ -3350,7 +3397,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -3441,7 +3488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d62b7323be5ce4488fa46e4f98cc95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolSpeed: 7
+  patrolSpeed: 10
   groundCheckPoint: {fileID: 432250131}
   wallCheckPoint: {fileID: 1864701833}
   circleRadius: 0.2
@@ -3451,9 +3498,47 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
-  chaseSpeed: 15
+  chaseSpeed: 10
   LineOfSite: 50
-  isChasingPlayer: 0
+--- !u!114 &2141734708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141734701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a51e8a959057b7148bc5335b68105c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionDelay: 4
+  explosionRadius: 40
+  explosionEffect: {fileID: 1726819411}
+--- !u!114 &2141734709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141734701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b771d5001d8d96e4daad326b66a57d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolSpeed: 10
+  groundCheckPoint: {fileID: 432250131}
+  wallCheckPoint: {fileID: 1864701833}
+  circleRadius: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  chaseSpeed: 10
+  LineOfSite: 50
 --- !u!68 &135960895139503507
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -5184,3 +5269,4 @@ SceneRoots:
   - {fileID: 133734652}
   - {fileID: 1448167002}
   - {fileID: 2141734706}
+  - {fileID: 1928762008}
