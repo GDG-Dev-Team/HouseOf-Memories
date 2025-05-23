@@ -29,10 +29,10 @@ public class Spider : MonoBehaviour
     private Animator enemyAnim;
     private Rigidbody2D enemyRB;
 
-
+  private Animator EnemyAnim;
     void Start()
     {
-       
+       EnemyAnim = GetComponent<Animator>();
         enemyRB = GetComponent<Rigidbody2D>();
 
     }
@@ -69,6 +69,7 @@ public class Spider : MonoBehaviour
     {
         if (checkingGround) // Jump only if on ground
         {
+            EnemyAnim.SetTrigger("IsAttacking");
             Vector2 jumpDirection = (player.position - transform.position).normalized;
             enemyRB.linearVelocity = new Vector2(0, 0); // optional: reset velocity before jump
             enemyRB.AddForce(new Vector2(jumpDirection.x, 1f) * jumpForce, ForceMode2D.Impulse);
@@ -124,7 +125,8 @@ public class Spider : MonoBehaviour
                     Flip();
                 }
             }
-
+            EnemyAnim.SetBool("IsIdle", true);
+        
             enemyRB.linearVelocity = new Vector2(moveSpeed * moveDirection, enemyRB.linearVelocity.y);
         }
     
