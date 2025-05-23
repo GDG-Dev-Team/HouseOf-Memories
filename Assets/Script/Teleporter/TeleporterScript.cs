@@ -8,8 +8,5 @@ public class TeleporterScript : MonoBehaviour
     {
         return Destination;
     }
-    void Update()
-    {
-        
-    }
+
 }

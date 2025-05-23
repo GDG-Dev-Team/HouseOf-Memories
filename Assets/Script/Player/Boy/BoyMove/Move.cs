@@ -33,7 +33,7 @@ public class Move : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-       anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         mainCamera = Camera.main;
       
     }
@@ -61,6 +61,9 @@ public class Move : MonoBehaviour
         direction = new Vector2(input * speed, rb2d.linearVelocity.y);
         rb2d.linearVelocity = direction;
 
+        anim.SetBool("IsRunning", input != 0 && !isDashing);
+        anim.SetBool("VelocityY", rb2d.linearVelocity.y != 0);
+        
         if (Input.GetKeyDown(KeyCode.RightShift) && canDash)
         {
             StartCoroutine(Dash());

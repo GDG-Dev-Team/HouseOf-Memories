@@ -15,6 +15,26 @@ public class Jump : MonoBehaviour
     [SerializeField]
     private LayerMask groundLayer;
 
+    private Animator anim;
+
+    private Rigidbody2D rb;
+    
+
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    void Update()
+    {
+        if (IsGrounded())
+        {
+            anim.SetBool("IsJumping", false);
+        }
+    }
+
+    
     public void Jumping(InputAction.CallbackContext context)
     {
         if (context.performed && IsGrounded())
@@ -26,7 +46,10 @@ public class Jump : MonoBehaviour
     void PerformJump()
     {
         Vector2 jumpDirection = new(0, jumpForce);
-        PlayerMove.rb2d.AddForce(jumpDirection, ForceMode2D.Impulse);
+        rb.AddForce(jumpDirection, ForceMode2D.Impulse);
+         anim.SetBool("IsJumping", true);
+        // play animation here
+         
     }
 
     bool IsGrounded()
