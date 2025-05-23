@@ -39,7 +39,15 @@ public class PlayerMove : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
-            StartCoroutine(Dash());
+            StartCoroutine(Dash());void Update()
+{
+    if (enablePlatformMovement)
+    {
+        // حركة أفقية عادية
+        float move = Input.GetAxis("Horizontal");
+        GetComponent<Rigidbody2D>().linearVelocity = new Vector2(move * speed, 0);
+    }
+}
         }
         Flip();
 
@@ -87,7 +95,7 @@ public class PlayerMove : MonoBehaviour
             transform.localScale = localscale;
         }
     }
-    void Update2()
+    void Update0()
     {
         if (enablePlatformMovement)
         {

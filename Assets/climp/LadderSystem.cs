@@ -5,15 +5,16 @@ public class LadderSystem : MonoBehaviour
     [Header("References")]
     [SerializeField] private Collider2D playerCollider;
     [SerializeField] private Rigidbody2D playerRigidbody;
-    [SerializeField] private PlayerMove playerMovement;
+    [SerializeField] private PlayerMove playerMovement; // افترض أن لديك سكريبت لحركة اللاعب
 
     [Header("Settings")]
     [SerializeField] private LayerMask ladderLayer;
-    [SerializeField] private float climbSpeed = 4f;
+    [SerializeField] private float climbSpeed = 3f;
+    [SerializeField] private float detectionRadius = 0.3f;
 
-    private bool isOnLadder = false;
     private bool isClimbing = false;
     private Collider2D currentLadder;
+    private float verticalInput;
 
     void Update()
     {
@@ -28,57 +29,48 @@ public class LadderSystem : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (((1 << other.gameObject.layer) & ladderLayer) != 0)
-        {
-            isOnLadder = true;
-            currentLadder = other;
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (((1 << other.gameObject.layer) & ladderLayer) != 0)
-        {
-            isOnLadder = false;
-            StopClimbing();
-        }
-    }
-
     void HandleLadderInput()
     {
-        float verticalInput = Input.GetAxisRaw("Vertical");
+        verticalInput = Input.GetAxisRaw("Vertical");
 
-        if (isOnLadder)
+        // الكشف عن السلم عند الضغط على W/S
+        if (verticalInput != 0 && !isClimbing)
         {
-            if (verticalInput != 0 && !isClimbing)
+            Collider2D ladder = Physics2D.OverlapCircle(transform.position, detectionRadius, ladderLayer);
+            if (ladder != null)
             {
-                StartClimbing();
+                StartClimbing(ladder);
             }
-            else if (verticalInput == 0 && isClimbing)
+        }
+
+        // إيقاف التسلق عند الوصول للنهاية
+        if (isClimbing && currentLadder != null)
+        {
+            Bounds ladderBounds = currentLadder.bounds;
+            if (transform.position.y > ladderBounds.max.y || transform.position.y < ladderBounds.min.y)
             {
                 StopClimbing();
             }
         }
     }
 
-    void StartClimbing()
+    void StartClimbing(Collider2D ladder)
     {
         isClimbing = true;
-        Physics2D.IgnoreCollision(playerCollider, currentLadder, true);
-        playerRigidbody.gravityScale = 0;
-        playerRigidbody.linearVelocity = Vector2.zero;
+        currentLadder = ladder;
+        Physics2D.IgnoreCollision(playerCollider, ladder, true);
 
+        // تعطيل حركة اللاعب الأفقي
         if (playerMovement != null)
         {
             playerMovement.enabled = false;
         }
+        playerRigidbody.gravityScale = 0;
+        playerRigidbody.linearVelocity = Vector2.zero;
     }
 
     void ClimbLadder()
     {
-        float verticalInput = Input.GetAxisRaw("Vertical");
         playerRigidbody.linearVelocity = new Vector2(0, verticalInput * climbSpeed);
     }
 
@@ -86,11 +78,19 @@ public class LadderSystem : MonoBehaviour
     {
         isClimbing = false;
         Physics2D.IgnoreCollision(playerCollider, currentLadder, false);
-        playerRigidbody.gravityScale = 1;
 
+        // إعادة تفعيل حركة اللاعب
         if (playerMovement != null)
         {
             playerMovement.enabled = true;
         }
+        playerRigidbody.gravityScale = 5;
+        currentLadder = null;
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
 }

@@ -11,6 +11,9 @@ TagManager:
   - GameManager
   - Teleporter
   - ladder_plat
+  - PlatformLadder
+  - Climbable
+  - Ladder
   layers:
   - Default
   - TransparentFX
@@ -24,8 +27,8 @@ TagManager:
   - wall decor
   - MoseTarget
   - Ladder
+  - Background
   - Ladder_plat
-  - 
   - 
   - 
   - 
