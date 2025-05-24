@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Ladder_System : MonoBehaviour
+public class LadderSystem1 : MonoBehaviour
 {
     [Header("Settings")]
     public float slopeAngle = 45f;

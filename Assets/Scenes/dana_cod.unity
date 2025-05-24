@@ -2542,7 +2542,7 @@ GameObject:
   - component: {fileID: 1060219476}
   - component: {fileID: 1060219477}
   - component: {fileID: 1060219479}
-  - component: {fileID: 1060219478}
+  - component: {fileID: 1060219480}
   m_Layer: 0
   m_Name: Girl
   m_TagString: Player
@@ -3194,26 +3194,6 @@ MonoBehaviour:
     m_Bits: 2048
   climbSpeed: 50
   detectionRadius: 0.2
---- !u!114 &1060219478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1060219458}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09618f02a06f2f947a35ef2fa77deafc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 50
-  jumpForce: 8
-  ladderClimbSpeed: 40
-  ladderJumpEntryForce: 2
-  ladderLayer:
-    serializedVersion: 2
-    m_Bits: 4096
-  groundCheck: {fileID: 26932884}
 --- !u!114 &1060219479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3226,6 +3206,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f619189820affa45af624012a5032c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1060219480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060219458}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bdbf5692c70517428064496f72130b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpForce: 10
+  ladderClimbSpeed: 3
+  ladderJumpEntryForce: 2
+  ladderLayer:
+    serializedVersion: 2
+    m_Bits: 2048
+  groundCheck: {fileID: 26932884}
 --- !u!1001 &1069550237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4672,7 +4672,7 @@ Transform:
   m_GameObject: {fileID: 1418933663}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 179.1, y: -4.3, z: 0}
+  m_LocalPosition: {x: 62.4, y: 6.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
