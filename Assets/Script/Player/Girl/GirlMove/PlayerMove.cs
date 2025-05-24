@@ -91,6 +91,8 @@ public class PlayerMove : MonoBehaviour
     {
         if (isFacingRight && input < 0f || !isFacingRight && input > 0f)
         {
+            // detach
+            
              Vector3 camPosition = cameraTransform.position;
              Quaternion camRotation = cameraTransform.rotation;
              cameraTransform.SetParent(null);
