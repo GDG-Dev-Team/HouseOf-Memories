@@ -6,26 +6,17 @@ public class PlayerAttackshoot : MonoBehaviour
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] private Transform firePoint;
 
-    void Update() {
-        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    void Update()
+    {
 
-        // ·› «··«⁄» Õ”» „Êﬁ⁄ «·„«Ê”
-        if (mouseWorldPos.x < transform.position.x)
-        {
-            transform.eulerAngles = new Vector3(0, 180f, 0); // ·› «··«⁄» ··Ì”«—
-        }
-        else
-        {
-            transform.eulerAngles = new Vector3(0, 0, 0); // ·› «··«⁄» ··Ì„Ì‰
-        }
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKeyDown("e"))
             Shoot();
     }
 
     private void Shoot()
     {
-        GameObject bullet= Instantiate(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation);
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation);
         Destroy(bullet, 5f);
     }
 }

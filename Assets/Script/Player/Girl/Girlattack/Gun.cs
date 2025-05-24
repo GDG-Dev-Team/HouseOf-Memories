@@ -2,25 +2,20 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
+    [SerializeField] Transform playerTransform;
 
     void Update()
     {
-        Vector3 mousePos = Input.mousePosition;
-        Vector3 gunPos = Camera.main.WorldToScreenPoint(transform.position);
-        mousePos.x = mousePos.x - gunPos.x;
-        mousePos.y = mousePos.y - gunPos.y;
-        float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-
-        if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < transform.position.x)
+        // äÊÇßÏ ÅÐÇ ÇááÇÚÈ áÝ
+        if (playerTransform.localScale.x < 0)
         {
-            transform.rotation = Quaternion.Euler(new Vector3(180f, 0f, -angle));
+            transform.localScale = new Vector3(1, 1, 1); // áÝ ÇáÓáÇÍ
         }
         else
         {
-            transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+            transform.localScale = new Vector3(1, 1, 1); // ÑÌÚå ááæÖÚ ÇáØÈíÚí
         }
     }
 
 
-   
 }
