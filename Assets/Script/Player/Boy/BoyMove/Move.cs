@@ -98,14 +98,27 @@ public class Move : MonoBehaviour
         canDash = true;
     }
 
+
+      
+    [SerializeField] private Transform cameraTransform; 
+
     private void Flip()
     {
         if (isFacingRight && input < 0f || !isFacingRight && input > 0f)
         {
+            Vector3 camPosition = cameraTransform.position;
+            Quaternion camRotation = cameraTransform.rotation;
+            cameraTransform.SetParent(null);
+
             isFacingRight = !isFacingRight;
             Vector3 localscale = transform.localScale;
             localscale.x *= -1f;
             transform.localScale = localscale;
+
+            cameraTransform.SetParent(transform);
+            cameraTransform.position = camPosition;
+            cameraTransform.rotation = camRotation;
+
         }
     }
 }
