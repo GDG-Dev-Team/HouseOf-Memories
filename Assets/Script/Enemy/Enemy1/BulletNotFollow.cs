@@ -2,56 +2,53 @@ using UnityEngine;
 
 public class BulletNotFollow : MonoBehaviour
 {
-
-    [Header("bulletdontfollow")]
-    GameObject target;
-    public float speed;
-    Rigidbody2D bulletRB;
-    
-   
-
-
-
-
+    public float speed = 7f;
+    private Rigidbody2D rb;
 
     void Start()
     {
-        //"bulletdontfollow"
-        bulletRB = GetComponent<Rigidbody2D>();
-        target = GameObject.FindGameObjectWithTag("Player");//          
-        Vector2 moveDir = (target.transform.position - transform.position).normalized * speed;//            
-        bulletRB.linearVelocity = new Vector2(moveDir.x, moveDir.y);//                   
-        Destroy(this.gameObject, 2);
 
+        rb = GetComponent<Rigidbody2D>();
 
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        GameObject target = GetClosestPlayer(players);
+
+        if (target != null)
+        {
+            Vector2 direction = (target.transform.position - transform.position).normalized;
+
+            // LOG direction
+            Debug.Log("Bullet direction: " + direction);
+
+            rb.linearVelocity = direction * speed;
+        }
+
+        Destroy(gameObject, 2f);
     }
-
-
 
     GameObject GetClosestPlayer(GameObject[] players)
     {
         GameObject closest = null;
-        float shortestDistance = Mathf.Infinity;
-        Vector3 currentPos = transform.position;
+        float minDist = Mathf.Infinity;
+        Vector3 current = transform.position;
 
-        foreach (GameObject GirlOrBoy in players)
+        foreach (GameObject p in players)
         {
-            float distance = Vector3.Distance(GirlOrBoy.transform.position, currentPos);
-            if (distance < shortestDistance)
+            float dist = Vector3.Distance(p.transform.position, current);
+            if (dist < minDist)
             {
-                shortestDistance = distance;
-                closest = GirlOrBoy;
+                minDist = dist;
+                closest = p;
             }
         }
 
         return closest;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-
             Destroy(gameObject);
         }
     }
