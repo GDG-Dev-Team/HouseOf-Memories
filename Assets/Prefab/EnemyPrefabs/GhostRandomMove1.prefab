@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 3171613387858462286}
   - component: {fileID: 1977834223184213469}
   m_Layer: 8
-  m_Name: Ghost1
+  m_Name: GhostRandomMove1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
