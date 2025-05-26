@@ -1,4 +1,4 @@
-using UnityEngine;
+Ôªøusing UnityEngine;
 
 public class Gun : MonoBehaviour
 {
@@ -6,16 +6,17 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        // ‰ «ﬂœ ≈–« «··«⁄» ·›
+        Vector3 currentScale = transform.localScale;
+
         if (playerTransform.localScale.x < 0)
         {
-            transform.localScale = new Vector3(1, 1, 1); // ·› «·”·«Õ
+            // ÿßŸÑÿ®ŸÜÿ™ ŸÑÿßŸÅÿ© Ÿäÿ≥ÿßÿ± ‚Üí ŸÑŸÅ ÿßŸÑÿ≥ŸÑÿßÿ≠ ŸÉŸÖÿßŸÜ Ÿäÿ≥ÿßÿ±
+            transform.localScale = new Vector3(Mathf.Abs(currentScale.x) * -1, currentScale.y, currentScale.z);
         }
         else
         {
-            transform.localScale = new Vector3(1, 1, 1); // —Ã⁄Â ··Ê÷⁄ «·ÿ»Ì⁄Ì
+            // ÿßŸÑÿ®ŸÜÿ™ ŸÑÿßŸÅÿ© ŸäŸÖŸäŸÜ ‚Üí ÿÆŸÑŸäŸá ÿ∑ÿ®ŸäÿπŸä
+            transform.localScale = new Vector3(Mathf.Abs(currentScale.x), currentScale.y, currentScale.z);
         }
     }
-
-
 }
