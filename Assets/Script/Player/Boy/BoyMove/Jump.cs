@@ -3,25 +3,16 @@ using UnityEngine.InputSystem;
 
 public class Jump : MonoBehaviour
 {
-    private Rigidbody2D rb;
+        private Rigidbody2D rb;
     private bool wasGroundedLastFrame;
 
-    [SerializeField]
-    private float jumpForce;
-
-    [SerializeField]
-    private Transform groundPoint;
-
-    [SerializeField]
-    private float pointRadius;
-
-    [SerializeField]
-    private LayerMask groundLayer;
+    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private Transform groundPoint;
+    [SerializeField] private float pointRadius = 0.2f;
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private int maxConsecutiveJumps = 2;
 
     private int jumpCount = 0;
-
-    
-    [SerializeField] private int maxConsecutiveJumps = 2;
 
     void Awake()
     {
@@ -30,34 +21,30 @@ public class Jump : MonoBehaviour
 
     void Update()
     {
-        bool isGrounded = IsGrounded();
+        // ✅ Handle input using the old Input system
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            TryJump();
+        }
 
-        // Reset jump count if we've just landed
+        // Ground check
+        bool isGrounded = IsGrounded();
         if (isGrounded && !wasGroundedLastFrame)
         {
             jumpCount = 0;
         }
 
         wasGroundedLastFrame = isGrounded;
-        
     }
 
-    public void HandleJump(InputAction.CallbackContext context)
+    void TryJump()
     {
-    
-        if (context.performed && jumpCount < maxConsecutiveJumps)
+        if (jumpCount < maxConsecutiveJumps)
         {
-            Debug.Log("Jumping! Current jump count: " + jumpCount);
-            JumpOnce();
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpCount++;
         }
-        
-    }
-
-    void JumpOnce()
-    {
-         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
-        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 
     bool IsGrounded()
@@ -67,8 +54,11 @@ public class Jump : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawSphere(groundPoint.position, pointRadius);
+        if (groundPoint != null)
+        {
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawSphere(groundPoint.position, pointRadius);
+        }
     }
 
 }
