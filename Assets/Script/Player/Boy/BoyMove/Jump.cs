@@ -3,6 +3,9 @@ using UnityEngine.InputSystem;
 
 public class Jump : MonoBehaviour
 {
+    private Rigidbody2D rb;
+    private bool wasGroundedLastFrame;
+
     [SerializeField]
     private float jumpForce;
 
@@ -15,41 +18,45 @@ public class Jump : MonoBehaviour
     [SerializeField]
     private LayerMask groundLayer;
 
-    private Animator anim;
+    private int jumpCount = 0;
 
-    private Rigidbody2D rb;
     
+    [SerializeField] private int maxConsecutiveJumps = 2;
 
-    void Start()
+    void Awake()
     {
-        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        if (IsGrounded())
+        bool isGrounded = IsGrounded();
+
+        // Reset jump count if we've just landed
+        if (isGrounded && !wasGroundedLastFrame)
         {
-            anim.SetBool("IsJumping", false);
+            jumpCount = 0;
         }
+
+        wasGroundedLastFrame = isGrounded;
+        
     }
 
+    public void Jump1(InputAction.CallbackContext context)
+    {
     
-    public void Jumping(InputAction.CallbackContext context)
-    {
-        if (context.performed && IsGrounded())
+        if (context.performed && jumpCount < maxConsecutiveJumps)
         {
-            PerformJump();
+            JumpOnce();
+            jumpCount++;
         }
+        
     }
 
-    void PerformJump()
+    void JumpOnce()
     {
-        Vector2 jumpDirection = new(0, jumpForce);
-        rb.AddForce(jumpDirection, ForceMode2D.Impulse);
-         anim.SetBool("IsJumping", true);
-        // play animation here
-         
+         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 
     bool IsGrounded()
@@ -62,4 +69,6 @@ public class Jump : MonoBehaviour
         Gizmos.color = Color.cyan;
         Gizmos.DrawSphere(groundPoint.position, pointRadius);
     }
+
 }
+

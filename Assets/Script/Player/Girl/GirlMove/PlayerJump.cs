@@ -3,6 +3,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerJump : MonoBehaviour
 {
+    private Rigidbody2D rb;
+    private bool wasGroundedLastFrame;
+
     [SerializeField]
     private float jumpForce;
 
@@ -16,30 +19,44 @@ public class PlayerJump : MonoBehaviour
     private LayerMask groundLayer;
 
     private int jumpCount = 0;
-    private int maxJumps = 2;
+
+    
+    [SerializeField] private int maxConsecutiveJumps = 2;
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
-        if (IsGrounded())
+        bool isGrounded = IsGrounded();
+
+        // Reset jump count if we've just landed
+        if (isGrounded && !wasGroundedLastFrame)
         {
             jumpCount = 0;
         }
+
+        wasGroundedLastFrame = isGrounded;
+        
     }
 
     public void Jump(InputAction.CallbackContext context)
     {
-        if (context.performed && jumpCount < maxJumps)
+    
+        if (context.performed && jumpCount < maxConsecutiveJumps)
         {
-            PerformJump();
+            JumpOnce();
             jumpCount++;
         }
+        
     }
 
-    void PerformJump()
+    void JumpOnce()
     {
-        Vector2 jumpDirection = new(0, jumpForce);
-        PlayerMove.rb2d.linearVelocity = new Vector2(PlayerMove.rb2d.linearVelocity.x, 0);
-        PlayerMove.rb2d.AddForce(jumpDirection, ForceMode2D.Impulse);
+         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 
     bool IsGrounded()
@@ -52,4 +69,6 @@ public class PlayerJump : MonoBehaviour
         Gizmos.color = Color.cyan;
         Gizmos.DrawSphere(groundPoint.position, pointRadius);
     }
+
 }
+
