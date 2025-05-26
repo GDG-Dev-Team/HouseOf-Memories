@@ -426,7 +426,7 @@
                 {
                     "name": "",
                     "id": "c35ca7ca-7d1d-4d9b-8dbf-05b87f4ab6dd",
-                    "path": "<Keyboard>/enter",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -440,7 +440,7 @@
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad",
+                    "groups": "",
                     "action": "Jump1",
                     "isComposite": false,
                     "isPartOfComposite": false

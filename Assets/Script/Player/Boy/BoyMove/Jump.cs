@@ -42,11 +42,12 @@ public class Jump : MonoBehaviour
         
     }
 
-    public void Jump1(InputAction.CallbackContext context)
+    public void HandleJump(InputAction.CallbackContext context)
     {
     
         if (context.performed && jumpCount < maxConsecutiveJumps)
         {
+            Debug.Log("Jumping! Current jump count: " + jumpCount);
             JumpOnce();
             jumpCount++;
         }
