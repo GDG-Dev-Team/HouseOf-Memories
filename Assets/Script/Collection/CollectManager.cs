@@ -6,24 +6,22 @@ public class CollectionManager : MonoBehaviour
 {
     public static CollectionManager instance;
 
-    [SerializeField]
-    private Image itemIcon;
+   [SerializeField] private GameObject iconPrefab;
 
     [SerializeField]
     private TextMeshProUGUI countText;
 
-    [SerializeField]
-    private Sprite iconSprite;
+   [SerializeField] private Transform iconContainer;// Parent object (e.g., a UI panel) where icons will appear
 
     [SerializeField]
     private int collectedCount = 0;
 
     [SerializeField]
-    private int totalCount = 6;
+    private int totalCount = 5;
 
     void Start()
     {
-        itemIcon.sprite = iconSprite;
+        
         UpdateText();
     }
 
@@ -35,12 +33,20 @@ public class CollectionManager : MonoBehaviour
         }
     }
 
-    public void CollectItem()
+    public void CollectItem(Sprite itemSprite)
     {
         if (collectedCount < totalCount)
         {
             collectedCount++;
             UpdateText();
+
+
+             GameObject newIcon = Instantiate(iconPrefab, iconContainer);
+            Image img = newIcon.GetComponent<Image>();
+            if (img != null)
+            {
+                img.sprite = itemSprite;
+            }
         }
     }
 
