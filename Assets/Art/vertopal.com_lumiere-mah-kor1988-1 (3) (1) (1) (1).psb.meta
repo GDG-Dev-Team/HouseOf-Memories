@@ -1,0 +1,2020 @@
+fileFormatVersion: 2
+guid: 88b3c66e9da2de94e8c2c4acaee909a2
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: ad245bac097e5074f823c17ec13a4bfc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 211
+      width: 166
+      height: 707
+    spriteID: 131fa5ab095369842bbb08de8ad0ca89
+    spriteBone: []
+    spriteOutline:
+    - outline:
+      - {x: 67, y: 353.5}
+      - {x: 50.418884, y: 329.0647}
+      - {x: 42, y: 353.5}
+      - {x: -49, y: 353.5}
+      - {x: -83, y: 262.5}
+      - {x: -83, y: 0.5}
+      - {x: -65, y: -1.5}
+      - {x: -50, y: 28.5}
+      - {x: -67, y: -51.5}
+      - {x: -70, y: -109.5}
+      - {x: -74, y: -203.5}
+      - {x: -83, y: -286.5}
+      - {x: -83, y: -353.5}
+      - {x: 83, y: -353.5}
+      - {x: 83, y: -246.5}
+      - {x: 63, y: -239.5}
+      - {x: 45, y: -250.5}
+      - {x: 45, y: -256.5}
+      - {x: 40, y: -214.5}
+      - {x: 73, y: -209.5}
+      - {x: 83, y: -162.5}
+      - {x: 83, y: 353.5}
+    - outline:
+      - {x: 1, y: 6.5}
+      - {x: -3, y: 7.5}
+      - {x: 0, y: 13.5}
+      - {x: 4, y: 20.5}
+      - {x: 6, y: 20.5}
+      - {x: 10, y: 23.5}
+      - {x: 8, y: 18.5}
+      - {x: 8, y: 15.5}
+      - {x: 5, y: 9.5}
+      - {x: 3, y: 6.5}
+    - outline:
+      - {x: -55, y: -321.5}
+      - {x: -55, y: -314.5}
+      - {x: -54, y: -313.5}
+      - {x: -54, y: -299.5}
+      - {x: -52, y: -296.5}
+      - {x: -52, y: -288.5}
+      - {x: -51, y: -287.5}
+      - {x: -51, y: -271.5}
+      - {x: -50, y: -270.5}
+      - {x: -50, y: -257.5}
+      - {x: -49, y: -256.5}
+      - {x: -49, y: -246.5}
+      - {x: -48, y: -245.5}
+      - {x: -48, y: -241.5}
+      - {x: -47, y: -240.5}
+      - {x: -47, y: -232.5}
+      - {x: -46, y: -231.5}
+      - {x: -46, y: -227.5}
+      - {x: -44, y: -229.5}
+      - {x: -41, y: -230.5}
+      - {x: -38, y: -232.5}
+      - {x: -35, y: -233.5}
+      - {x: -32, y: -236.5}
+      - {x: -30, y: -236.5}
+      - {x: -28, y: -239.5}
+      - {x: -26, y: -240.5}
+      - {x: -26, y: -280.5}
+      - {x: -27, y: -281.5}
+      - {x: -27, y: -303.5}
+      - {x: -31, y: -309.5}
+      - {x: -31, y: -313.5}
+      - {x: -32, y: -314.5}
+      - {x: -32, y: -316.5}
+      - {x: -31, y: -318.5}
+      - {x: -34, y: -319.5}
+      - {x: -41, y: -319.5}
+      - {x: -42, y: -320.5}
+      - {x: -52, y: -320.5}
+      - {x: -54, y: -322.5}
+    - outline:
+      - {x: 25, y: -229.5}
+      - {x: 25, y: -237.5}
+      - {x: 24, y: -230.5}
+    - outline:
+      - {x: 2, y: -289.5}
+      - {x: 2, y: -283.5}
+      - {x: 0, y: -281.5}
+      - {x: 1, y: -279.5}
+      - {x: 0, y: -263.5}
+      - {x: 1, y: -264.5}
+      - {x: 2, y: -263.5}
+      - {x: 2, y: -280.5}
+      - {x: 3, y: -281.5}
+      - {x: 3.769226, y: -293.03845}
+    - outline:
+      - {x: 26, y: -242.5}
+      - {x: 26, y: -252.5}
+      - {x: 27, y: -253.5}
+      - {x: 27, y: -261.5}
+      - {x: 28, y: -262.5}
+      - {x: 28, y: -270.5}
+      - {x: 29, y: -271.5}
+      - {x: 29, y: -288.5}
+      - {x: 30, y: -289.5}
+      - {x: 30, y: -296.5}
+      - {x: 32, y: -300.5}
+      - {x: 33, y: -314.5}
+      - {x: 34, y: -315.5}
+      - {x: 34, y: -326.5}
+      - {x: 33, y: -323.5}
+      - {x: 29, y: -320.5}
+      - {x: 26, y: -320.5}
+      - {x: 26, y: -299.5}
+      - {x: 25, y: -298.5}
+      - {x: 25, y: -241.5}
+    - outline:
+      - {x: 33, y: -332.5}
+      - {x: 33, y: -331.5}
+      - {x: 34, y: -330.5}
+      - {x: 34, y: -331.5}
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 211}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 770
+      width: 69
+      height: 147
+    spriteID: 3c4dcfd4330c93d438d616318d1c4a64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 137, y: 770}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 214
+      width: 155
+      height: 669
+    spriteID: 9c2e6f71b8e69a5418026eb385891934
+    spriteBone: []
+    spriteOutline:
+    - outline:
+      - {x: -15.5, y: 302.5}
+      - {x: -22.5, y: 241.5}
+      - {x: -74.5, y: 193.5}
+      - {x: -77.5, y: 143.5}
+      - {x: -77.5, y: 63.5}
+      - {x: -77.5, y: -44.5}
+      - {x: -77.5, y: -120.5}
+      - {x: -32.5, y: -212.5}
+      - {x: -29.5, y: -260.5}
+      - {x: 14.5, y: -270.5}
+      - {x: 37.5, y: -283.5}
+      - {x: 55.5, y: -267.5}
+      - {x: 66.5, y: -143.5}
+      - {x: 72.5, y: -84.5}
+      - {x: 77.5, y: 39.5}
+      - {x: 71.5, y: 210.5}
+      - {x: 41.5, y: 219.5}
+      - {x: 21.5, y: 275.5}
+      - {x: 13.5, y: 315.5}
+      - {x: -1.5, y: 334.5}
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 214}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 240
+      y: 757
+      width: 80
+      height: 160
+    spriteID: 6b0d37e7803e35d45b654a56117f9e54
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 240, y: 757}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 295
+      y: 438
+      width: 134
+      height: 475
+    spriteID: 009ed7a8b3c90a7438f03ddf0af50c92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 295, y: 438}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 428
+      y: 547
+      width: 272
+      height: 372
+    spriteID: e9f89195792a6d140a7c263f411fd216
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 428, y: 547}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 724
+      y: 859
+      width: 88
+      height: 118
+    spriteID: 69c7efd79d284db408d007a6c2cfe9ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 724, y: 859}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 814
+      y: 860
+      width: 43
+      height: 122
+    spriteID: 1d59893962c5ebd44a5572e38088f89c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 814, y: 860}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 870
+      y: 855
+      width: 63
+      height: 115
+    spriteID: 33dcc932d0752e14cba069cb002d7eb4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 870, y: 855}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 935
+      y: 723
+      width: 62
+      height: 246
+    spriteID: 178a49d06ffbf8145947891938397a75
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 935, y: 723}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1008
+      y: 846
+      width: 63
+      height: 136
+    spriteID: 293d8903b0310cf4bb96f899de49006f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1008, y: 846}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1104
+      y: 675
+      width: 167
+      height: 254
+    spriteID: 54013a2ae52a5334e9f790ceeda4a474
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1104, y: 675}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1280
+      y: 675
+      width: 177
+      height: 259
+    spriteID: 7dd2550045405ba468058a664a568a7d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1280, y: 675}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1467
+      y: 665
+      width: 160
+      height: 275
+    spriteID: b3dcb421aaf07bd4a9f899ee677a4bd3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1467, y: 665}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1645
+      y: 658
+      width: 153
+      height: 279
+    spriteID: 391166470e9515b418c351122ca5af5b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1645, y: 658}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 729
+      y: 722
+      width: 73
+      height: 135
+    spriteID: 736ea19c72f9f6943935418eae1ca25b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 729, y: 722}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 799
+      y: 723
+      width: 72
+      height: 122
+    spriteID: 7b2e5420e312de041855354267b0b9c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 799, y: 723}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 876
+      y: 723
+      width: 51
+      height: 113
+    spriteID: 6b948bdd76543514e8fd13b3ddf74678
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 876, y: 723}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1005
+      y: 777
+      width: 70
+      height: 64
+    spriteID: 8202686b0367add49a344cf1032037f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1005, y: 777}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 282
+      y: 215
+      width: 285
+      height: 538
+    spriteID: 7f17dae506457d34e85600206292567c
+    spriteBone: []
+    spriteOutline:
+    - outline:
+      - {x: -142.5, y: -269}
+      - {x: 3.5, y: -265}
+      - {x: 142.5, y: -269}
+    - outline:
+      - {x: 142.5, y: 269}
+      - {x: 142.5, y: -269}
+      - {x: 3.5, y: -265}
+      - {x: -6.5, y: -163}
+      - {x: -6.5, y: 269}
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 282, y: 215}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 722
+      y: 607
+      width: 56
+      height: 8
+    spriteID: 64afd4c3fef8e4f4fbf0638f574310cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 722, y: 607}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 731
+      y: 630
+      width: 68
+      height: 85
+    spriteID: f4cfeb443ec04204db3ba262cd8cf85b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 731, y: 630}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 814
+      y: 627
+      width: 46
+      height: 88
+    spriteID: d6180075f7f1c1245a27637f7bf59d2c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 814, y: 627}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 867
+      y: 614
+      width: 72
+      height: 96
+    spriteID: ef51201f9985d6447be2ddc1cc393715
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 867, y: 614}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 945
+      y: 614
+      width: 49
+      height: 101
+    spriteID: 5e57972ed95f7c5438413ca57094eb2f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 945, y: 614}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_25
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1006
+      y: 627
+      width: 66
+      height: 143
+    spriteID: f3fd6cd85165d2c4198591e946d94e54
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1006, y: 627}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_26
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1030
+      y: 607
+      width: 49
+      height: 7
+    spriteID: 71332377dd1476241a59b7e6a8384bdd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1030, y: 607}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_27
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1104
+      y: 219
+      width: 167
+      height: 445
+    spriteID: d54fc1c996865b44e981d4966f1ee65c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1104, y: 219}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_28
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1276
+      y: 429
+      width: 78
+      height: 245
+    spriteID: 2e1b1bccc1853a84e90b279d6e9fef27
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1276, y: 429}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_29
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1359
+      y: 441
+      width: 89
+      height: 228
+    spriteID: 04a031b10633f714a8a0ef5fd42e9107
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1359, y: 441}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_30
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1445
+      y: 454
+      width: 207
+      height: 206
+    spriteID: e241138c1da0f764ab050b7e6e29195d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1445, y: 454}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_31
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1669
+      y: 447
+      width: 109
+      height: 201
+    spriteID: d09a8e1250108c642a8b43c4f5f52efd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1669, y: 447}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_32
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 570
+      y: 215
+      width: 123
+      height: 289
+    spriteID: ac2ed37339e64274ab39ee7957b579de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 570, y: 215}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_33
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 723
+      y: 192
+      width: 166
+      height: 357
+    spriteID: c427529f56d463a41b114d4d61a90b8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 723, y: 192}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_34
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 877
+      y: 194
+      width: 195
+      height: 269
+    spriteID: 34892a7d622d4864ab9883421d2c5e93
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 877, y: 194}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_35
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 894
+      y: 446
+      width: 28
+      height: 97
+    spriteID: 49ed2a6989f1bf947a5fbe282eb46a33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 894, y: 446}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_36
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 924
+      y: 447
+      width: 110
+      height: 103
+    spriteID: ba0774b86b6b85d499fd91d563b15676
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 924, y: 447}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_37
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1027
+      y: 398
+      width: 50
+      height: 151
+    spriteID: 494d6a5c8e20b8f408121d14e27e22e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1027, y: 398}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_38
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1279
+      y: 221
+      width: 201
+      height: 243
+    spriteID: 3aaa32f8c9b504d4fa3a2243a19476e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1279, y: 221}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_39
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 835
+      y: 355
+      width: 56
+      height: 58
+    spriteID: 70912f7b3b2befe499644b641811f607
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 835, y: 355}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_40
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1455
+      y: 215
+      width: 185
+      height: 218
+    spriteID: d93aac76e3085de47848f6b7959446df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1455, y: 215}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_41
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1649
+      y: 214
+      width: 154
+      height: 215
+    spriteID: e7a24c6831224134d92afe47be192f06
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1649, y: 214}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_42
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 122
+      width: 9
+      height: 4
+    spriteID: 54c8a5844e0eb5c4f984f204fff9c8ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 122}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_43
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 14
+      width: 143
+      height: 190
+    spriteID: 8d99319fd8556b145bb1d5631cfd153d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 14}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_44
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 197
+      y: 14
+      width: 144
+      height: 187
+    spriteID: a0b8ec0917407cb4bb6ef362ebfd4be1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 197, y: 14}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_45
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 356
+      y: 14
+      width: 145
+      height: 190
+    spriteID: b7f565afd061d214ab1c47c09c6449ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 356, y: 14}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_46
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 556
+      y: 71
+      width: 49
+      height: 74
+    spriteID: 93346d24ba4a53e4a8467c4bae64b9ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 556, y: 71}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_47
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 606
+      y: 71
+      width: 32
+      height: 69
+    spriteID: e8a215c67f13cc64e90d7e32be11896d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 606, y: 71}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_48
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 639
+      y: 71
+      width: 42
+      height: 55
+    spriteID: 1402017bae7b6f2419e30fe2149e7b1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 639, y: 71}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_49
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 686
+      y: 71
+      width: 42
+      height: 55
+    spriteID: 57bb22ab156da9a40baad0510e2abe70
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 686, y: 71}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_50
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 736
+      y: 72
+      width: 64
+      height: 54
+    spriteID: 6c78f1d0599ec0948814a8b6d0adf103
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 736, y: 72}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_51
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 810
+      y: 54
+      width: 41
+      height: 72
+    spriteID: 5afdc62ff2540974d8a623779e149c8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 810, y: 54}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_52
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 859
+      y: 71
+      width: 39
+      height: 55
+    spriteID: 046856cf8336f0d4a9468f81ac598357
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 859, y: 71}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_53
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 72
+      width: 38
+      height: 54
+    spriteID: 4d8976dd9e49b2040953bebc66563d15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 72}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_54
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 955
+      y: 72
+      width: 41
+      height: 71
+    spriteID: 69d3cacd45d301947bae213fe40386d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 955, y: 72}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_55
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1019
+      y: 111
+      width: 4
+      height: 30
+    spriteID: 32c6bb94b52aa82418dc80a77fadb0cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1019, y: 111}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_56
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1059
+      y: 71
+      width: 42
+      height: 55
+    spriteID: 270b0609b2b20ba4f9affadb253b931a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1059, y: 71}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_57
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1110
+      y: 72
+      width: 64
+      height: 54
+    spriteID: 4d9d8f9b5c81f734aabd78fa640c256f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1110, y: 72}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_58
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1183
+      y: 54
+      width: 42
+      height: 72
+    spriteID: 6c24e3d134f12ee428a3f35693901301
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1183, y: 54}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_59
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1228
+      y: 71
+      width: 39
+      height: 55
+    spriteID: a305660dceaf61f4aab987e4f9ffef02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1228, y: 71}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_60
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1019
+      y: 72
+      width: 39
+      height: 31
+    spriteID: 2af2b96ea2aa6df4ba742ae29ea72479
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1019, y: 72}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_61
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 552
+      y: 14
+      width: 27
+      height: 42
+    spriteID: 29b2cf1a128e30042a86476f8ae72a4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 552, y: 14}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_62
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 582
+      y: 13
+      width: 25
+      height: 33
+    spriteID: e000f4ccf6554bb49a448be0184bc6e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 582, y: 13}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_63
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 606
+      y: 14
+      width: 19
+      height: 43
+    spriteID: a1500d619089c6647bb11e8a959793ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 606, y: 14}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_64
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 624
+      y: 13
+      width: 25
+      height: 33
+    spriteID: 8ce0d15047c84df42930e2f0416163fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 624, y: 13}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_65
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 653
+      y: 14
+      width: 16
+      height: 32
+    spriteID: 0176e492922b7384e830db733b867fe2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 653, y: 14}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_66
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 667
+      y: 13
+      width: 24
+      height: 33
+    spriteID: 9d4b7b08b8c23314e832b0c1258393d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 667, y: 13}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_67
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 695
+      y: 14
+      width: 23
+      height: 32
+    spriteID: 81244a4fd98622746ae4d601f6a42fde
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 695, y: 14}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_68
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 722
+      y: 13
+      width: 23
+      height: 33
+    spriteID: dff7201d1753f5445b23d2ca5adb026d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 722, y: 13}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_69
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 747
+      y: 13
+      width: 23
+      height: 33
+    spriteID: 8d823c21d73561042a804a592808449d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 747, y: 13}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_70
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 786
+      y: 14
+      width: 9
+      height: 42
+    spriteID: 11fd8ce4930570c4a97461bd3a716534
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 786, y: 14}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_71
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 799
+      y: 14
+      width: 37
+      height: 32
+    spriteID: 977badc79115627489f256a21c31d695
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 799, y: 14}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_72
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 842
+      y: 13
+      width: 23
+      height: 33
+    spriteID: fa9791cbfdf7bdc40a93cc87af572575
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 842, y: 13}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_73
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 868
+      y: 4
+      width: 26
+      height: 47
+    spriteID: 8558ecafc1773dd4a950171169432967
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 868, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_74
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 895
+      y: 13
+      width: 25
+      height: 33
+    spriteID: 954f4467f8a70c04eb50b0d4cc9260d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 895, y: 13}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_75
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 943
+      y: 4
+      width: 9
+      height: 52
+    spriteID: ad52397d352bb324d819fbaa4749321d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 943, y: 4}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_76
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 963
+      y: 14
+      width: 29
+      height: 43
+    spriteID: a08f06cb06429264f97d35abcdeb3252
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 963, y: 14}
+    spritePosition: {x: 0, y: 0}
+  - name: vertopal.com_lumiere-mah-kor1988-1 (3) (1) (1) (1)_77
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 995
+      y: 14
+      width: 24
+      height: 42
+    spriteID: b9599ede6b57d4748885a5594f81fe8a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 995, y: 14}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData: []
+  rigSpriteImportData: []
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: L1
+    spriteName: L1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 86e4346c610ed7842b08d68f7f4daf58
+    layerID: 0
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers: []
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

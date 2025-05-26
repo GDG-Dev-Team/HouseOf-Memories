@@ -1295,6 +1295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d0124818ab446438ba5c350111233f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemSprite: {fileID: 0}
 --- !u!58 &504445540
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1617,7 +1618,7 @@ Transform:
   m_GameObject: {fileID: 593969053}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.69999516, w: 0.7141476}
-  m_LocalPosition: {x: 420.6, y: 35.5, z: 0}
+  m_LocalPosition: {x: 420.5, y: 38.2, z: 0}
   m_LocalScale: {x: 85.85074, y: 3.7296, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1935,9 +1936,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32cd07c1255424ec092f8948d4a41726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemIcon: {fileID: 1174853824}
+  iconPrefab: {fileID: 0}
   countText: {fileID: 615588763}
-  iconSprite: {fileID: -8522433546947300881, guid: bdde65c9a67214625ba951fa999fefc8, type: 3}
+  iconContainer: {fileID: 0}
   collectedCount: 0
   totalCount: 6
 --- !u!1 &888365281
@@ -2105,6 +2106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b21a5fe324e584bdf9928b1fb151813e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerTransform: {fileID: 0}
 --- !u!212 &901720769
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2700,6 +2702,7 @@ MonoBehaviour:
   speed: 50
   tr: {fileID: 1060219472}
   PlayerHealth: 3
+  cameraTransform: {fileID: 0}
 --- !u!114 &1060219468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5171,6 +5174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d0124818ab446438ba5c350111233f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemSprite: {fileID: 0}
 --- !u!58 &1746595892
 CircleCollider2D:
   m_ObjectHideFlags: 0
