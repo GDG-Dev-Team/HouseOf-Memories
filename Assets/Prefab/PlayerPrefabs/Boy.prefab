@@ -243,7 +243,19 @@ MonoBehaviour:
     m_ActionId: 38708507-a481-499f-ae39-380cdd406554
     m_ActionName: Player/Escape
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2208034285590970657}
+        m_TargetAssemblyTypeName: Jump, Assembly-CSharp
+        m_MethodName: HandleJump
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 330e2bab-f191-4aea-b597-5f96b6c8394e
     m_ActionName: 'Player/Jump1[/Keyboard/enter]'
   m_NeverAutoSwitchControlSchemes: 0
@@ -511,6 +523,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  maxConsecutiveJumps: 2
 --- !u!114 &875315401356606739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,7 +728,7 @@ Transform:
   m_GameObject: {fileID: 601518201658836180}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.006, y: -0.46, z: 0}
+  m_LocalPosition: {x: -0.006, y: -1.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
