@@ -26,6 +26,10 @@ public class Move : MonoBehaviour
     private float DashCoolDown = 1f;
     private bool isFacingRight = true;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip runClip;
+    [SerializeField] private AudioClip dashClip;
     [SerializeField]private TrailRenderer tr;
     [SerializeField] int PlayerHealth = 3;
 
@@ -83,6 +87,7 @@ public class Move : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
+        audioSource.PlayOneShot(dashClip);
         anim.SetBool("IsDashing", true);
 
 
