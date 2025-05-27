@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7114981567123346220
+--- !u!1 &7593982023529836322
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4116914869578747933}
-  - component: {fileID: 8793196196004185733}
+  - component: {fileID: 5878096238940687938}
+  - component: {fileID: 3890662533049064151}
   m_Layer: 0
   m_Name: DoorTriggerButton
   m_TagString: Untagged
@@ -17,32 +17,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4116914869578747933
+--- !u!4 &5878096238940687938
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7114981567123346220}
+  m_GameObject: {fileID: 7593982023529836322}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40, y: 33, z: -0.25151515}
+  m_LocalPosition: {x: 2615.096, y: -848.56, z: -0.25151515}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8793196196004185733
+--- !u!114 &3890662533049064151
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7114981567123346220}
+  m_GameObject: {fileID: 7593982023529836322}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e62fff099b8509f4ab30758eef65a12b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorGameObjectA: {fileID: 0}
-  DoorGameObjectB: {fileID: 0}
+  DoorGameObjectA: {fileID: 8028340686150355374, guid: b6a7af841713de348af9363be5f78dfd, type: 3}

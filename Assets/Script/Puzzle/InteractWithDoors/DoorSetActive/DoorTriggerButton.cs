@@ -4,7 +4,7 @@ public class DoorTriggerButton : MonoBehaviour
 {
 
     [SerializeField] private GameObject DoorGameObjectA;
-    [SerializeField] private GameObject DoorGameObjectB;
+   // [SerializeField] private GameObject DoorGameObjectB;
 
 
     private IDoor doorA;
