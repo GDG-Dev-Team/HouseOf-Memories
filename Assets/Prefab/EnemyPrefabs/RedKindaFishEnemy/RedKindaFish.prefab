@@ -241,7 +241,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 2
-  damageCooldown: 0.3
+  damageCooldown: 2
   hurtColor: {r: 1, g: 0, b: 0, a: 1}
   flashDuration: 0.1
 --- !u!68 &6699845521774119474
