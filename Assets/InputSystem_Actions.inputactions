@@ -492,7 +492,7 @@
                 {
                     "name": "",
                     "id": "5c18025f-0783-4517-9a09-f3e22ec66bfa",
-                    "path": "<Keyboard>/upArrow",
+                    "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",

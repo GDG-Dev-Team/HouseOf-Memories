@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class Jump : MonoBehaviour
 {
-        private Rigidbody2D rb;
+       private Rigidbody2D rb;
     private bool wasGroundedLastFrame;
 
     [SerializeField] private float jumpForce = 10f;
@@ -21,14 +21,8 @@ public class Jump : MonoBehaviour
 
     void Update()
     {
-        // ✅ Handle input using the old Input system
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            TryJump();
-        }
-
-        // Ground check
         bool isGrounded = IsGrounded();
+
         if (isGrounded && !wasGroundedLastFrame)
         {
             jumpCount = 0;
@@ -37,14 +31,17 @@ public class Jump : MonoBehaviour
         wasGroundedLastFrame = isGrounded;
     }
 
-    void TryJump()
+    // ✅ No callback context — plain void method
+    public void HandleJump1()
     {
-        if (jumpCount < maxConsecutiveJumps)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            jumpCount++;
-        }
+         Debug.Log("Jump input received");
+
+    if (jumpCount < maxConsecutiveJumps)
+    {
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        jumpCount++;
+    }
     }
 
     bool IsGrounded()
