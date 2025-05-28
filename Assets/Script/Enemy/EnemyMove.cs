@@ -61,8 +61,8 @@ public class EnemyMove : MonoBehaviour
         }
         else
         {
-            isAttacking = false;
-            Patrolling(); // يرجع يدوّر
+            anim.SetBool("isAttacking", false);
+            Patrolling();
         }
 
         GameObject GetClosestPlayer(GameObject[] players)
