@@ -27,12 +27,14 @@ public class ArcherEnemy : MonoBehaviour
     private float nextJumpTime;
     private Rigidbody2D rb;
 
+    private Animator anim;
+
     void Start()
     {
         startPoint = transform.position;
         FindAndSetTargetOnce();
-
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -48,20 +50,20 @@ public class ArcherEnemy : MonoBehaviour
 
             if (Time.time >= nextFireTime)
             {
-                Shoot();
+                if (anim != null)
+                    anim.SetTrigger("IsAttacking"); // هنا بس نشغل الانيميشن
+
                 nextFireTime = Time.time + shootCooldown;
             }
-        }
 
-        if (distance <= dangerDistance && Time.time >= nextJumpTime)
-        {
-            JumpBackFromPlayer();
-            nextJumpTime = Time.time + jumpCooldown;
+            if (distance <= dangerDistance && Time.time >= nextJumpTime)
+            {
+                JumpBackFromPlayer();
+                nextJumpTime = Time.time + jumpCooldown;
+            }
         }
-
         else if (distance > maxLoseTargetRange)
         {
-            // اللاعب هرب → ندور واحد جديد
             isPlayerInRange = false;
             FindAndSetTargetOnce();
         }
@@ -74,53 +76,97 @@ public class ArcherEnemy : MonoBehaviour
         {
             Patrol();
         }
-    }
+}
 
-    void Patrol()
-    {
-        float dir = movingRight ? 1f : -1f;
-        transform.Translate(Vector2.right * patrolSpeed * Time.deltaTime * dir);
-
-        float distanceFromStart = transform.position.x - startPoint.x;
-        if (movingRight && distanceFromStart >= patrolDistance)
+void Patrol()
         {
-            movingRight = false;
-            Flip();
+            float dir = movingRight ? 1f : -1f;
+            transform.Translate(Vector2.right * patrolSpeed * Time.deltaTime * dir);
+
+            float distanceFromStart = transform.position.x - startPoint.x;
+            if (movingRight && distanceFromStart >= patrolDistance)
+            {
+                movingRight = false;
+                Flip();
+            }
+            else if (!movingRight && distanceFromStart <= -patrolDistance)
+            {
+                movingRight = true;
+                Flip();
+            }
         }
-        else if (!movingRight && distanceFromStart <= -patrolDistance)
+
+        void Flip()
         {
-            movingRight = true;
-            Flip();
+            Vector3 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;
         }
-    }
 
-    void Flip()
-    {
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
-    }
+        void FaceTarget()
+        {
+            if (target == null) return;
 
-    void FaceTarget()
+            Vector3 scale = transform.localScale;
+
+            if (target.position.x > transform.position.x && scale.x < 0)
+            {
+                scale.x *= -1;
+            }
+            else if (target.position.x < transform.position.x && scale.x > 0)
+            {
+                scale.x *= -1;
+            }
+
+            transform.localScale = scale;
+        }
+
+        void Shoot()
+        {
+            Vector2 direction = (target.position - shootPoint.position).normalized;
+            GameObject arrow = Instantiate(arrowPrefab, shootPoint.position, Quaternion.identity);
+
+            Rigidbody2D rb = arrow.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.linearVelocity = direction * arrowSpeed;
+            }
+        }
+
+        void FindAndSetTargetOnce()
+        {
+            GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+            Transform closest = null;
+            float shortestDistance = Mathf.Infinity;
+            Vector3 currentPos = transform.position;
+
+            foreach (GameObject p in players)
+            {
+                float distance = Vector3.Distance(p.transform.position, currentPos);
+                if (distance < shortestDistance)
+                {
+                    shortestDistance = distance;
+                    closest = p.transform;
+                }
+            }
+
+            target = closest;
+        }
+
+
+        void JumpBackFromPlayer()
+        {
+            if (target == null || rb == null) return;
+
+            Vector2 directionAway = (transform.position - target.position).normalized;
+            rb.AddForce(directionAway * jumpBackForce, ForceMode2D.Impulse);
+        }
+
+    public void FireArrowAndDealDamage()
     {
         if (target == null) return;
 
-        Vector3 scale = transform.localScale;
-
-        if (target.position.x > transform.position.x && scale.x < 0)
-        {
-            scale.x *= -1;
-        }
-        else if (target.position.x < transform.position.x && scale.x > 0)
-        {
-            scale.x *= -1;
-        }
-
-        transform.localScale = scale;
-    }
-
-    void Shoot()
-    {
+        // إطلاق السهم
         Vector2 direction = (target.position - shootPoint.position).normalized;
         GameObject arrow = Instantiate(arrowPrefab, shootPoint.position, Quaternion.identity);
 
@@ -129,36 +175,18 @@ public class ArcherEnemy : MonoBehaviour
         {
             rb.linearVelocity = direction * arrowSpeed;
         }
-    }
 
-    void FindAndSetTargetOnce()
-    {
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-        Transform closest = null;
-        float shortestDistance = Mathf.Infinity;
-        Vector3 currentPos = transform.position;
-
-        foreach (GameObject p in players)
+        // ضرب اللاعب (لو قريب من العدو)
+        if (Vector2.Distance(transform.position, target.position) <= attackRange)
         {
-            float distance = Vector3.Distance(p.transform.position, currentPos);
-            if (distance < shortestDistance)
+            PlayerHealth ph = target.GetComponent<PlayerHealth>();
+            if (ph != null)
             {
-                shortestDistance = distance;
-                closest = p.transform;
+                ph.TakeDamage(1);
             }
         }
-
-        target = closest;
     }
 
-
-    void JumpBackFromPlayer()
-    {
-        if (target == null || rb == null) return;
-
-        Vector2 directionAway = (transform.position - target.position).normalized;
-        rb.AddForce(directionAway * jumpBackForce, ForceMode2D.Impulse);
-    }
 
     private void OnDrawGizmosSelected()
     {
