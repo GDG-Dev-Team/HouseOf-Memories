@@ -74,7 +74,7 @@ public class Move : MonoBehaviour
         }
         Flip();
 
-        anim.SetBool("IsRunning", input != 0 && !isDashing);
+      //  anim.SetBool("IsRunning", input != 0 && !isDashing);
 
     }
 
@@ -111,6 +111,9 @@ public class Move : MonoBehaviour
     {
         if (isFacingRight && input < 0f || !isFacingRight && input > 0f)
         {
+            Debug.Log($"input: {input}, isFacingRight: {isFacingRight}");
+
+
             Vector3 camPosition = cameraTransform.position;
             Quaternion camRotation = cameraTransform.rotation;
             cameraTransform.SetParent(null);
