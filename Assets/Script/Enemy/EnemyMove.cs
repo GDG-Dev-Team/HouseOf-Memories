@@ -21,11 +21,9 @@ public class EnemyMove : MonoBehaviour
 
     [Header("For Attack")]
     [SerializeField] float attackRange = 1.5f;
-    private Animator anim;
-    private bool isAttacking = false;
     [SerializeField] float attackCooldown = 1f;
     private float lastAttackTime = -Mathf.Infinity;
-    private bool isInAttackRange = false;
+    private Animator anim;
 
     [Header("Other")]
     private Rigidbody2D enemyRB;
@@ -45,26 +43,24 @@ public class EnemyMove : MonoBehaviour
         player = GetClosestPlayer(players).transform;
 
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
+
         if (distanceFromPlayer < LineOfSite)
         {
             if (distanceFromPlayer <= attackRange)
             {
-                isInAttackRange = true;
-                enemyRB.linearVelocity = Vector2.zero; // ← الحل الصح
-                anim.SetBool("isAttacking", true);
+                enemyRB.linearVelocity = Vector2.zero; // العدو يوقف عند الهجوم
+                anim.SetBool("isAttacking", true);     // يشغّل انيميشن الهجوم
             }
             else
             {
-                isInAttackRange = false;
-                anim.SetBool("isAttacking", false);
+                anim.SetBool("isAttacking", false);    // يرجع يلاحق اللاعب
                 FollowPlayer();
             }
         }
         else
         {
-            isInAttackRange = false;
             anim.SetBool("isAttacking", false);
-            Patrolling();
+            Patrolling();                              // يرجع للدوران
         }
     }
 
@@ -72,17 +68,18 @@ public class EnemyMove : MonoBehaviour
     {
         if (Time.time - lastAttackTime >= attackCooldown)
         {
-            if (Vector2.Distance(player.position, transform.position) <= attackRange)
+            if (player != null && Vector2.Distance(player.position, transform.position) <= attackRange)
             {
                 PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
                 if (playerHealth != null)
                 {
                     playerHealth.TakeDamage(1);
-                    lastAttackTime = Time.time; // سجل وقت الضربة
+                    lastAttackTime = Time.time;
                 }
             }
         }
     }
+
 
     GameObject GetClosestPlayer(GameObject[] players)
     {
@@ -90,13 +87,13 @@ public class EnemyMove : MonoBehaviour
         float shortestDistance = Mathf.Infinity;
         Vector3 currentPos = transform.position;
 
-        foreach (GameObject GirlOrBoy in players)
+        foreach (GameObject p in players)
         {
-            float distance = Vector3.Distance(GirlOrBoy.transform.position, currentPos);
+            float distance = Vector3.Distance(p.transform.position, currentPos);
             if (distance < shortestDistance)
             {
                 shortestDistance = distance;
-                closest = GirlOrBoy;
+                closest = p;
             }
         }
 
@@ -106,14 +103,11 @@ public class EnemyMove : MonoBehaviour
     void FollowPlayer()
     {
         moveDirection = (player.position.x > transform.position.x) ? 1f : -1f;
+
         if (player.position.x > transform.position.x && !facingRight)
-        {
             Flip();
-        }
         else if (player.position.x < transform.position.x && facingRight)
-        {
             Flip();
-        }
 
         enemyRB.linearVelocity = new Vector2(chaseSpeed * moveDirection, enemyRB.linearVelocity.y);
     }
@@ -121,9 +115,7 @@ public class EnemyMove : MonoBehaviour
     void Patrolling()
     {
         if (!checkingGround || checkingWall)
-        {
             Flip();
-        }
 
         enemyRB.linearVelocity = new Vector2(patrolSpeed * moveDirection, enemyRB.linearVelocity.y);
     }
