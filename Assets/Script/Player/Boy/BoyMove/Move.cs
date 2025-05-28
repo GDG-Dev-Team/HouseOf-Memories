@@ -25,7 +25,7 @@ public class Move : MonoBehaviour
     private float DashingTime = 0.2f;
     private float DashCoolDown = 1f;
     private bool isFacingRight = true;
-
+    private bool IsRunning = false;
     [Header("Audio")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip runClip;
