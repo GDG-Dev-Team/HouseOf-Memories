@@ -50,6 +50,23 @@ public class EnemyExploder : MonoBehaviour
         }
     }
 
+
+
+
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log("Collided with: " + other.gameObject.name);
+
+        if (hasExploded) return;
+
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Explode();
+        }
+    }
+
+
     void Explode()
     {
         hasExploded = true;
@@ -72,6 +89,10 @@ public class EnemyExploder : MonoBehaviour
 
         Destroy(gameObject);
     }
+
+
+
+
 
     void OnDrawGizmosSelected()
     {
