@@ -3,25 +3,16 @@ using UnityEngine.InputSystem;
 
 public class PlayerJump : MonoBehaviour
 {
-    private Rigidbody2D rb;
+      private Rigidbody2D rb;
     private bool wasGroundedLastFrame;
 
-    [SerializeField]
-    private float jumpForce;
-
-    [SerializeField]
-    private Transform groundPoint;
-
-    [SerializeField]
-    private float pointRadius;
-
-    [SerializeField]
-    private LayerMask groundLayer;
+    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private Transform groundPoint;
+    [SerializeField] private float pointRadius = 0.2f;
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private int maxConsecutiveJumps = 2;
 
     private int jumpCount = 0;
-
-    
-    [SerializeField] private int maxConsecutiveJumps = 2;
 
     void Awake()
     {
@@ -32,31 +23,25 @@ public class PlayerJump : MonoBehaviour
     {
         bool isGrounded = IsGrounded();
 
-        // Reset jump count if we've just landed
         if (isGrounded && !wasGroundedLastFrame)
         {
             jumpCount = 0;
         }
 
         wasGroundedLastFrame = isGrounded;
-        
     }
 
-    public void Jump(InputAction.CallbackContext context)
+    // ✅ No callback context — plain void method
+    public void HandleJump1()
     {
-    
-        if (context.performed && jumpCount < maxConsecutiveJumps)
-        {
-            JumpOnce();
-            jumpCount++;
-        }
-        
-    }
+         Debug.Log("Jump input received");
 
-    void JumpOnce()
+    if (jumpCount < maxConsecutiveJumps)
     {
-         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        jumpCount++;
+    }
     }
 
     bool IsGrounded()
@@ -66,8 +51,11 @@ public class PlayerJump : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawSphere(groundPoint.position, pointRadius);
+        if (groundPoint != null)
+        {
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawSphere(groundPoint.position, pointRadius);
+        }
     }
 
 }
