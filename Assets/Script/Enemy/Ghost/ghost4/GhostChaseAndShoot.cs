@@ -120,8 +120,10 @@ public class GhostChaseAndShoot : MonoBehaviour
         Gizmos.DrawCube(DownCheck.transform.position, DownCheckSize);
         Gizmos.DrawCube(UpCheck.transform.position, UpCheckSize);
         Gizmos.DrawCube(WallCheck.transform.position, WallCheckSize);
+
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, lineOfSight);
+
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, shootingRange);
     }

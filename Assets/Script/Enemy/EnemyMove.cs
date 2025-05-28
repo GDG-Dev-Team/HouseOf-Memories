@@ -20,6 +20,11 @@ public class EnemyMove : MonoBehaviour
     private Transform player;
 
 
+    [Header("For Attack")]
+    [SerializeField] float attackRange = 1.5f;
+    private Animator anim;
+    private bool isAttacking = false;
+
     [Header("Other")]
     private Rigidbody2D enemyRB;
 
@@ -27,6 +32,7 @@ public class EnemyMove : MonoBehaviour
     {
        
         enemyRB = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -41,56 +47,67 @@ public class EnemyMove : MonoBehaviour
 
         if (distanceFromPlayer < LineOfSite)
         {
-            FollowPlayer();
+            if (distanceFromPlayer <= attackRange)
+            {
+                // enemyRB.linearVelocity = Vector2.zero;
+                anim.SetBool("isAttacking", true);
+            }
+            else
+            {
+                anim.SetBool("isAttacking", false);
+                FollowPlayer();
+            }
+
         }
         else
         {
-            Patrolling();
+            isAttacking = false;
+            Patrolling(); // يرجع يدوّر
         }
-    }
 
-    GameObject GetClosestPlayer(GameObject[] players)
-    {
-        GameObject closest = null;
-        float shortestDistance = Mathf.Infinity;
-        Vector3 currentPos = transform.position;
-
-        foreach (GameObject GirlOrBoy in players)
+        GameObject GetClosestPlayer(GameObject[] players)
         {
-            float distance = Vector3.Distance(GirlOrBoy.transform.position, currentPos);
-            if (distance < shortestDistance)
+            GameObject closest = null;
+            float shortestDistance = Mathf.Infinity;
+            Vector3 currentPos = transform.position;
+
+            foreach (GameObject GirlOrBoy in players)
             {
-                shortestDistance = distance;
-                closest = GirlOrBoy;
+                float distance = Vector3.Distance(GirlOrBoy.transform.position, currentPos);
+                if (distance < shortestDistance)
+                {
+                    shortestDistance = distance;
+                    closest = GirlOrBoy;
+                }
             }
+
+            return closest;
         }
 
-        return closest;
-    }
-
-    void FollowPlayer()
-    {
-        moveDirection = (player.position.x > transform.position.x) ? 1f : -1f;
-        if (player.position.x > transform.position.x && !facingRight)
+        void FollowPlayer()
         {
-            Flip();
+            moveDirection = (player.position.x > transform.position.x) ? 1f : -1f;
+            if (player.position.x > transform.position.x && !facingRight)
+            {
+                Flip();
+            }
+            else if (player.position.x < transform.position.x && facingRight)
+            {
+                Flip();
+            }
+
+            enemyRB.linearVelocity = new Vector2(chaseSpeed * moveDirection, enemyRB.linearVelocity.y);
         }
-        else if (player.position.x < transform.position.x && facingRight)
+
+        void Patrolling()
         {
-            Flip();
+            if (!checkingGround || checkingWall)
+            {
+                Flip();
+            }
+
+            enemyRB.linearVelocity = new Vector2(patrolSpeed * moveDirection, enemyRB.linearVelocity.y);
         }
-
-        enemyRB.linearVelocity = new Vector2(chaseSpeed * moveDirection, enemyRB.linearVelocity.y);
-    }
-
-    void Patrolling()
-    {
-        if (!checkingGround || checkingWall)
-        {
-            Flip();
-        }
-
-        enemyRB.linearVelocity = new Vector2(patrolSpeed * moveDirection, enemyRB.linearVelocity.y);
     }
 
     private void Flip()
@@ -108,6 +125,9 @@ public class EnemyMove : MonoBehaviour
 
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, LineOfSite);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 
 }

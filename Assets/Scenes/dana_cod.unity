@@ -3758,6 +3758,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8442682024073036812, guid: 0133d7cd0a2ee3b4bb006ff8df401782, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.73
+      objectReference: {fileID: 0}
     - target: {fileID: 9058772890050107087, guid: 0133d7cd0a2ee3b4bb006ff8df401782, type: 3}
       propertyPath: m_Name
       value: treeEnemy1
