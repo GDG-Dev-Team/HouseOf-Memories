@@ -142,6 +142,17 @@ public class Spider : MonoBehaviour
     }
 
 
+    public void DealDamage()
+    {
+        if (Vector2.Distance(player.position, transform.position) <= 1.5f) // حسب منطقك
+        {
+            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(1);
+            }
+        }
+    }
 
 
     private void OnDrawGizmosSelected()
