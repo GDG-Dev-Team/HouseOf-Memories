@@ -1181,6 +1181,7 @@ MonoBehaviour:
   health2: {fileID: 0}
   health3: {fileID: 0}
   Health: 3
+  invincibilityDuration: 1
 --- !u!114 &2003366960158183391
 MonoBehaviour:
   m_ObjectHideFlags: 0
