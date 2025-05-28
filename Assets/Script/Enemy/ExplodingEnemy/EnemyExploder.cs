@@ -10,13 +10,19 @@ public class EnemyExploder : MonoBehaviour
     private float timer;
     private bool hasExploded = false;
     private bool timerStarted = false;
-
     private ExplodingEnemyMove moveScript;
+
+    [Header("For Attack")]
+    [SerializeField] float attackRange = 1.5f;
+    [SerializeField] float attackCooldown = 1f;
+    private float lastAttackTime = -Mathf.Infinity;
+    private Animator anim;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
         moveScript = GetComponent<ExplodingEnemyMove>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -27,6 +33,9 @@ public class EnemyExploder : MonoBehaviour
         {
             timerStarted = true;
             timer = explosionDelay;
+
+            if (anim != null)
+                anim.SetBool("isPreparing", true); 
         }
 
         if (timerStarted)
@@ -35,7 +44,7 @@ public class EnemyExploder : MonoBehaviour
 
             if (timer <= 0f)
             {
-                Explode();
+                Explode(); 
             }
         }
     }
@@ -69,11 +78,24 @@ public class EnemyExploder : MonoBehaviour
 
     void Explode()
     {
+        if (hasExploded) return;
         hasExploded = true;
+
+        if (anim != null)
+        {
+            anim.SetTrigger("Explode");
+            anim.SetBool("isPreparing", false);
+        }
 
         if (explosionEffect != null)
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
 
+        Destroy(gameObject, 0.5f); 
+    }
+
+
+    public void ExplodeDamage() 
+    {
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
         foreach (var hit in hits)
         {
@@ -86,10 +108,7 @@ public class EnemyExploder : MonoBehaviour
                 }
             }
         }
-
-        Destroy(gameObject);
     }
-
 
 
 
@@ -98,5 +117,8 @@ public class EnemyExploder : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, explosionRadius);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
