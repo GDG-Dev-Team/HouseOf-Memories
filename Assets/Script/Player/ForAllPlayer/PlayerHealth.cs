@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Diagnostics;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
@@ -9,7 +7,10 @@ public class PlayerHealth : MonoBehaviour
     public GameObject health1;
     public GameObject health2;
     public GameObject health3;
-    public int Health;
+    public int Health = 3;
+
+    private bool isInvincible = false;
+    [SerializeField] private float invincibilityDuration = 0.5f;
 
     void Awake()
     {
@@ -17,78 +18,33 @@ public class PlayerHealth : MonoBehaviour
             instance = this;
     }
 
-
-
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            Health--;
-
-            if (Health == 0)
-            {
-                Destroy(gameObject);
-                Time.timeScale = 0;
-                SceneManage.instance.LoadMenu("Lose Menu");
-            }
-        }
-        switch (Health)
-        {
-            case 0:
-            {
-                health1.gameObject.SetActive(false);
-                health2.gameObject.SetActive(false);
-                health3.gameObject.SetActive(false);
-                break;
-            }
-            case 1:
-            {
-                health1.gameObject.SetActive(true);
-                health2.gameObject.SetActive(false);
-                health3.gameObject.SetActive(false);
-                break;
-            }
-            case 2:
-            {
-                health1.gameObject.SetActive(true);
-                health2.gameObject.SetActive(true);
-                health3.gameObject.SetActive(false);
-                break;
-            }
-            case 3:
-            {
-                health1.gameObject.SetActive(true);
-                health2.gameObject.SetActive(true);
-                health3.gameObject.SetActive(true);
-
-                break;
-            }
-        }
-
-
-    }
-
-
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.CompareTag("Enemy"))
         {
-            Health--;
-
-            if (Health == 0)
-            {
-                Destroy(gameObject);
-                Time.timeScale = 0;
-                SceneManage.instance.LoadMenu("Lose Menu");
-            }
+            TakeDamage(1);
         }
+}
+
+//    private void OnCollisionEnter2D(Collision2D collision)
+//{
+//        if (collision.CompareTag("Enemy"))
+//        {
+//            TryTakeDamage(1);
+//        }
+//    }
+
+    public void TakeDamage(int damage)
+    {
+        if (!isInvincible)
+            StartCoroutine(TakeDamageWithCooldown(damage));
     }
 
-        public void TakeDamage(int damage)
+    private IEnumerator TakeDamageWithCooldown(int damage)
     {
-        Health -= damage;
+        isInvincible = true;
 
+        Health -= damage;
         if (Health <= 0)
         {
             Health = 0;
@@ -97,40 +53,16 @@ public class PlayerHealth : MonoBehaviour
             SceneManage.instance.LoadMenu("Lose Menu");
         }
 
+        UpdateHearts();
 
-        switch (Health)
-        {
-            case 0:
-                {
-                    health1.gameObject.SetActive(false);
-                    health2.gameObject.SetActive(false);
-                    health3.gameObject.SetActive(false);
-                    break;
-                }
-            case 1:
-                {
-                    health1.gameObject.SetActive(true);
-                    health2.gameObject.SetActive(false);
-                    health3.gameObject.SetActive(false);
-                    break;
-                }
-            case 2:
-                {
-                    health1.gameObject.SetActive(true);
-                    health2.gameObject.SetActive(true);
-                    health3.gameObject.SetActive(false);
-                    break;
-                }
-            case 3:
-                {
-                    health1.gameObject.SetActive(true);
-                    health2.gameObject.SetActive(true);
-                    health3.gameObject.SetActive(true);
+        yield return new WaitForSeconds(invincibilityDuration);
+        isInvincible = false;
+    }
 
-                    break;
-                }
-        }
-
-
+    private void UpdateHearts()
+    {
+        health1.SetActive(Health >= 1);
+        health2.SetActive(Health >= 2);
+        health3.SetActive(Health >= 3);
     }
 }
