@@ -23,7 +23,7 @@ public class EnemyMove : MonoBehaviour
     [SerializeField] float attackRange = 1.5f;
     private Animator anim;
     private bool isAttacking = false;
-    [SerializeField] float attackCooldown = 1f; 
+    [SerializeField] float attackCooldown = 1f;
     private float lastAttackTime = -Mathf.Infinity;
     private bool isInAttackRange = false;
 

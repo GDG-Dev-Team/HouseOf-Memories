@@ -126,9 +126,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b771d5001d8d96e4daad326b66a57d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolSpeed: 7
-  groundCheckPoint: {fileID: 4571216963015179794}
-  wallCheckPoint: {fileID: 9185264064079486483}
+  patrolSpeed: 20
+  groundCheckPoint: {fileID: 0}
+  wallCheckPoint: {fileID: 0}
   circleRadius: 0.2
   groundLayer:
     serializedVersion: 2
@@ -137,7 +137,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   chaseSpeed: 15
-  LineOfSite: 50
+  LineOfSite: 100
+  attackRange: 20
+  attackCooldown: 1
 --- !u!70 &1491998817938575954
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
