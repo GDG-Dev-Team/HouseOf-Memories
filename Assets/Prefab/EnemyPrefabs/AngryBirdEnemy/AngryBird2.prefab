@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2639918897911959172}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheckPoint
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3248625720735482601}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallCheckPoint
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 6731240976685645668}
   - component: {fileID: 5675250270128597681}
   - component: {fileID: 5076205329829251055}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AngryBird2
   m_TagString: Enemy
   m_Icon: {fileID: 0}

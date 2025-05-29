@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4049635662711504119}
   - component: {fileID: 6969269029828214364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eye R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 961764460506724000}
   - component: {fileID: 716669684104569899}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9139562635286781303}
   - component: {fileID: 6535626610343428210}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eyebrows L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3518289534700654199}
   - component: {fileID: 5416304840040632051}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +358,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6410716660693771370}
   - component: {fileID: 3298498674570822450}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eyebrows R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 49295997996162781}
   - component: {fileID: 4123326150030766452}
   - component: {fileID: 8677503551951673447}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GuardEnemy3
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -710,7 +710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2294766780909296884}
   - component: {fileID: 2414660313808157229}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -797,7 +797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 306082338060312612}
   - component: {fileID: 4724561922201233991}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -884,7 +884,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1322608241377871253}
   - component: {fileID: 7286313052757402841}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ear L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -971,7 +971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6685239565394624694}
   - component: {fileID: 7550167842971768759}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1058,7 +1058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3546701671950163947}
   - component: {fileID: 2528365024302431088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Foot 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1144,7 +1144,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3431906155831399636}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Horse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1187,7 +1187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5073040232472344923}
   - component: {fileID: 3491993709120477421}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1274,7 +1274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8370332032119069733}
   - component: {fileID: 5356017084499988678}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eye L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1361,7 +1361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8319816146731046543}
   - component: {fileID: 2099915600193018782}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1448,7 +1448,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3689880966525136611}
   - component: {fileID: 5306396610596005790}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1534,7 +1534,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6961150704194638843}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheckPoint
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -1566,7 +1566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3890082697892822913}
   - component: {fileID: 5883831679830224238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Foot 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1653,7 +1653,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2089640996450927819}
   - component: {fileID: 2321733142227357451}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1740,7 +1740,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8500591382073013860}
   - component: {fileID: 6215796313631176828}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Nail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1827,7 +1827,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7209361420262905725}
   - component: {fileID: 2491106108304113561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ear R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1914,7 +1914,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4107742544912225471}
   - component: {fileID: 282147313194673382}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Foot 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2001,7 +2001,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5138833581028989424}
   - component: {fileID: 7757626511264266866}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chara_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2066,7 +2066,7 @@ GameObject:
   m_Component:
   - component: {fileID: 868038760595116030}
   - component: {fileID: 7247995594996154759}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2153,7 +2153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2404574896146665080}
   - component: {fileID: 5454140760286512552}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Foot 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2239,7 +2239,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 964382193383850658}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallCheckPoint
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
