@@ -23,7 +23,7 @@ public class SimpleAttack : MonoBehaviour
         float moveInput = Input.GetAxisRaw("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y); // انتبهي: velocity وليس linearVelocity
 
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.M))
         {
             StartCoroutine(Attack());
         }
