@@ -1125,7 +1125,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7027281160704079786, guid: 99db25299f00042a18ff053621aeb619, type: 3}
   firePoint: {fileID: 4794879747663903039}
   playerTransform: {fileID: 6423644984580457889}
-  bulletSpeed: 50
+  bulletSpeed: 60
   shootCooldown: 0.3
 --- !u!114 &8491484927232529758
 MonoBehaviour:
@@ -1235,7 +1235,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1283,7 +1283,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 126.53088
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
