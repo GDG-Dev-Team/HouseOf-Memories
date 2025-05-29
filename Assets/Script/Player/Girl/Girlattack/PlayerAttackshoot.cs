@@ -14,12 +14,21 @@ public class PlayerGunAttack : MonoBehaviour
 
     private float nextFireTime = 0f;
 
+    private void Start()
+    {
+        // البحث عن Animator في الأبناء إن لم يتم تعيينه يدويًا
+        if (animator == null)
+        {
+            animator = GetComponentInChildren<Animator>();
+        }
+    }
+
     void Update()
     {
         if (Time.time >= nextFireTime && Input.GetKeyDown(KeyCode.E))
         {
             if (animator != null)
-                animator.SetTrigger("Shoot");
+                animator.SetTrigger("Shoot"); // سيشغّل أنميشن يحتوي على Event
 
             nextFireTime = Time.time + shootCooldown;
         }
@@ -42,7 +51,6 @@ public class PlayerGunAttack : MonoBehaviour
         scale.x = Mathf.Abs(scale.x) * Mathf.Sign(playerTransform.localScale.x);
         bullet.transform.localScale = scale;
 
-        // تدمير الطلقة بعد 5 ثواني (اختياري)
         Destroy(bullet, 5f);
     }
 }
