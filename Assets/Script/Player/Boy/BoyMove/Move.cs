@@ -65,8 +65,8 @@ public class Move : MonoBehaviour
         direction = new Vector2(input * speed, rb2d.linearVelocity.y);
         rb2d.linearVelocity = direction;
 
-        anim.SetBool("IsRunning", input != 0 && !isDashing);
-        anim.SetBool("VelocityY", rb2d.linearVelocity.y != 0);
+       // anim.SetBool("IsRunning", input != 0 && !isDashing);
+       // anim.SetBool("VelocityY", rb2d.linearVelocity.y != 0);
         
         if (Input.GetKeyDown(KeyCode.RightShift) && canDash)
         {
