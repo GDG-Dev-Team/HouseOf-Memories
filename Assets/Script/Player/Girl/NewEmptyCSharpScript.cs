@@ -15,7 +15,6 @@ public class SimplePlayerAnim : MonoBehaviour
 
         float verticalVelocity = rb.linearVelocity.y;
 
-        // عند القفز لأعلى
         if (verticalVelocity > 0.1f && !wasJumping)
         {
             animator.SetBool("isJumping", true);
@@ -23,7 +22,6 @@ public class SimplePlayerAnim : MonoBehaviour
             wasJumping = true;
             wasFalling = false;
         }
-        // عند بدء السقوط
         else if (verticalVelocity < -0.1f && !wasFalling)
         {
             animator.SetBool("isFalling", true);
@@ -31,7 +29,6 @@ public class SimplePlayerAnim : MonoBehaviour
             wasFalling = true;
             wasJumping = false;
         }
-        // عند الثبات أو الوقوف
         else if (Mathf.Abs(verticalVelocity) <= 0.1f)
         {
             animator.SetBool("isJumping", false);
