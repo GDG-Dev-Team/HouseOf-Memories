@@ -1462,9 +1462,9 @@ MonoBehaviour:
   mouseAimMask:
     serializedVersion: 2
     m_Bits: 0
-  audioSource: {fileID: 0}
-  runClip: {fileID: 0}
-  dashClip: {fileID: 0}
+  audioSource: {fileID: 5930892944820722356}
+  runClip: {fileID: 8300000, guid: fc8a72f1dee4cba4ca760d1d51ea4100, type: 3}
+  dashClip: {fileID: 8300000, guid: 3353183deb1d1bd4b8b273ff5d0e5560, type: 3}
   tr: {fileID: 896720225808001649}
   PlayerHealth: 3
   cameraTransform: {fileID: 4419152013911187090}
@@ -1804,14 +1804,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3740662310826274759}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13ff443e8542afc44a6212a836d47a63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1749089670329945508}
-  rb: {fileID: 9151794049289056195}
-  moveSpeed: 5
   attackDuration: 0.5
   attackPoint: {fileID: 6900831297435423054}
   attackRange: 0.5

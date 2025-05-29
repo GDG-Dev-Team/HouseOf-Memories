@@ -3088,11 +3088,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bab5081b83767234689b68a5914a8f56, type: 3}
---- !u!82 &1911099509 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5930892944820722356, guid: 821b2b7e55a55f141b981a3740948983, type: 3}
-  m_PrefabInstance: {fileID: 7876907935769075314}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1921790470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3774,25 +3769,9 @@ PrefabInstance:
       propertyPath: health3
       value: 
       objectReference: {fileID: 1028099057}
-    - target: {fileID: 2629976297081309963, guid: 821b2b7e55a55f141b981a3740948983, type: 3}
-      propertyPath: runClip
-      value: 
-      objectReference: {fileID: 8300000, guid: fc8a72f1dee4cba4ca760d1d51ea4100, type: 3}
-    - target: {fileID: 2629976297081309963, guid: 821b2b7e55a55f141b981a3740948983, type: 3}
-      propertyPath: dashClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 3353183deb1d1bd4b8b273ff5d0e5560, type: 3}
-    - target: {fileID: 2629976297081309963, guid: 821b2b7e55a55f141b981a3740948983, type: 3}
-      propertyPath: audioSource
-      value: 
-      objectReference: {fileID: 1911099509}
     - target: {fileID: 3740662310826274759, guid: 821b2b7e55a55f141b981a3740948983, type: 3}
       propertyPath: m_Name
       value: Boy
-      objectReference: {fileID: 0}
-    - target: {fileID: 4049156485681843379, guid: 821b2b7e55a55f141b981a3740948983, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7742735896827634004, guid: 821b2b7e55a55f141b981a3740948983, type: 3}
       propertyPath: m_LocalPosition.x
