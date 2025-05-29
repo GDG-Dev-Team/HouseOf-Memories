@@ -1,31 +1,36 @@
-﻿using UnityEngine;
+﻿using Mono.Cecil;
+using UnityEngine;
 
 public class lightShoot : MonoBehaviour
 {
-    [SerializeField] float bulletSpeed = 30f;
+    [SerializeField] float bulletDamage = 10f;
+    [SerializeField] float bulletSpeed = 20f;
+    [SerializeField] float lifeTime = 3f;
     [SerializeField] float bulletLifetime = 2f;
-
     private Rigidbody2D rb;
+
+
+
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.linearVelocity = transform.right * bulletSpeed;
-
+        Vector3 force = transform.right * bulletSpeed;
+        rb.AddForce(force, ForceMode2D.Impulse);
         Destroy(gameObject, bulletLifetime);
+
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if (collision.CompareTag("Enemy"))
+        EnemyHealth enemy = collision.collider.GetComponent<EnemyHealth>();
+        if (enemy != null)
         {
-            EnemyHealth enemy = collision.GetComponent<EnemyHealth>();
-            if (enemy != null)
-            {
-                enemy.TakeDamage(1); // غيري الرقم لو بدك ضرر أكثر
-            }
+            enemy.TakeDamage(bulletDamage);
         }
 
-        Destroy(gameObject); // تتدمر بعد أول اصطدام
+        Destroy(gameObject);
     }
 }

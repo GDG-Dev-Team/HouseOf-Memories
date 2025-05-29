@@ -4,6 +4,14 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public int damage = 1;
+    [SerializeField] private float lifeTime = 0.8f;
+
+
+    void Start()
+    {
+        Destroy(gameObject, lifeTime); // ÍĞİ ÇáØáŞÉ ÈÚÏ ãÏÉ ÊáŞÇÆíÇğ
+    }
+
 
 
     private void OnTriggerEnter2D(Collider2D collision)
