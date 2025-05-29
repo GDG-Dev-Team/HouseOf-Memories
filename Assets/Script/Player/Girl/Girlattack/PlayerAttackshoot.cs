@@ -12,6 +12,10 @@ public class PlayerGunAttack : MonoBehaviour
     [Header("Animation")]
     [SerializeField] private Animator animator;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip shootClip;
+
     private float nextFireTime = 0f;
 
     private void Start()
@@ -50,6 +54,12 @@ public class PlayerGunAttack : MonoBehaviour
         Vector3 scale = bullet.transform.localScale;
         scale.x = Mathf.Abs(scale.x) * Mathf.Sign(playerTransform.localScale.x);
         bullet.transform.localScale = scale;
+
+        // ✅ تشغيل صوت الطلقة
+        if (audioSource != null && shootClip != null)
+        {
+            audioSource.PlayOneShot(shootClip);
+        }
 
         Destroy(bullet, 5f);
     }

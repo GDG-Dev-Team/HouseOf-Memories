@@ -6,11 +6,12 @@ public class PlayerMove : MonoBehaviour
 {
     [HideInInspector]
     public static Rigidbody2D rb2d;
+
+    [Header("Movement")]
     public bool enablePlatformMovement;
-    [Header("move")]
-    Vector2 direction;
     public float speed;
     float input;
+    Vector2 direction;
     Animator anim;
 
     [Header("Dash")]
@@ -21,11 +22,16 @@ public class PlayerMove : MonoBehaviour
     private float DashCoolDown = 1f;
     private bool isFacingRight = true;
 
-    [SerializeField]
-    private TrailRenderer tr;
+    [SerializeField] private TrailRenderer tr;
     public int PlayerHealth = 3;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip dashClip;
+    [SerializeField] private AudioClip runClip;
+
+    [SerializeField] private Transform cameraTransform;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -33,35 +39,34 @@ public class PlayerMove : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    // Update is called once per frame
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
-            StartCoroutine(Dash());void Update()
-{
-    if (enablePlatformMovement)
-    {
-        // حركة أفقية عادية
-        float move = Input.GetAxis("Horizontal");
-        GetComponent<Rigidbody2D>().linearVelocity = new Vector2(move * speed, 0);
-    }
-}
+            StartCoroutine(Dash());
         }
-        Flip();
 
-        //velocity
+        Flip();
     }
 
     void FixedUpdate()
     {
-        if (isDashing)
-        {
-            return;
-        }
-        direction = new Vector2(input * speed, rb2d.linearVelocityY);
+        if (isDashing) return;
+
+        direction = new Vector2(input * speed, rb2d.linearVelocity.y);
         rb2d.linearVelocity = direction;
+
+        // 🔊 تشغيل صوت الجري
+        if (Mathf.Abs(input) > 0.01f && !audioSource.isPlaying)
+        {
+            audioSource.clip = runClip;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
+        else if (Mathf.Abs(input) <= 0.01f && audioSource.clip == runClip)
+        {
+            audioSource.Stop();
+        }
     }
 
     public void playermove(InputAction.CallbackContext context)
@@ -73,29 +78,33 @@ public class PlayerMove : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
+
+        // 🔊 صوت الداش
+        if (audioSource != null && dashClip != null)
+            audioSource.PlayOneShot(dashClip);
+
         float originalGravity = rb2d.gravityScale;
         rb2d.gravityScale = 0f;
         rb2d.linearVelocity = new Vector2(transform.localScale.x * DashPower, 0f);
         tr.emitting = true;
+
         yield return new WaitForSeconds(DashingTime);
+
         tr.emitting = false;
         rb2d.gravityScale = originalGravity;
         isDashing = false;
+
         yield return new WaitForSeconds(DashCoolDown);
         canDash = true;
     }
-     
-    [SerializeField] private Transform cameraTransform; 
 
     private void Flip()
     {
         if (isFacingRight && input < 0f || !isFacingRight && input > 0f)
         {
-            // detach
-            
-             Vector3 camPosition = cameraTransform.position;
-             Quaternion camRotation = cameraTransform.rotation;
-             cameraTransform.SetParent(null);
+            Vector3 camPosition = cameraTransform.position;
+            Quaternion camRotation = cameraTransform.rotation;
+            cameraTransform.SetParent(null);
 
             isFacingRight = !isFacingRight;
             Vector3 localscale = transform.localScale;
@@ -107,22 +116,4 @@ public class PlayerMove : MonoBehaviour
             cameraTransform.rotation = camRotation;
         }
     }
-    void Update0()
-    {
-        if (enablePlatformMovement)
-        {
-            // حركة أفقية عادية
-            float move = Input.GetAxis("Horizontal");
-            GetComponent<Rigidbody2D>().linearVelocity = new Vector2(move * speed, 0);
-        }
-    }
-    //playerhealth
-    //private void OnTriggerEnter2D(Collider2D collision) //OnTriggerEnter2D ��� �������� ����
-    //{
-    //    if (collision.tag == "Enemy")
-    //        PlayerHealth--;
-    //    Debug.Log(PlayerHealth);
-    //    if (PlayerHealth <= 0)
-    //        Debug.Log("your Dead");
-    //}
 }
