@@ -2,16 +2,20 @@
 
 public class SimpleAttack : MonoBehaviour
 {
-    public Animator animator; // من الابن
+    public Animator animator;
 
     [Header("Attack Settings")]
     public float attackDuration = 0.5f;
-    public Transform attackPoint; // نقطة الضرب
+    public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayer;
     public int damage = 1;
 
     private bool isAttacking = false;
+
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip attackClip;
 
     void Update()
     {
@@ -28,10 +32,14 @@ public class SimpleAttack : MonoBehaviour
         isAttacking = true;
         animator.SetTrigger("Attack");
 
+        // ✅ تشغيل الصوت هنا
+        if (audioSource != null && attackClip != null)
+        {
+            audioSource.PlayOneShot(attackClip);
+        }
+
         yield return new WaitForSeconds(attackDuration / 3f);
-
         DoAttack();
-
         yield return new WaitForSeconds(attackDuration * 2f / 3f);
 
         isAttacking = false;
