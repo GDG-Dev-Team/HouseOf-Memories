@@ -6,16 +6,9 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        // نتاكد إذا اللاعب لف
-        if (playerTransform.localScale.x < 0)
-        {
-            transform.localScale = new Vector3(1, 1, 1); // لف السلاح
-        }
-        else
-        {
-            transform.localScale = new Vector3(1, 1, 1); // رجعه للوضع الطبيعي
-        }
+        Vector3 gunScale = transform.localScale;
+        float direction = Mathf.Sign(playerTransform.localScale.x);
+        gunScale.x = Mathf.Abs(gunScale.x) * direction;
+        transform.localScale = gunScale;
     }
-
-
 }

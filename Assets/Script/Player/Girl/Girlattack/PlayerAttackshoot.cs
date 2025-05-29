@@ -16,9 +16,14 @@ public class PlayerAttackshoot : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation);
-        Destroy(bullet, 5f);
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.linearVelocity = firePoint.right * 30f; // نفس اتجاه firePoint الحالي
+        }
     }
+
+
 }
-
-
