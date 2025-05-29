@@ -61,18 +61,18 @@ public class Move : MonoBehaviour
         direction = new Vector2(input * speed, rb2d.linearVelocity.y);
         rb2d.linearVelocity = direction;
 
-        // ÊÔÛíá ÕæÊ ÇáÌÑí ÚäÏ ÇáÍÑßÉ
-        if (input != 0 && !audioSource.isPlaying)
-        {
-            audioSource.clip = runClip;
-            audioSource.loop = true;
-            audioSource.Play();
-        }
-        // ÅíÞÇÝ ÕæÊ ÇáÌÑí ÚäÏ ÇáÊæÞÝ
-        else if (input == 0 && audioSource.clip == runClip)
-        {
-            audioSource.Stop();
-        }
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     //   if (input != 0 && !audioSource.isPlaying)
+       // {
+        //    audioSource.clip = runClip;
+          //  audioSource.loop = true;
+           // audioSource.Play();
+    //    }
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+      //  else if (input == 0 && audioSource.clip == runClip)
+       // {
+        //    audioSource.Stop();
+      //  }
 
         if (Input.GetKeyDown(KeyCode.RightShift) && canDash)
         {
