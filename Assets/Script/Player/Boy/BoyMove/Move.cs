@@ -4,7 +4,6 @@ using UnityEngine.InputSystem;
 
 public class Move : MonoBehaviour
 {
-    
     private Animator anim;
     public static Rigidbody2D rb2d;
     [SerializeField] Transform targetTransform;
@@ -13,10 +12,9 @@ public class Move : MonoBehaviour
     Vector2 direction;
     float input;
     [SerializeField] float speed;
-    
+
     private Camera mainCamera;
     [SerializeField] LayerMask mouseAimMask;
-
 
     [Header("Dash")]
     private bool canDash = true;
@@ -26,20 +24,20 @@ public class Move : MonoBehaviour
     private float DashCoolDown = 1f;
     private bool isFacingRight = true;
     private bool IsRunning = false;
+
     [Header("Audio")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip runClip;
     [SerializeField] private AudioClip dashClip;
-    [SerializeField]private TrailRenderer tr;
+
+    [SerializeField] private TrailRenderer tr;
     [SerializeField] int PlayerHealth = 3;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         mainCamera = Camera.main;
-      
     }
 
     private void Update()
@@ -53,29 +51,35 @@ public class Move : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (isDashing)
         {
             return;
         }
-       // direction = new Vector2(input * speed, rb2d.linearVelocityY);
-       // rb2d.linearVelocity = direction;
+
         direction = new Vector2(input * speed, rb2d.linearVelocity.y);
         rb2d.linearVelocity = direction;
 
-       // anim.SetBool("IsRunning", input != 0 && !isDashing);
-       // anim.SetBool("VelocityY", rb2d.linearVelocity.y != 0);
-        
+        //  ‘€Ì· ’Ê  «·Ã—Ì ⁄‰œ «·Õ—ﬂ…
+        if (input != 0 && !audioSource.isPlaying)
+        {
+            audioSource.clip = runClip;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
+        // ≈Ìﬁ«› ’Ê  «·Ã—Ì ⁄‰œ «· Êﬁ›
+        else if (input == 0 && audioSource.clip == runClip)
+        {
+            audioSource.Stop();
+        }
+
         if (Input.GetKeyDown(KeyCode.RightShift) && canDash)
         {
             StartCoroutine(Dash());
         }
+
         Flip();
-
-      //  anim.SetBool("IsRunning", input != 0 && !isDashing);
-
     }
 
     public void mover(InputAction.CallbackContext context)
@@ -90,29 +94,27 @@ public class Move : MonoBehaviour
         audioSource.PlayOneShot(dashClip);
         anim.SetBool("IsDashing", true);
 
-
         float originalGravity = rb2d.gravityScale;
         rb2d.gravityScale = 0f;
         rb2d.linearVelocity = new Vector2(transform.localScale.x * DashPower, 0f);
         tr.emitting = true;
+
         yield return new WaitForSeconds(DashingTime);
         tr.emitting = false;
         rb2d.gravityScale = originalGravity;
         isDashing = false;
+
         yield return new WaitForSeconds(DashCoolDown);
         canDash = true;
     }
 
-
-      
-    [SerializeField] private Transform cameraTransform; 
+    [SerializeField] private Transform cameraTransform;
 
     private void Flip()
     {
         if (isFacingRight && input < 0f || !isFacingRight && input > 0f)
         {
             Debug.Log($"input: {input}, isFacingRight: {isFacingRight}");
-
 
             Vector3 camPosition = cameraTransform.position;
             Quaternion camRotation = cameraTransform.rotation;
@@ -126,7 +128,6 @@ public class Move : MonoBehaviour
             cameraTransform.SetParent(transform);
             cameraTransform.position = camPosition;
             cameraTransform.rotation = camRotation;
-
         }
     }
 }
