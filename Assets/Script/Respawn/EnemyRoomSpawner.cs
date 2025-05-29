@@ -11,6 +11,7 @@ public class EnemyRoomSpawner : MonoBehaviour
     public int maxEnemies = 3;
     public float respawnDelay = 5f;
     public Vector2 spawnAreaSize = new Vector2(5f, 5f); // Width & height of room
+    [SerializeField] private float spawnZ = 0f;
 
     private List<GameObject> currentEnemies = new List<GameObject>();
 
@@ -56,12 +57,14 @@ public class EnemyRoomSpawner : MonoBehaviour
 
     private Vector3 GetRandomPositionInArea()
     {
-        Vector2 offset = new Vector2(
-            Random.Range(-spawnAreaSize.x / 2f, spawnAreaSize.x / 2f),
-            Random.Range(-spawnAreaSize.y / 2f, spawnAreaSize.y / 2f)
-        );
+       Vector2 offset = new Vector2(
+        Random.Range(-spawnAreaSize.x / 2f, spawnAreaSize.x / 2f),
+        Random.Range(-spawnAreaSize.y / 2f, spawnAreaSize.y / 2f)
+    );
 
-        return transform.position + (Vector3)offset;
+    Vector3 spawnPosition = transform.position + (Vector3)offset;
+    spawnPosition.z = spawnZ; // force Z position
+    return spawnPosition;
     }
 
     private void OnDrawGizmosSelected()

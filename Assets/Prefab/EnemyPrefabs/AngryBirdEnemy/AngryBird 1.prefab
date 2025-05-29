@@ -63,8 +63,8 @@ Transform:
   m_GameObject: {fileID: 2595494724230588240}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 186.3, y: 42.1, z: 0}
-  m_LocalScale: {x: 27, y: 27, z: 27}
+  m_LocalPosition: {x: 185.12, y: 40.06, z: 0}
+  m_LocalScale: {x: 52.14671, y: 52.14671, z: 52.14671}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1284013047174267879}
@@ -138,7 +138,7 @@ MonoBehaviour:
     m_Bits: 128
   chaseSpeed: 15
   LineOfSite: 100
-  attackRange: 20
+  attackRange: 24
   attackCooldown: 1
 --- !u!212 &3579550503073115776
 SpriteRenderer:
@@ -181,9 +181,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1684095401
+  m_SortingLayer: 3
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1196779015, guid: 198300ed0b8763d408d30a5ffe6f3a76, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
