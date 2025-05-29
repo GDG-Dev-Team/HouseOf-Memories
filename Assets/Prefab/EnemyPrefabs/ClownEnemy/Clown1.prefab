@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6555618350861364197}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheckPoint
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3578345776607855573}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallCheckPoint
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 6407018639727826714}
   - component: {fileID: 5325679082829746375}
   - component: {fileID: 3839113048882799887}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clown1
   m_TagString: Enemy
   m_Icon: {fileID: 0}

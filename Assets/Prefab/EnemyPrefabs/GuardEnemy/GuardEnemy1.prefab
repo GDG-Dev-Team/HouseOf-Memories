@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3129564008594939126}
   - component: {fileID: 7983016366545882686}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 4461148347905781902}
   - component: {fileID: 1623352863178043528}
   - component: {fileID: 8519906137078021620}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5852055140711226556}
   - component: {fileID: 7338625461769686095}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Glove R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3116080348595856013}
   - component: {fileID: 1271864216745746572}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Glove L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8793356008849081741}
   - component: {fileID: 3484524021999828833}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eye L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -467,7 +467,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7649912063272070066}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallCheckPoint
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
@@ -499,7 +499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6539202248243459483}
   - component: {fileID: 5655008312982830094}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Foot R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -586,7 +586,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5352727527032289432}
   - component: {fileID: 5528505658076626703}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Foot L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -679,7 +679,7 @@ GameObject:
   - component: {fileID: 7025653710712879362}
   - component: {fileID: 2903037094696632657}
   - component: {fileID: 3412291308536783389}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GuardEnemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -941,7 +941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4992722775940900947}
   - component: {fileID: 4896243958679564526}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1028,7 +1028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5815478610320178811}
   - component: {fileID: 1134590727944479128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eyebrows R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1114,7 +1114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 548754370651879381}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundCheckPoint
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -1146,7 +1146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5710060419072005340}
   - component: {fileID: 2429320307248843861}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Chara_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1214,7 +1214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 74367395076194153}
   - component: {fileID: 6930944284503168808}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hand R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1301,7 +1301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1787865010573989838}
   - component: {fileID: 1087632356817484183}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eyebrows L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1388,7 +1388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8328474062012112054}
   - component: {fileID: 515863276027610749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1475,7 +1475,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4856807366032365076}
   - component: {fileID: 523072856456235988}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Eye R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1562,7 +1562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3594296730937439448}
   - component: {fileID: 7380397743871313102}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
