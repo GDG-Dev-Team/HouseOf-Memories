@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1906473539571367707}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.443, y: -0.747, z: 0}
+  m_LocalPosition: {x: 0.443, y: -0.69, z: 0}
   m_LocalScale: {x: 1.3, y: 1.325, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -64,7 +64,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 144.14, y: 22.581, z: 0}
-  m_LocalScale: {x: 25.274, y: 25.274, z: 25.274}
+  m_LocalScale: {x: 57.519264, y: 57.519264, z: 57.519264}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5855696140670651357}
@@ -137,8 +137,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   chaseSpeed: 15
-  LineOfSite: 50
-  attackRange: 13
+  LineOfSite: 90
+  attackRange: 39
   attackCooldown: 1
 --- !u!70 &664754954560464283
 CapsuleCollider2D:
@@ -174,8 +174,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.008463669, y: 0.2120943}
-  m_Size: {x: 0.85548633, y: 1.7946221}
+  m_Offset: {x: -0.0021095173, y: 0.011946018}
+  m_Size: {x: 0.55049914, y: 1.3943255}
   m_Direction: 0
 --- !u!212 &8913984175345372408
 SpriteRenderer:
