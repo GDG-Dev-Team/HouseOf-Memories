@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "\u30B7\u30F3\u30D5\u309A\u30EB\u306A\u5927\u6C17\u306E\u80CC\u666F\u30D5\u30EC\u30FC\u30E0\u30A4\u30E9\u30B9\u30C8\u753B\u50CF\u3068PNG\u30D5\u30EA\u30FC\u7D20\u6750\u900F\u904E\u306E\u7121\u6599\u30BF\u3099\u30A6\u30F3\u30ED\u30FC\u30C8\u3099_-_Pngtree-removebg-preview_0": 3958231057575039653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
