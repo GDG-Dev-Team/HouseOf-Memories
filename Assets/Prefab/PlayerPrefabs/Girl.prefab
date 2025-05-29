@@ -667,6 +667,7 @@ GameObject:
   - component: {fileID: 911441531747051735}
   - component: {fileID: 5329041383685722559}
   - component: {fileID: 7010314957671399857}
+  - component: {fileID: 106793015001589777}
   m_Layer: 0
   m_Name: Girl
   m_TagString: Player
@@ -1123,6 +1124,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7027281160704079786, guid: 99db25299f00042a18ff053621aeb619, type: 3}
   firePoint: {fileID: 4794879747663903039}
+  playerTransform: {fileID: 6423644984580457889}
+  bulletSpeed: 50
+  shootCooldown: 0.3
 --- !u!114 &8491484927232529758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1231,7 +1235,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1380,6 +1384,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 8806025511555070855}
   rb: {fileID: 8576936909376203681}
+--- !u!68 &106793015001589777
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2194611345797344985}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.2653355, y: -0.5113517}
+  - {x: 0.27105886, y: -0.51135206}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &2471792650355610511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,7 +1965,7 @@ Transform:
   m_GameObject: {fileID: 4247323687784655070}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.6836168, w: 0.7298411}
-  m_LocalPosition: {x: -0.029453754, y: 4.501348, z: 0}
+  m_LocalPosition: {x: 0.10145446, y: 4.655627, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
