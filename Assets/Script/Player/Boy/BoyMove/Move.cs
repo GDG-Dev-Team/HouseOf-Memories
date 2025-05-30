@@ -91,8 +91,10 @@ public class Move : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
-        audioSource.PlayOneShot(dashClip);
-        anim.SetBool("IsDashing", true);
+
+        // 🔊 صوت الداش
+        if (audioSource != null && dashClip != null)
+            audioSource.PlayOneShot(dashClip);
 
         float originalGravity = rb2d.gravityScale;
         rb2d.gravityScale = 0f;
@@ -100,6 +102,7 @@ public class Move : MonoBehaviour
         tr.emitting = true;
 
         yield return new WaitForSeconds(DashingTime);
+
         tr.emitting = false;
         rb2d.gravityScale = originalGravity;
         isDashing = false;
