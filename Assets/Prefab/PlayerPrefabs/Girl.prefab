@@ -668,6 +668,7 @@ GameObject:
   - component: {fileID: 5329041383685722559}
   - component: {fileID: 7010314957671399857}
   - component: {fileID: 106793015001589777}
+  - component: {fileID: -6674624144096219020}
   m_Layer: 0
   m_Name: Girl
   m_TagString: Player
@@ -1128,6 +1129,8 @@ MonoBehaviour:
   bulletSpeed: 60
   shootCooldown: 0.5
   animator: {fileID: 8806025511555070855}
+  audioSource: {fileID: 0}
+  shootClip: {fileID: 0}
 --- !u!114 &8491484927232529758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1144,6 +1147,9 @@ MonoBehaviour:
   speed: 50
   tr: {fileID: 8491230456950605604}
   PlayerHealth: 3
+  audioSource: {fileID: 0}
+  dashClip: {fileID: 0}
+  runClip: {fileID: 0}
   cameraTransform: {fileID: 3908531475119428114}
 --- !u!114 &7249057245852818584
 MonoBehaviour:
@@ -1428,6 +1434,18 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &-6674624144096219020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2194611345797344985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f5ed91a12974610a92e09d22d83c4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2471792650355610511
 GameObject:
   m_ObjectHideFlags: 0

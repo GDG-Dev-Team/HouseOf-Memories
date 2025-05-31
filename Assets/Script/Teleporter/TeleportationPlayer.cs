@@ -29,4 +29,22 @@ public class TeleportationPlayer : MonoBehaviour
         }
         
     }
+
+
+     private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Teleporter"))
+        {
+            CurrentTeleporter = other.gameObject;
+            
+        }
+    }
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject == CurrentTeleporter)
+        {
+            CurrentTeleporter = null;
+        }
+        
+    }
 }
