@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 2
-  damageCooldown: 0.3
+  damageCooldown: 0
   hurtColor: {r: 1, g: 0, b: 0, a: 1}
   flashDuration: 0.1
 --- !u!114 &5368076439698871728
@@ -168,9 +168,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   chaseSpeed: 15
-  LineOfSite: 100
+  LineOfSite: 60
   attackRange: 20
-  attackCooldown: 1
+  attackCooldown: 3
 --- !u!70 &6791463903822192900
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

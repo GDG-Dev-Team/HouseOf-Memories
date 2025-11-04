@@ -175,10 +175,9 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 0
-  speed: 5
-  LineOfSite: 50
+  lineOfSight: 8
+  attackRange: 2
   jumpForce: 5
-  jumpRange: 50
   jumpCooldown: 1
 --- !u!60 &6042606881873668531
 PolygonCollider2D:
@@ -256,7 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 2
-  damageCooldown: 0.3
+  damageCooldown: 0
   hurtColor: {r: 1, g: 0, b: 0, a: 1}
   flashDuration: 0.1
 --- !u!68 &7178105657933387873
