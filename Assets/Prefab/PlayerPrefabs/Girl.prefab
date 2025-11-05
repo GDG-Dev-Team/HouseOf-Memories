@@ -686,7 +686,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -60.548992, y: 0.08864975, z: -14.041489}
-  m_LocalScale: {x: 35, y: 38, z: 1}
+  m_LocalScale: {x: 45, y: 45, z: 45}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5528037360520573308}
@@ -765,7 +765,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 5
   m_Material: {fileID: 6200000, guid: 0f2f2f6b3f562c54ebded322e20fb240, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1129,8 +1129,8 @@ MonoBehaviour:
   bulletSpeed: 60
   shootCooldown: 0.5
   animator: {fileID: 8806025511555070855}
-  audioSource: {fileID: 0}
-  shootClip: {fileID: 0}
+  audioSource: {fileID: 911441531747051735}
+  shootClip: {fileID: 8300000, guid: 738518b7937eb784b8ed808ffdabff44, type: 3}
 --- !u!114 &8491484927232529758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1144,7 +1144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enablePlatformMovement: 0
-  speed: 50
+  speed: 70
   tr: {fileID: 8491230456950605604}
   PlayerHealth: 3
   audioSource: {fileID: 0}
@@ -1186,7 +1186,7 @@ MonoBehaviour:
   health2: {fileID: 0}
   health3: {fileID: 0}
   Health: 3
-  invincibilityDuration: 1
+  invincibilityDuration: 0
 --- !u!114 &2003366960158183391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1275,13 +1275,13 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2194611345797344985}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3061,13 +3061,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9008531038771534414}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15821111, y: -0, z: -0, w: 0.98740536}
-  m_LocalPosition: {x: 0.039997213, y: 2.4, z: -147.5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.268, y: 0.659, z: -3.59}
   m_LocalScale: {x: 0.031856228, y: 0.02880189, z: 0.21541701}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6423644984580457889}
-  m_LocalEulerAnglesHint: {x: 18.206, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &5758754911145908749
 Camera:
   m_ObjectHideFlags: 0
@@ -3126,7 +3126,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9008531038771534414}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!114 &2988010290396077974
 MonoBehaviour:
   m_ObjectHideFlags: 0
