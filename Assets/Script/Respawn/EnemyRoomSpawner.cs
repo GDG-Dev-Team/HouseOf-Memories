@@ -10,11 +10,20 @@ public class EnemyRoomSpawner : MonoBehaviour
     [Header("Room Settings")]
     public int maxEnemies = 3;
     public float respawnDelay = 5f;
+    private Rect spawnRect;
     public Vector2 spawnAreaSize = new Vector2(5f, 5f); // Width & height of room
     [SerializeField] private float spawnZ = 0f;
 
     private List<GameObject> currentEnemies = new List<GameObject>();
 
+
+    private void Awake()
+    {
+        Vector2 center = new Vector2(transform.position.x, transform.position.y);
+        float minX = center.x - spawnAreaSize.x / 2f;
+        float minY = center.y - spawnAreaSize.y / 2f;
+        spawnRect = new Rect(minX, minY, spawnAreaSize.x, spawnAreaSize.y);
+    }
     private void Start()
     {
         StartCoroutine(InitialSpawn());
@@ -38,10 +47,25 @@ public class EnemyRoomSpawner : MonoBehaviour
         GameObject enemy = Instantiate(prefab, spawnPos, Quaternion.identity);
         currentEnemies.Add(enemy);
 
-        // Monitor death automatically
+      
+
+        EnemyMove moveScript = enemy.GetComponent<EnemyMove>();
+
+        if (moveScript != null)
+        {
+            // Optionally set movement bounds or other properties here
+            moveScript.MovementsBounds = spawnRect;
+        }
+        else
+        {
+            Debug.LogWarning("Spawned enemy does not have an EnemyMove script.");
+        }
+
+      // Monitor death automatically
         EnemyDeathWatcher watcher = enemy.AddComponent<EnemyDeathWatcher>();
         watcher.spawner = this;
-    }
+        
+        }
 
     public void NotifyEnemyDied(GameObject enemy)
     {
