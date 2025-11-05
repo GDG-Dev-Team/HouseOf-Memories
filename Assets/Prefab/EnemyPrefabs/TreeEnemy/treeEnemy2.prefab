@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51c0b707232d74401bf4af080649c1f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  maxHealth: 3
   damageCooldown: 0
   hurtColor: {r: 1, g: 0, b: 0, a: 1}
   flashDuration: 0.1
@@ -137,8 +137,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   chaseSpeed: 10
-  LineOfSite: 40
-  attackRange: 40
+  LineOfSite: 150
+  attackRange: 90
   attackCooldown: 3
 --- !u!70 &664754954560464283
 CapsuleCollider2D:
@@ -174,8 +174,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0021095173, y: 0.011946018}
-  m_Size: {x: 0.55049914, y: 1.3943255}
+  m_Offset: {x: -0.032935873, y: 0.011946018}
+  m_Size: {x: 0.68211716, y: 1.3943255}
   m_Direction: 0
 --- !u!212 &8913984175345372408
 SpriteRenderer:

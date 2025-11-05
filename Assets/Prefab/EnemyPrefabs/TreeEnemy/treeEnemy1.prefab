@@ -107,7 +107,7 @@ MonoBehaviour:
     m_Bits: 128
   chaseSpeed: 10
   LineOfSite: 590
-  attackRange: 40
+  attackRange: 50
   attackCooldown: 3
 --- !u!70 &5805854051855486542
 CapsuleCollider2D:
@@ -143,8 +143,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.023652915, y: 0.0020345475}
-  m_Size: {x: 0.6146003, y: 1.4117963}
+  m_Offset: {x: -0.0021145851, y: 0.0020345475}
+  m_Size: {x: 0.7119445, y: 1.4117963}
   m_Direction: 0
 --- !u!212 &4733138624016917624
 SpriteRenderer:

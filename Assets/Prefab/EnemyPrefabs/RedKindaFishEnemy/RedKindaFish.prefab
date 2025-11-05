@@ -206,8 +206,8 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 0
-  lineOfSight: 8
-  attackRange: 2
+  lineOfSight: 15
+  attackRange: 10
   jumpForce: 5
   jumpCooldown: 1
 --- !u!60 &322693933658645576
