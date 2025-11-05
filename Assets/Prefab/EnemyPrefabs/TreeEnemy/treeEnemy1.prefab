@@ -106,9 +106,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   chaseSpeed: 10
-  LineOfSite: 590
+  LineOfSite: 90
   attackRange: 40
-  attackCooldown: 3
+  attackCooldown: 5
 --- !u!70 &5805854051855486542
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

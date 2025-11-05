@@ -169,7 +169,7 @@ MonoBehaviour:
     m_Bits: 128
   chaseSpeed: 15
   LineOfSite: 40
-  attackRange: 20
+  attackRange: 30
   attackCooldown: 3
 --- !u!70 &6677678308942401618
 CapsuleCollider2D:
