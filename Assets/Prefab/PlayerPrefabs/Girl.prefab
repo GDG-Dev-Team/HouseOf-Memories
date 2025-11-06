@@ -1129,8 +1129,9 @@ MonoBehaviour:
   bulletSpeed: 60
   shootCooldown: 0.5
   animator: {fileID: 8806025511555070855}
-  audioSource: {fileID: 911441531747051735}
+  audioSource: {fileID: 0}
   shootClip: {fileID: 8300000, guid: 738518b7937eb784b8ed808ffdabff44, type: 3}
+  shootVolume: 0.4
 --- !u!114 &8491484927232529758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1145,11 +1146,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enablePlatformMovement: 0
   speed: 70
+  DashPower: 24
   tr: {fileID: 8491230456950605604}
   PlayerHealth: 3
   audioSource: {fileID: 0}
-  dashClip: {fileID: 0}
-  runClip: {fileID: 0}
+  dashClip: {fileID: 8300000, guid: 3353183deb1d1bd4b8b273ff5d0e5560, type: 3}
+  runClip: {fileID: 8300000, guid: fc8a72f1dee4cba4ca760d1d51ea4100, type: 3}
   cameraTransform: {fileID: 3908531475119428114}
 --- !u!114 &7249057245852818584
 MonoBehaviour:
@@ -1242,7 +1244,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1275,7 +1277,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2194611345797344985}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -3126,7 +3128,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9008531038771534414}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &2988010290396077974
 MonoBehaviour:
   m_ObjectHideFlags: 0

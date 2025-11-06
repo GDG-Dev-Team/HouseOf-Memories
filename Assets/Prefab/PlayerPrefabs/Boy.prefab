@@ -151,7 +151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769622283298304839}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.54783076, w: 0.83658916}
+  m_LocalRotation: {x: 0, y: 0, z: -0.547819, w: 0.8365969}
   m_LocalPosition: {x: 0.7857143, y: 0.0000002049718, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -563,7 +563,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2266008500814001568}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.86577404, w: 0.5004352}
+  m_LocalRotation: {x: -0, y: -0, z: 0.8657751, w: 0.5004332}
   m_LocalPosition: {x: 0.682, y: -0.019, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -880,7 +880,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3731650450199435013}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.9991334, w: 0.041624185}
+  m_LocalRotation: {x: 0, y: 0, z: -0.9991339, w: 0.041612647}
   m_LocalPosition: {x: 0.8066249, y: -0.521962, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1462,7 +1462,8 @@ MonoBehaviour:
   mouseAimMask:
     serializedVersion: 2
     m_Bits: 0
-  audioSource: {fileID: 5930892944820722356}
+  DashPower: 50
+  audioSource: {fileID: 0}
   runClip: {fileID: 8300000, guid: fc8a72f1dee4cba4ca760d1d51ea4100, type: 3}
   dashClip: {fileID: 8300000, guid: 3353183deb1d1bd4b8b273ff5d0e5560, type: 3}
   tr: {fileID: 896720225808001649}
@@ -1662,7 +1663,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1776,7 +1777,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1818,7 +1819,7 @@ MonoBehaviour:
     m_Bits: 256
   damage: 1
   audioSource: {fileID: 0}
-  attackClip: {fileID: 0}
+  attackClip: {fileID: 8300000, guid: 92062f3cc2b9bbf4db245fb3339e1e33, type: 3}
 --- !u!1 &3755073890214461904
 GameObject:
   m_ObjectHideFlags: 0
@@ -1843,7 +1844,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3755073890214461904}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.022906654, w: 0.9997377}
+  m_LocalRotation: {x: -0, y: -0, z: 0.022903, w: 0.99973774}
   m_LocalPosition: {x: 1.46, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1874,7 +1875,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3826718274003742590}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.34117296, w: 0.94000053}
+  m_LocalRotation: {x: -0, y: -0, z: -0.34117, w: 0.9400016}
   m_LocalPosition: {x: 0.68, y: 0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2034,7 +2035,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4457539345984822442}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.27378342, w: 0.9617914}
+  m_LocalRotation: {x: 0, y: 0, z: -0.2737744, w: 0.96179396}
   m_LocalPosition: {x: 0.97583115, y: -0.00000007338239, z: 0}
   m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2067,7 +2068,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5122847155490888508}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.03418652, w: 0.99941546}
+  m_LocalRotation: {x: 0, y: 0, z: -0.034187835, w: 0.99941546}
   m_LocalPosition: {x: 1.1970208, y: 0.00000002095092, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2210,7 +2211,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5395302978934210103}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.98989826, w: -0.14177968}
+  m_LocalRotation: {x: 0, y: 0, z: 0.9899007, w: -0.14176267}
   m_LocalPosition: {x: 0.65251297, y: 0.25683478, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2812,7 +2813,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8851210420321646218}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &1516081045315182900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2881,7 +2882,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9038924582535756899}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.99995637, w: 0.009344955}
+  m_LocalRotation: {x: 0, y: 0, z: 0.99995637, w: 0.009339985}
   m_LocalPosition: {x: 0.35280532, y: 0.16167954, z: 0}
   m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
