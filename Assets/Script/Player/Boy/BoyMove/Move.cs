@@ -37,6 +37,7 @@ public class Move : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
         mainCamera = Camera.main;
     }
@@ -62,18 +63,17 @@ public class Move : MonoBehaviour
         direction = new Vector2(input * speed, rb2d.linearVelocity.y);
         rb2d.linearVelocity = direction;
 
-        // ����� ��� ����� ��� ������
-     //   if (input != 0 && !audioSource.isPlaying)
-       // {
-        //    audioSource.clip = runClip;
-          //  audioSource.loop = true;
-           // audioSource.Play();
-    //    }
-        // ����� ��� ����� ��� ������
-      //  else if (input == 0 && audioSource.clip == runClip)
-       // {
-        //    audioSource.Stop();
-      //  }
+     
+        if (input != 0 && !audioSource.isPlaying)
+        {
+            audioSource.clip = runClip;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
+        else if (input == 0 && audioSource.clip == runClip)
+        {
+            audioSource.Stop();
+        }
 
         if (Input.GetKeyDown(KeyCode.RightShift) && canDash)
         {

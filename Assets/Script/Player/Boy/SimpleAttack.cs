@@ -17,6 +17,10 @@ public class SimpleAttack : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip attackClip;
 
+    void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     void Update()
     {
         if (isAttacking) return;

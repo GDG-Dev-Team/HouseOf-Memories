@@ -35,6 +35,7 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
         Time.timeScale = 1;
     }
