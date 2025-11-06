@@ -2,6 +2,9 @@
 
 public class EnemyMove : MonoBehaviour
 {
+    [Header("For Respawn")]
+    [SerializeField] public Rect MovementsBounds;
+
     [Header("For Patrolling")]
     [SerializeField] float patrolSpeed;
     [SerializeField] Transform groundCheckPoint;
@@ -40,6 +43,8 @@ public class EnemyMove : MonoBehaviour
         checkingWall = Physics2D.OverlapCircle(wallCheckPoint.position, circleRadius, wallLayer);
 
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        if (players.Length == 0) return;
+
         player = GetClosestPlayer(players).transform;
 
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
@@ -62,6 +67,18 @@ public class EnemyMove : MonoBehaviour
             anim.SetBool("isAttacking", false);
             Patrolling();                              // يرجع للدوران
         }
+
+
+    }
+
+    void LateUpdate()
+    {
+        if (MovementsBounds.width == 0) return;
+
+        Vector3 clampedPosition = transform.position;
+        clampedPosition.x = Mathf.Clamp(clampedPosition.x, MovementsBounds.xMin, MovementsBounds.xMax);
+        clampedPosition.y = Mathf.Clamp(clampedPosition.y, MovementsBounds.yMin, MovementsBounds.yMax);
+        transform.position = clampedPosition;
     }
 
     public void DealDamage()
@@ -126,6 +143,8 @@ public class EnemyMove : MonoBehaviour
         facingRight = !facingRight;
         transform.Rotate(0, 180, 0);
     }
+
+     
 
     private void OnDrawGizmosSelected()
     {

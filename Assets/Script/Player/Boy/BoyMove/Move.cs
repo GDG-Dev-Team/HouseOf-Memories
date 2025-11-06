@@ -17,13 +17,14 @@ public class Move : MonoBehaviour
     [SerializeField] LayerMask mouseAimMask;
 
     [Header("Dash")]
+    [SerializeField]  private float DashPower = 50f;
     private bool canDash = true;
     private bool isDashing;
-    private float DashPower = 24f;
     private float DashingTime = 0.2f;
     private float DashCoolDown = 1f;
     private bool isFacingRight = true;
     private bool IsRunning = false;
+  
 
     [Header("Audio")]
     [SerializeField] private AudioSource audioSource;
