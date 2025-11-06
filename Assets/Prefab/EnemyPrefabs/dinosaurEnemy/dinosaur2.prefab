@@ -157,6 +157,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b771d5001d8d96e4daad326b66a57d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementsBounds:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
   patrolSpeed: 20
   groundCheckPoint: {fileID: 4694584831319843866}
   wallCheckPoint: {fileID: 6306866989799104898}
@@ -170,7 +176,7 @@ MonoBehaviour:
   chaseSpeed: 15
   LineOfSite: 100
   attackRange: 50
-  attackCooldown: 1
+  attackCooldown: 0.3
 --- !u!70 &1747513591321764394
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
