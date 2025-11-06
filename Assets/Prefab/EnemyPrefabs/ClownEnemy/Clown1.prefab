@@ -144,7 +144,7 @@ MonoBehaviour:
   maxHealth: 4
   damageCooldown: 0
   hurtColor: {r: 0.7735849, g: 0.30286577, b: 0.30286577, a: 1}
-  flashDuration: 0.1
+  flashDuration: 0.2
 --- !u!114 &135716982115522919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,6 +157,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b771d5001d8d96e4daad326b66a57d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementsBounds:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
   patrolSpeed: 20
   groundCheckPoint: {fileID: 6555618350861364197}
   wallCheckPoint: {fileID: 3578345776607855573}
@@ -170,7 +176,7 @@ MonoBehaviour:
   chaseSpeed: 15
   LineOfSite: 40
   attackRange: 30
-  attackCooldown: 3
+  attackCooldown: 0.3
 --- !u!70 &6677678308942401618
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

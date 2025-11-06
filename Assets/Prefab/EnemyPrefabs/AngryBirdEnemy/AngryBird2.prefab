@@ -157,6 +157,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b771d5001d8d96e4daad326b66a57d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementsBounds:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
   patrolSpeed: 20
   groundCheckPoint: {fileID: 2639918897911959172}
   wallCheckPoint: {fileID: 3248625720735482601}
@@ -170,7 +176,7 @@ MonoBehaviour:
   chaseSpeed: 15
   LineOfSite: 40
   attackRange: 30
-  attackCooldown: 3
+  attackCooldown: 0.3
 --- !u!212 &7643322272457663295
 SpriteRenderer:
   m_ObjectHideFlags: 0
