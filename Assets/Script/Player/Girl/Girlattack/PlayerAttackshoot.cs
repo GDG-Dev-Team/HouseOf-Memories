@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.Collections;
 public class PlayerGunAttack : MonoBehaviour
 {
     [Header("Gun Variables")]
@@ -15,9 +15,15 @@ public class PlayerGunAttack : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip shootClip;
+    [SerializeField]  [Range(0f, 1f)] private float shootVolume = 0.7f;
 
     private float nextFireTime = 0f;
 
+
+    void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     private void Start()
     {
         // البحث عن Animator في الأبناء إن لم يتم تعيينه يدويًا
@@ -58,9 +64,12 @@ public class PlayerGunAttack : MonoBehaviour
         // ✅ تشغيل صوت الطلقة
         if (audioSource != null && shootClip != null)
         {
-            audioSource.PlayOneShot(shootClip);
+            audioSource.PlayOneShot(shootClip, shootVolume);
+            
         }
 
         Destroy(bullet, 5f);
+      
+
     }
 }
