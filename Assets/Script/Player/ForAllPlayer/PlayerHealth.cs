@@ -18,13 +18,13 @@ public class PlayerHealth : MonoBehaviour
             instance = this;
     }
 
-   // void OnTriggerEnter2D(Collider2D collision)
-   // {
-   //     if (collision.CompareTag("Enemy"))
-   //     {
-   //         TakeDamage(1);
-   //     }
-//}
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            TakeDamage(1);
+        }
+    }
 
 //    private void OnCollisionEnter2D(Collision2D collision)
 //{
