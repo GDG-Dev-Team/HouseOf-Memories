@@ -20,6 +20,12 @@ public class SimpleAttack : MonoBehaviour
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+
+        if (audioSource == null)
+        {
+            Debug.LogError("SimpleAttack script needs an AudioSource component on the same GameObject!");
+            this.enabled = false;
+        }
     }
     void Update()
     {
@@ -39,10 +45,12 @@ public class SimpleAttack : MonoBehaviour
         // ✅ تشغيل الصوت هنا
         if (audioSource != null && attackClip != null)
         {
-            audioSource.PlayOneShot(attackClip);
+            audioSource.clip = attackClip;
+            audioSource.Play();
         }
 
         yield return new WaitForSeconds(attackDuration / 3f);
+        audioSource.Stop();
         DoAttack();
         yield return new WaitForSeconds(attackDuration * 2f / 3f);
 

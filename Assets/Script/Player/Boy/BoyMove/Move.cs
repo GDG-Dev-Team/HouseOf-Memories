@@ -67,7 +67,7 @@ public class Move : MonoBehaviour
         if (input != 0 && !audioSource.isPlaying)
         {
             audioSource.clip = runClip;
-            audioSource.loop = true;
+            audioSource.loop = false;
             audioSource.Play();
         }
         else if (input == 0 && audioSource.clip == runClip)

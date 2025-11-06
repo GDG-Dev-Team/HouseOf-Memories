@@ -61,7 +61,7 @@ public class PlayerMove : MonoBehaviour
         if (Mathf.Abs(input) > 0.01f && !audioSource.isPlaying)
         {
             audioSource.clip = runClip;
-            audioSource.loop = true;
+            audioSource.loop = false;
             audioSource.Play();
         }
         else if (Mathf.Abs(input) <= 0.01f && audioSource.clip == runClip)
