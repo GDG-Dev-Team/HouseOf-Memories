@@ -53,25 +53,36 @@ public class EnemyMove : MonoBehaviour
         {
             if (distanceFromPlayer <= attackRange)
             {
-                enemyRB.linearVelocity = Vector2.zero; // العدو يوقف عند الهجوم
-                anim.SetBool("isAttacking", true);     // يشغّل انيميشن الهجوم
+                enemyRB.linearVelocity = Vector2.zero;
+
+                // يهجم فقط إذا انتهى وقت الانتظار بين الهجمات
+                if (Time.time - lastAttackTime >= attackCooldown)
+                {
+                    anim.SetBool("isAttacking", true);
+                    lastAttackTime = Time.time; // نبدأ العدّ من جديد بعد كل ضربة
+                }
+                else
+                {
+                    anim.SetBool("isAttacking", false);
+                }
             }
             else
             {
-                anim.SetBool("isAttacking", false);    // يرجع يلاحق اللاعب
+                anim.SetBool("isAttacking", false);
                 FollowPlayer();
             }
         }
         else
         {
             anim.SetBool("isAttacking", false);
-            Patrolling();                              // يرجع للدوران
+            Patrolling();
         }
-
-
     }
 
-    void LateUpdate()
+
+
+
+        void LateUpdate()
     {
         if (MovementsBounds.width == 0) return;
 
