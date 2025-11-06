@@ -8,7 +8,7 @@ public class EnemyHealth : MonoBehaviour
     private float currentHealth;
 
     [Header("Damage Cooldown")]
-    [SerializeField] private float damageCooldown = 1f; // æÞÊ ÇáÇäÊÙÇÑ Èíä ÇáÖÑÈÇÊ
+    [SerializeField] private float damageCooldown = 1f; // ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     private float lastDamageTime;
 
     [Header("ChangColor")]
@@ -20,7 +20,7 @@ public class EnemyHealth : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;
-        lastDamageTime = -damageCooldown; // äÓãÍ ÈÇáÖÑÈ ãÈÇÔÑÉ Ãæá ãÑÉ
+        lastDamageTime = -damageCooldown; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer != null)
@@ -30,7 +30,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        // áæ ãÑ æÞÊ ßÇÝí ãä ÂÎÑ ÖÑÈÉ
+        // ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         if (Time.time - lastDamageTime >= damageCooldown)
         {
             currentHealth -= damage;
@@ -41,6 +41,7 @@ public class EnemyHealth : MonoBehaviour
             if (currentHealth <= 0)
             {
                 Destroy(gameObject);
+                
             }
         }
     }

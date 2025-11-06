@@ -35,6 +35,7 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
         Time.timeScale = 1;
     }
@@ -60,7 +61,7 @@ public class PlayerMove : MonoBehaviour
         if (Mathf.Abs(input) > 0.01f && !audioSource.isPlaying)
         {
             audioSource.clip = runClip;
-            audioSource.loop = true;
+            audioSource.loop = false;
             audioSource.Play();
         }
         else if (Mathf.Abs(input) <= 0.01f && audioSource.clip == runClip)
