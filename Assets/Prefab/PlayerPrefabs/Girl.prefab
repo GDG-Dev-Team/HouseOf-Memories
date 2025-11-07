@@ -1126,7 +1126,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 7027281160704079786, guid: 99db25299f00042a18ff053621aeb619, type: 3}
   firePoint: {fileID: 4794879747663903039}
   playerTransform: {fileID: 6423644984580457889}
-  bulletSpeed: 60
+  bulletSpeed: 300
   shootCooldown: 0.5
   animator: {fileID: 8806025511555070855}
   audioSource: {fileID: 0}
@@ -2523,13 +2523,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6623980572919452112}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.4650088, w: 0.8853061}
+  m_LocalRotation: {x: -0, y: -0, z: -0.5365373, w: 0.84387666}
   m_LocalPosition: {x: 1.1057543, y: -0.00000018743648, z: 0}
   m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5689108553268423022}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -64.896}
 --- !u!1 &6648259874224403236
 GameObject:
   m_ObjectHideFlags: 0

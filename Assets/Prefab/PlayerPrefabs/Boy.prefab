@@ -1458,11 +1458,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTransform: {fileID: 7742735896827634004}
-  speed: 50
+  speed: 70
   mouseAimMask:
     serializedVersion: 2
     m_Bits: 0
-  DashPower: 50
+  DashPower: 100
   audioSource: {fileID: 0}
   runClip: {fileID: 8300000, guid: fc8a72f1dee4cba4ca760d1d51ea4100, type: 3}
   dashClip: {fileID: 8300000, guid: 3353183deb1d1bd4b8b273ff5d0e5560, type: 3}

@@ -82,7 +82,7 @@ public class EnemyMove : MonoBehaviour
 
 
 
-        void LateUpdate()
+    void LateUpdate()
     {
         if (MovementsBounds.width == 0) return;
 
@@ -155,7 +155,7 @@ public class EnemyMove : MonoBehaviour
         transform.Rotate(0, 180, 0);
     }
 
-     
+
 
     private void OnDrawGizmosSelected()
     {
