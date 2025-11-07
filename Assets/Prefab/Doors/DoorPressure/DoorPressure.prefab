@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6774841415779407271}
   - component: {fileID: 7564008480812129631}
-  - component: {fileID: 5095865797807201388}
   - component: {fileID: 218254973565072167}
   m_Layer: 0
   m_Name: DoorPressure
@@ -57,18 +56,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5095865797807201388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8533323438041444363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9aefe41bf8648d439a57a898731b32b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &218254973565072167
 BoxCollider2D:
   m_ObjectHideFlags: 0
