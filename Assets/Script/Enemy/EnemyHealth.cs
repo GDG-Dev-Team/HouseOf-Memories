@@ -30,7 +30,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        // �� �� ��� ���� �� ��� ����
+     
         if (Time.time - lastDamageTime >= damageCooldown)
         {
             currentHealth -= damage;

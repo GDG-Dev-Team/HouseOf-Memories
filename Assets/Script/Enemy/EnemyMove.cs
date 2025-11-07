@@ -94,6 +94,7 @@ public class EnemyMove : MonoBehaviour
 
     public void DealDamage()
     {
+
         if (Time.time - lastAttackTime >= attackCooldown)
         {
             if (player != null && Vector2.Distance(player.position, transform.position) <= attackRange)
