@@ -26,13 +26,13 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-//    private void OnCollisionEnter2D(Collision2D collision)
-//{
-//        if (collision.CompareTag("Enemy"))
-//        {
-//            TryTakeDamage(1);
-//        }
-//    }
+    //    private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //        if (collision.CompareTag("Enemy"))
+    //        {
+    //            TryTakeDamage(1);
+    //        }
+    //    }
 
     public void TakeDamage(int damage)
     {

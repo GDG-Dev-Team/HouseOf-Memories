@@ -8,7 +8,7 @@ public class EnemyHealth : MonoBehaviour
     private float currentHealth;
 
     [Header("Damage Cooldown")]
-    [SerializeField] private float damageCooldown = 1f; // ��� �������� ��� �������
+    [SerializeField] private float damageCooldown = 1f; 
     private float lastDamageTime;
 
     [Header("ChangColor")]
@@ -20,7 +20,7 @@ public class EnemyHealth : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;
-        lastDamageTime = -damageCooldown; // ���� ������ ������ ��� ���
+        lastDamageTime = -damageCooldown; 
 
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer != null)
