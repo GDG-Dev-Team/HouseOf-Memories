@@ -18,22 +18,7 @@ public class PlayerHealth : MonoBehaviour
             instance = this;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Enemy"))
-        {
-            TakeDamage(1);
-        }
-    }
-
-    //    private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //        if (collision.CompareTag("Enemy"))
-    //        {
-    //            TryTakeDamage(1);
-    //        }
-    //    }
-
+ 
     public void TakeDamage(int damage)
     {
         if (!isInvincible)

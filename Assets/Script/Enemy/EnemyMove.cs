@@ -101,7 +101,7 @@ public class EnemyMove : MonoBehaviour
                 PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
                 if (playerHealth != null)
                 {
-                    playerHealth.TakeDamage(1);
+                   // playerHealth.TakeDamage(1);
                     lastAttackTime = Time.time;
                 }
             }
