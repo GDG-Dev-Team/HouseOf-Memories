@@ -8,7 +8,7 @@ public class SimpleAttack : MonoBehaviour
     public float attackDuration = 0.5f;
     public Transform attackPoint;
     public float attackRange = 0.5f;
-    public LayerMask enemyLayer;
+    public LayerMask damageableLayer;
     public int damage = 1;
 
     private bool isAttacking = false;
@@ -59,6 +59,7 @@ public class SimpleAttack : MonoBehaviour
 
     void DoAttack()
     {
+        /*
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
 
         foreach (Collider2D enemy in hitEnemies)
@@ -69,6 +70,30 @@ public class SimpleAttack : MonoBehaviour
             if (enemyHealth != null)
             {
                 enemyHealth.TakeDamage(damage);
+            }
+        }
+        */
+
+
+        // CHANGED: Use the new damageableLayer variable
+        Collider2D[] hitTargets = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, damageableLayer);
+
+        // CHANGED: The loop now checks for CharacterHealth
+        foreach (Collider2D target in hitTargets)
+        {
+            Debug.Log("Sword hit: " + target.name);
+
+            if (target.gameObject == this.gameObject)
+            {
+                continue; // 'continue' means "skip the rest of this loop iteration and move to the next one"
+            }
+        
+            // We look for our universal CharacterHealth script
+            NewPlayerHealth health = target.GetComponent<NewPlayerHealth>();
+            if (health != null)
+            {
+                // We found a health component, so deal damage!
+                health.TakeDamage(damage);
             }
         }
     }

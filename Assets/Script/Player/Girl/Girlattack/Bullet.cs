@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
 
     void Start()
     {
-        Destroy(gameObject, lifeTime); // Õ–› «·ÿ·ﬁ… »⁄œ „œ…  ·ﬁ«∆Ì«
+        Destroy(gameObject, lifeTime); 
     }
 
 
@@ -18,28 +18,52 @@ public class Bullet : MonoBehaviour
     {
         Debug.Log("Bullet touched: " + collision.name);
 
-        if (collision.CompareTag("Enemy"))
+        NewPlayerHealth health = collision.GetComponent<NewPlayerHealth>();
+        if (health != null)
         {
-            Debug.Log("Enemy TAG detected: " + collision.name);
-            EnemyHealth enemy = collision.GetComponent<EnemyHealth>();
-            if (enemy != null)
-            {
-                Debug.Log("EnemyHealth FOUND on: " + collision.name);
-                enemy.TakeDamage(damage);
-            }
-            else
-            {
-                Debug.LogWarning("No EnemyHealth script found on: " + collision.name);
-            }
-
-            Destroy(gameObject);
+            health.TakeDamage(damage);
+          
         }
+        Destroy(gameObject);
+  
+        /*
+                if (collision.CompareTag("Enemy"))
+                {
+                    Debug.Log("Enemy TAG detected: " + collision.name);
+                    EnemyHealth enemy = collision.GetComponent<EnemyHealth>();
+                    if (enemy != null)
+                    {
+                        Debug.Log("EnemyHealth FOUND on: " + collision.name);
+                        enemy.TakeDamage(damage);
+                    }
+                    else
+                    {
+                        Debug.LogWarning("No EnemyHealth script found on: " + collision.name);
+                    }
+
+                    Destroy(gameObject);
+                }
+        */
     }
 
 
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+
+        NewPlayerHealth health = collision.collider.GetComponent<NewPlayerHealth>();
+        if (health != null)
+        {
+            health.TakeDamage(damage);
+        }
+
+        Destroy(gameObject);
+    
+ 
+ 
+
+        /*
         Debug.Log("Collision with: " + collision.collider.name);
 
         if (collision.collider.CompareTag("Enemy"))
@@ -52,5 +76,8 @@ public class Bullet : MonoBehaviour
 
             Destroy(gameObject);
         }
+      }
+        */
     }
+
 }
