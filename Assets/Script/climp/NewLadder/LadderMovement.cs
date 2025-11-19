@@ -6,7 +6,7 @@ public class LadderMovement : MonoBehaviour
     private float vertical;
     private bool isLadder;
     private bool isClimbing;
-    [SerializeField] private float speed = 8f;
+    [SerializeField] private float speed = 15f;
     [SerializeField] private Rigidbody2D rb;
    
 

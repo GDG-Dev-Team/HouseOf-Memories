@@ -6,6 +6,7 @@ public class PlayerUI : MonoBehaviour
     public GameObject health1;
     public GameObject health2;
     public GameObject health3;
+ 
 
     [Header("Required Component")]
     [SerializeField] private NewPlayerHealth characterHealth; // A reference to the health script on this SAME object.
@@ -36,6 +37,7 @@ public class PlayerUI : MonoBehaviour
         health1.SetActive(currentHealth >= 1);
         health2.SetActive(currentHealth >= 2);
         health3.SetActive(currentHealth >= 3);
+       
     }
 
     // This function is now triggered by the OnDeath event from CharacterHealth.
