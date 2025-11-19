@@ -9,6 +9,7 @@ public class PhotoCollect : MonoBehaviour
         if (other.GetComponent<PlayerBoy>() != null)
         {
             CollectionManager.instance.CollectItem(itemSprite);
+            
             Destroy(gameObject);
         }
     }

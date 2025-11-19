@@ -12,11 +12,16 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private int maxConsecutiveJumps = 2;
 
+ 
+  [Header("Sound Effects")]
+    [SerializeField] private AudioClip jumpSound; // The sound clip for jumping.
+    private AudioSource audioSource;
     private int jumpCount = 0;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -35,6 +40,8 @@ public class PlayerJump : MonoBehaviour
     public void HandleJump1()
     {
          Debug.Log("Jump input received");
+ if (jumpSound != null)
+               {  audioSource.PlayOneShot(jumpSound); }
 
     if (jumpCount < maxConsecutiveJumps)
     {
