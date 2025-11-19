@@ -6,10 +6,12 @@ public class PhotoCollect : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.GetComponent<PlayerBoy>() != null)
         {
             CollectionManager.instance.CollectItem(itemSprite);
             Destroy(gameObject);
         }
     }
+    
 }
+

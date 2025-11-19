@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 542adda38901f4ac08b2a4db7b39eeef
   - enabled: 1
-    path: Assets/Scenes/rama.unity
-    guid: 30c388aeddcb5920594bb5bf5a622229
-  - enabled: 1
     path: Assets/Scenes/Lose Menu.unity
     guid: a4e2bdc44b6724efbafdd6eb859d7675
   - enabled: 1
@@ -23,6 +20,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 04d5fa942f62d47d7a1d98cfc3394bed
+  - enabled: 1
+    path: Assets/Scenes/BoyWin.unity
+    guid: 9fa9ac4510e064778a749545ae9eba79
+  - enabled: 1
+    path: Assets/Scenes/GirlWin.unity
+    guid: 7ed5296369d18c7fd8ca9438fa684544
+  - enabled: 1
+    path: Assets/Scenes/new_idea.unity
+    guid: ce7906530551f83388c0747f78215aa8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class NewPlayerHealth : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class NewPlayerHealth : MonoBehaviour
     [Tooltip("Event fired when the character dies.")]
     public UnityEvent OnDeath;
 
+    
+
     // --- Public Property to access current health safely ---
     public int CurrentHealth
     {
@@ -31,16 +34,12 @@ public class NewPlayerHealth : MonoBehaviour
     public void TakeDamage(int damageAmount)
     {
         // If we are currently invincible, don't do anything.
-        if (_isInvincible)
+        if (_isInvincible || _currentHealth <= 0)
         {
             return;
         }
 
-        // If we are already dead, don't do anything.
-        if (_currentHealth <= 0)
-        {
-            return;
-        }
+        
 
         _currentHealth -= damageAmount;
         _currentHealth = Mathf.Clamp(_currentHealth, 0, maxHealth);
@@ -54,6 +53,9 @@ public class NewPlayerHealth : MonoBehaviour
         {
             // Fire the death event.
             OnDeath.Invoke();
+           
+            
+
             // We usually let the death event handler decide to destroy the object.
             // For now, let's just make it inactive.
             // Destroy(gameObject); 
