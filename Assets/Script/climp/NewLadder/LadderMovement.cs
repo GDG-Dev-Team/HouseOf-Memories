@@ -6,7 +6,7 @@ public class LadderMovement : MonoBehaviour
     private float vertical;
     private bool isLadder;
     private bool isClimbing;
-    [SerializeField] private float speed = 15f;
+    [SerializeField] private float speed = 50f;
     [SerializeField] private Rigidbody2D rb;
    
 
@@ -23,7 +23,7 @@ public class LadderMovement : MonoBehaviour
     {
         if (isClimbing)
         {
-            rb.gravityScale = 0f;
+            rb.gravityScale = 1f;
             rb.linearVelocity = new Vector2(rb.linearVelocityX, vertical * speed);
 
         }
