@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
     {
         // This function is called when the OnAllItemsCollected event is fired.
         Debug.Log("Boy wins by collecting all items! Loading scene...");
-        SceneManager.LoadScene(boyWinsSceneName);
+        SceneManager.LoadSceneAsync(boyWinsSceneName);
     }
     // This single function will handle the death of ANY player
     private void OnPlayerDeath(GameObject deadPlayer)
@@ -68,13 +68,13 @@ public class GameManager : MonoBehaviour
         {
             // The Boy died, so the Girl wins.
             Debug.Log("Loading Girl Wins Scene...");
-            SceneManager.LoadScene(girlWinsSceneName);
+            SceneManager.LoadSceneAsync(girlWinsSceneName);
         }
         else if (deadPlayer.GetComponent<PlayerGirl>() != null)
         {
             // The Girl died, so the Boy wins.
             Debug.Log("Loading Boy Wins Scene...");
-            SceneManager.LoadScene(boyWinsSceneName);
+            SceneManager.LoadSceneAsync(boyWinsSceneName);
         }
     }
 }
