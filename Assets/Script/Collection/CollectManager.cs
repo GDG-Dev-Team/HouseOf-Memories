@@ -13,6 +13,9 @@ public class CollectionManager : MonoBehaviour
     [SerializeField] private int collectedCount = 0;
     [SerializeField] private int totalCount = 5;
 
+    [SerializeField] private AudioClip collectionSound; // The sound clip to play.
+    private AudioSource audioSource; // The speaker component.
+
     [Header("Events")]
     [Tooltip("Fired when the number of collected items equals the total count.")]
     public UnityEvent OnAllItemsCollected; // <-- ADD THIS EVENT
@@ -20,6 +23,7 @@ public class CollectionManager : MonoBehaviour
     void Awake()
     {
         if (instance == null) instance = this;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -35,6 +39,10 @@ public class CollectionManager : MonoBehaviour
             collectedCount++;
             UpdateText();
 
+       if (collectionSound != null)
+        {
+            audioSource.PlayOneShot(collectionSound);
+        }
 
             GameObject newIcon = Instantiate(iconPrefab, iconContainer);
             Image img = newIcon.GetComponent<Image>();
@@ -43,7 +51,7 @@ public class CollectionManager : MonoBehaviour
                 img.sprite = itemSprite;
             }
             
-            if (collectedCount >= totalCount)
+            if (collectedCount == totalCount)
             {
                 OnAllItemsCollected.Invoke(); // <-- INVOKE THE EVENT
             }

@@ -39,8 +39,6 @@ public class NewPlayerHealth : MonoBehaviour
             return;
         }
 
-        
-
         _currentHealth -= damageAmount;
         _currentHealth = Mathf.Clamp(_currentHealth, 0, maxHealth);
 
@@ -53,12 +51,6 @@ public class NewPlayerHealth : MonoBehaviour
         {
             // Fire the death event.
             OnDeath.Invoke();
-           
-            
-
-            // We usually let the death event handler decide to destroy the object.
-            // For now, let's just make it inactive.
-            // Destroy(gameObject); 
         }
         else
         {
