@@ -15,6 +15,7 @@ TagManager:
   - Climbable
   - Ladder
   - OneWayPlatform
+  - Boy
   layers:
   - Default
   - TransparentFX
