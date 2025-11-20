@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerJump : MonoBehaviour
 {
-      private Rigidbody2D rb;
+    private Rigidbody2D rb;
     private bool wasGroundedLastFrame;
 
     [SerializeField] private float jumpForce = 10f;
@@ -12,9 +12,8 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private int maxConsecutiveJumps = 2;
 
- 
-  [Header("Sound Effects")]
-    [SerializeField] private AudioClip jumpSound; // The sound clip for jumping.
+    [Header("Audio")]
+    [SerializeField] private AudioClip jumpSound;
     private AudioSource audioSource;
     private int jumpCount = 0;
 
@@ -27,28 +26,24 @@ public class PlayerJump : MonoBehaviour
     void Update()
     {
         bool isGrounded = IsGrounded();
-
         if (isGrounded && !wasGroundedLastFrame)
-        {
             jumpCount = 0;
-        }
 
         wasGroundedLastFrame = isGrounded;
     }
 
-    // ✅ No callback context — plain void method
     public void HandleJump1()
     {
-         Debug.Log("Jump input received");
- if (jumpSound != null)
-               {  audioSource.PlayOneShot(jumpSound); }
+        if (jumpCount < maxConsecutiveJumps)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            jumpCount++;
 
-    if (jumpCount < maxConsecutiveJumps)
-    {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
-        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        jumpCount++;
-    }
+            // 🔊 صوت القفز
+            if (jumpSound != null)
+                audioSource.PlayOneShot(jumpSound);
+        }
     }
 
     bool IsGrounded()
@@ -64,6 +59,4 @@ public class PlayerJump : MonoBehaviour
             Gizmos.DrawSphere(groundPoint.position, pointRadius);
         }
     }
-
 }
-

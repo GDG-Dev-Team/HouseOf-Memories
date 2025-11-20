@@ -39,18 +39,18 @@ public class Jump : MonoBehaviour
     // ✅ No callback context — plain void method
     public void HandleJump1()
     {
-         Debug.Log("Jump input received");
+        if (jumpCount < maxConsecutiveJumps)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            jumpCount++;
 
-    if (jumpCount < maxConsecutiveJumps)
-    {
-        if (jumpSound != null)
-               {  audioSource.PlayOneShot(jumpSound); }
-       
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
-        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        jumpCount++;
+            // 🔊 تشغيل صوت القفز بدون قطع أصوات أخرى
+            if (jumpSound != null)
+                audioSource.PlayOneShot(jumpSound);
+        }
     }
-    }
+
 
     bool IsGrounded()
     {

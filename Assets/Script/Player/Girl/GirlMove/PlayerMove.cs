@@ -4,32 +4,30 @@ using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
+
     [HideInInspector]
     public static Rigidbody2D rb2d;
 
     [Header("Movement")]
-    public bool enablePlatformMovement;
     public float speed;
-    float input;
-    Vector2 direction;
-    Animator anim;
+    private float input;
+    private Vector2 direction;
+    private Animator anim;
 
     [Header("Dash")]
     [SerializeField] private float DashPower = 24f;
     private bool canDash = true;
     private bool isDashing;
-    private float DashingTime = 0.2f;
-    private float DashCoolDown = 1f;
-    private bool isFacingRight = true;
-
-    [SerializeField] private TrailRenderer tr;
-    public int PlayerHealth = 3;
+    [SerializeField] private float DashingTime = 0.2f;
+    [SerializeField] private float DashCoolDown = 1f;
 
     [Header("Audio")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip dashClip;
     [SerializeField] private AudioClip runClip;
 
+    [SerializeField] private TrailRenderer tr;
+    private bool isFacingRight = true;
     [SerializeField] private Transform cameraTransform;
 
     void Start()
@@ -37,36 +35,19 @@ public class PlayerMove : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
-        Time.timeScale = 1;
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
-        {
-            StartCoroutine(Dash());
-        }
-
-        Flip();
     }
 
     void FixedUpdate()
     {
         if (isDashing) return;
 
-        direction = new Vector2(input * speed, rb2d.linearVelocity.y);
-        rb2d.linearVelocity = direction;
+        rb2d.linearVelocity = new Vector2(input * speed, rb2d.linearVelocity.y);
 
-        // 🔊 تشغيل صوت الجري
-        if (Mathf.Abs(input) > 0.01f && !audioSource.isPlaying)
+        // 🔊 تشغيل صوت الجري بدون قطع أصوات أخرى
+        if (Mathf.Abs(input) > 0.01f && runClip != null)
         {
-            audioSource.clip = runClip;
-            audioSource.loop = false;
-            audioSource.Play();
-        }
-        else if (Mathf.Abs(input) <= 0.01f && audioSource.clip == runClip)
-        {
-            audioSource.Stop();
+            if (!audioSource.isPlaying)
+                audioSource.PlayOneShot(runClip);
         }
     }
 
@@ -75,13 +56,21 @@ public class PlayerMove : MonoBehaviour
         input = context.ReadValue<Vector2>().x;
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+            StartCoroutine(Dash());
+
+        Flip();
+    }
+
     private IEnumerator Dash()
     {
         canDash = false;
         isDashing = true;
 
         // 🔊 صوت الداش
-        if (audioSource != null && dashClip != null)
+        if (dashClip != null)
             audioSource.PlayOneShot(dashClip);
 
         float originalGravity = rb2d.gravityScale;
@@ -101,20 +90,20 @@ public class PlayerMove : MonoBehaviour
 
     private void Flip()
     {
-        if (isFacingRight && input < 0f || !isFacingRight && input > 0f)
+        if ((isFacingRight && input < 0f) || (!isFacingRight && input > 0f))
         {
-            Vector3 camPosition = cameraTransform.position;
-            Quaternion camRotation = cameraTransform.rotation;
+            Vector3 camPos = cameraTransform.position;
+            Quaternion camRot = cameraTransform.rotation;
             cameraTransform.SetParent(null);
 
+            Vector3 scale = transform.localScale;
+            scale.x *= -1f;
+            transform.localScale = scale;
             isFacingRight = !isFacingRight;
-            Vector3 localscale = transform.localScale;
-            localscale.x *= -1f;
-            transform.localScale = localscale;
 
             cameraTransform.SetParent(transform);
-            cameraTransform.position = camPosition;
-            cameraTransform.rotation = camRotation;
+            cameraTransform.position = camPos;
+            cameraTransform.rotation = camRot;
         }
     }
 }
